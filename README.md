@@ -95,32 +95,6 @@ Para rodar a aplicação, entre na pasta do projeto em que está localizado o __
 ```
 Espere até que todos os serviços estejam disponíveis, acesse a página inicial do projeto com o seguinte endereço: https://localhost:8000
 
-## 📊 Rodando os testes
-
-Para conferir a cobertura de testes, siga os passos abaixo:
-
-__1º No terminal digite:__
-```Terminal
-  coverage run -m django test --settings=tests.settings 
-```
-Isso fará com que os testes sejam executados.
-
-obs: Para funcionar, é necessário estar na raiz do projeto.
-
-__2º No terminal digite:__
-```Terminal
-  coverage report
-```
-Esse comando irá gerar um relatório contendo as porcentagens da cobertura de testes em cada módulo e a cobertura total.
-
-Obs: Para funcionar, é necessário ter realizado o passo anterior.
-
-__3º No terminal digite (opcional):__
-```Terminal
-  coverage html
-```
-Esse comando irá gerar uma pasta contendo um arquivo html(index.html) que apresenta a cobertura de testes.
-
 ##  ℹ️ Deploy
 
 <p align="justify">O deploy da aplicação é feito de forma automatizada por meio da integração contínua (Travis CI) que utiliza como ambiente de hospedagem o Heroku.
