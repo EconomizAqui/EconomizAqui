@@ -3,6 +3,9 @@ site_name: EconomizAqui
 pages:
   - Home: index.md
 
+  - Desenho da Metodologia:
+    - Metodologia: Desenho-da-Metodologia/Metodologia.md
+
   - Elicitação de Requisitos:
     - 5W2H: Elicitação-de-Requisitos/5W2H.md
     - Léxicos: Elicitação-de-Requisitos/Léxicos.md
