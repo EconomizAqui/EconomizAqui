@@ -8,6 +8,7 @@ pages:
     - Modelagem da Metodologia:
       - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Documento-de-Visão.md
       - Elicitação de Requisitos: Metodologia/Modelagem-da-Metodologia/Elicitação-de-Requisitos.md
+      - NFR Framework: Metodologia/Modelagem-da-Metodologia/NFR-Framework.md
 
   - Dinâmica 1:
     - 5W2H: Dinâmica-1/5W2H.md
