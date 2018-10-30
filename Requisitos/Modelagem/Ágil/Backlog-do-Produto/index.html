@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Backlog do Produto - EconomizAqui</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">EconomizAqui</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../../../../Metodologia/Desenho-da-Metodologia/">Metodologia</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Desenvolvimento</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Artefatos/Desenvolvimento/Configuração-de-Software-e-Políticas-de-Repositório/">Configuração de Software e Políticas de Repositório</a>
+</li>
+            
+<li >
+    <a href="../../../../Artefatos/Desenvolvimento/Documento-de-Visão.md">Documento de Visão</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Organizacional</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../Artefatos/Organizacional/Plano-de-Gerenciamento-de-Riscos/">Plano de Gerenciamento de Riscos</a>
+</li>
+            
+<li >
+    <a href="../../../../Artefatos/Organizacional/Detalhamento-dos-Riscos/">Detalhamento dos Riscos</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requisitos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Elicitação</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Elicitação/Elicitação-de-Requisitos/">Elicitação de Requisitos</a>
+</li>
+            
+<li >
+    <a href="../../../Elicitação/5W2H/">5W2H</a>
+</li>
+            
+<li >
+    <a href="../../../Elicitação/Brainstorming/">Brainstorming</a>
+</li>
+            
+<li >
+    <a href="../../../Elicitação/Mapa-Mental/">Mapa Mental</a>
+</li>
+            
+<li >
+    <a href="../../../Elicitação/Rich-Picture/">Rich Pictures</a>
+</li>
+            
+<li >
+    <a href="../../../Elicitação/Storyboard/">Storyboard</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Modelagem</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ágil</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Backlog do Produto</a>
+</li>
+            
+<li >
+    <a href="../Roadmap/">Roadmap</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Inicial</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Inicial/Léxicos/">Léxicos</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Intencional</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Intencional/NFR-Framework/">NFR Framework</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tradicional</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Tradicional/Diagrama-de-Caso-de-Uso/">Diagrama de Caso de Uso</a>
+</li>
+            
+<li >
+    <a href="../../Tradicional/Diagrama-de-Domínio/">Diagrama de Domínio</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Atas de Reuniões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../Atas-de-Reuniões/Ata-01/">Ata 01</a>
+</li>
+                                    
+<li >
+    <a href="../../../../Atas-de-Reuniões/Ata-02/">Ata 02</a>
+</li>
+                                    
+<li >
+    <a href="../../../../Atas-de-Reuniões/Ata-03/">Ata 03</a>
+</li>
+                                    
+<li >
+    <a href="../../../../Atas-de-Reuniões/Ata-04/">Ata 04</a>
+</li>
+                                    
+<li >
+    <a href="../../../../Atas-de-Reuniões/Ata-05/">Ata 05</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../../Elicitação/Storyboard/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../Roadmap/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#backlog-do-prduto">Backlog do Prduto</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Responsáveis</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>29/10/2018</td>
+<td>Mateus de Oliveira e Vinícius Cantuária</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="backlog-do-prduto">Backlog do Prduto</h1>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Tema</strong></th>
+<th align="center"><strong>Nome</strong></th>
+<th align="center"><strong>Descrição</strong></th>
+<th align="center"><strong>Tarefas</strong></th>
+<th align="center"><strong>Prioridade</strong></th>
+<th align="center"><strong>Pontuação</strong></th>
+<th align="center"><strong>Identificador</strong></th>
+<th align="center"><strong>Padrões de Projeto</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Usuário</td>
+<td align="center">Realizar Autenticação</td>
+<td align="center">Tem como objetivo fazer com que o cliente se identifique para o sistema, para que o sistema possa fornecer as informações corretamente a cada cliente.</td>
+<td align="center">Login</td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center">UC01</td>
+<td align="center">Proxy</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Logout</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Manter Usuário</td>
+<td align="center">A funcionalidade de manter usuário estabelece as operações de CRUD, ou seja, criação, leitura, atualização e exclusão de dados relacionados ao objeto que representa a classe de usuário. Nesse sentido, ela define que o usuário poderá criar uma conta no sistema e, a partir disto, logar , atualizar as suas informações ou excluir os seus registros.</td>
+<td align="center">Criar Usuário (Nome, E-mail, senha, pontos de confiança)</td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center">UC02</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Atualizar Usuário</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Remover Usuário</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Llstar Usuário</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Visualizar Ranking</td>
+<td align="center">Esta funcionalidade compreende a listagem dos 10 usuários com maior número de pontos de confiança</td>
+<td align="center"></td>
+<td align="center">D</td>
+<td align="center"></td>
+<td align="center">UC03</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Confirmar preço</td>
+<td align="center">Tem como objetivo confirmar se o preço de um determinado produto está correto, caso o produto seja dado como confiavel, os usuários ganham 1 ponto de confiança, caso o produto seja dado como não confiavel, os usuários perdem 1 pontos de confiança</td>
+<td align="center"></td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center">UC04</td>
+<td align="center">Observer(Usuário vai seguir o produto, e de acordo com estes updates ele realiza uma função)</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Questionar preço</td>
+<td align="center">Tem como objetivo negar se o preço de um determinado produto, reduzindo assim a confiabilidade deste, caso o produto seja dado como não confiavel, os usuaários ganham 1 ponto de confiança, caso o produto seja dado como confiavel, os usuários perdem 1 pontos de confiança</td>
+<td align="center"></td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center">UC05</td>
+<td align="center">Observer(Usuário vai seguir o produto, e de acordo com estes updates ele realiza uma função)</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Pontuar Confiabilidade do Usuário</td>
+<td align="center">O usuário recebe pontos de confiança ao adicionar, confirmar ou questionar preços de produtos, ao adicionar um produto confiavel o usuário recebe 10 pontos</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center">UC06</td>
+<td align="center">Strategy: Dependendo do estado do produto, confiavel ou não, ele vai possuir um calculo diferente para adicionar os pontos ou reduzir</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Evoluir para Usuário Premium</td>
+<td align="center">Usuários podem utilizar 100 pontos de confiança para se transformarem em usuários premium, o peso de um usuário premium ao questionar ou confirmar um preço é o dobro de um usuário comum, e este usuário também pode realizar funções como montar lista de compras com mais de 15 produtos, porém este recurso consome seus pontos de confiança</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center">UC07</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Produto</td>
+<td align="center">Manter Produto</td>
+<td align="center">A funcionalidade de manter produto estabelece as operações de CRUD, ou seja, criação, leitura, atualização e exclusão de dados relacionados ao objeto que representa a classe de produto. Nesse sentido, ela define que um usuário poderá criar um produto e a partir disso adicionar seu preço, foto, data do preço, local e nome</td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center">UC08</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Filtrar produto por preço</td>
+<td align="center">Esta funcionalidade tem como objetivo filtrar a listagem de um determinado produto pelo seu preço, em ordem crescente ou decrescente</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center">UC09</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Mostrar Gráfico de preço</td>
+<td align="center">Tem como objetivo apresentar o gráfico do preço de um determinado produto em um período de tempo, para assim determinar as melhores datas para aquisição deste</td>
+<td align="center"></td>
+<td align="center">D</td>
+<td align="center"></td>
+<td align="center">UC10</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Buscar produto</td>
+<td align="center">Este caso de uso permite ao usuário pesquisar um determinado produto pelo seu nome</td>
+<td align="center"></td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center">UC11</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Pontuar Confiabilidade do Produto</td>
+<td align="center">A confiabilidade do preço de um produto será determinada através das confirmações e questionamentos dos usuários, um usuário normal soma 2 pontos de confiança para um produto, um usuário não confiavel soma 1 ponto de confiança e um usuário premium soma 3 pontos de confiança</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center">UC12</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Comércio</td>
+<td align="center">Manter Comércio</td>
+<td align="center">A funcionalidade de manter comércio estabelece as operações de CRUD, ou seja, criação, leitura, atualização e exclusão de dados relacionados ao objeto que representa a classe de comércio. Nesse sentido, ela define que um usuário poderá criar um comércio e a partir disso adicionar seu local e nome e produtos que este comércio possua</td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center">UC13</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Buscar comércio</td>
+<td align="center">Este caso de uso permite ao usuário pesquisar um determinado comércio pelo seu nome</td>
+<td align="center"></td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center">UC14</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Autenticar comércio</td>
+<td align="center">Esta funcionalidade permite que usuários que sejam donos de um comércio confirmem a posse deste, através de documentos, CNPJ, etc</td>
+<td align="center"></td>
+<td align="center">E</td>
+<td align="center"></td>
+<td align="center">UC15</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Filtrar comércio por distancia</td>
+<td align="center">Esta funcionalidade tem como objetivo filtrar a listagem de comércios através da sua distancia</td>
+<td align="center"></td>
+<td align="center">D</td>
+<td align="center"></td>
+<td align="center">UC16</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Montar Lista de Compras</td>
+<td align="center">Permite ao usuário adicionar e remover produtos em um carrinho de compras, o usuário tera direito a 15 produtos, a não ser que gaste 100 pontos de confiança, neste caso terá direito a adicionar até 100 produtos</td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center">UC17</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Filtrar lista de compras por preço</td>
+<td align="center">Esta funcionalidade apresenta para o usuário o comércio mais barato com todos aqueles produtos</td>
+<td align="center"></td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center">UC18</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Detalhamento dos Riscos - EconomizAqui</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">EconomizAqui</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../../../Metodologia/Desenho-da-Metodologia/">Metodologia</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Desenvolvimento</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Desenvolvimento/Configuração-de-Software-e-Políticas-de-Repositório/">Configuração de Software e Políticas de Repositório</a>
+</li>
+            
+<li >
+    <a href="../../Desenvolvimento/Documento-de-Visão.md">Documento de Visão</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Organizacional</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Plano-de-Gerenciamento-de-Riscos/">Plano de Gerenciamento de Riscos</a>
+</li>
+            
+<li class="active">
+    <a href="./">Detalhamento dos Riscos</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requisitos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Elicitação</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Requisitos/Elicitação/Elicitação-de-Requisitos/">Elicitação de Requisitos</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Elicitação/5W2H/">5W2H</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Elicitação/Brainstorming/">Brainstorming</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Elicitação/Mapa-Mental/">Mapa Mental</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Elicitação/Rich-Picture/">Rich Pictures</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Elicitação/Storyboard/">Storyboard</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Modelagem</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ágil</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Requisitos/Modelagem/Ágil/Backlog-do-Produto/">Backlog do Produto</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Modelagem/Ágil/Roadmap/">Roadmap</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Inicial</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Requisitos/Modelagem/Inicial/Léxicos/">Léxicos</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Intencional</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Requisitos/Modelagem/Intencional/NFR-Framework/">NFR Framework</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tradicional</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Requisitos/Modelagem/Tradicional/Diagrama-de-Caso-de-Uso/">Diagrama de Caso de Uso</a>
+</li>
+            
+<li >
+    <a href="../../../Requisitos/Modelagem/Tradicional/Diagrama-de-Domínio/">Diagrama de Domínio</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Atas de Reuniões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Atas-de-Reuniões/Ata-01/">Ata 01</a>
+</li>
+                                    
+<li >
+    <a href="../../../Atas-de-Reuniões/Ata-02/">Ata 02</a>
+</li>
+                                    
+<li >
+    <a href="../../../Atas-de-Reuniões/Ata-03/">Ata 03</a>
+</li>
+                                    
+<li >
+    <a href="../../../Atas-de-Reuniões/Ata-04/">Ata 04</a>
+</li>
+                                    
+<li >
+    <a href="../../../Atas-de-Reuniões/Ata-05/">Ata 05</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../Plano-de-Gerenciamento-de-Riscos/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../../Requisitos/Elicitação/Elicitação-de-Requisitos/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#detalhamento-dos-riscos">Detalhamento dos Riscos</a></li>
+            <li><a href="#1-introducao">1 Introdução</a></li>
+            <li><a href="#2-registro-de-riscos">2 Registro de Riscos</a></li>
+            <li><a href="#3-analise-e-respostas-aos-riscos">3 Análise e Respostas aos Riscos</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="detalhamento-dos-riscos">Detalhamento dos Riscos</h1>
+<h2 id="1-introducao">1 Introdução</h2>
+<p>O objetivo deste documento é conter os riscos referentes ao  projeto, seguindo o processo definido no Plano de Gerenciamento de Riscos. Buscando identificar, analisar e planejar soluções cabíveis para controlar ou contornar os riscos.</p>
+<h2 id="2-registro-de-riscos">2 Registro de Riscos</h2>
+<p>Para identificação dos riscos foram feitas duas tabelas (Riscos negativos e Riscos positivos) contendo os seguintes atributos: ID, Descrição, Categoria no EAR e a subcategoria no EAR.</p>
+<h3 id="21-riscos-negativos">2.1 Riscos Negativos</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Categoria EAR</th>
+<th>Subcategoria EAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN01</td>
+<td>Dificuldade na aprendizagem das tecnologias (linguagens)</td>
+<td>Técnico</td>
+<td>Tecnologia</td>
+</tr>
+<tr>
+<td>RN02</td>
+<td>Equipe não possuir domínio do código</td>
+<td>Técnico</td>
+<td>Tecnologia</td>
+</tr>
+<tr>
+<td>RN03</td>
+<td>Equipe não conseguir desenvolver a arquitetura</td>
+<td>Técnico</td>
+<td>Tecnologia</td>
+</tr>
+<tr>
+<td>RN04</td>
+<td>Dificuldade na Elicitação de Requisitos</td>
+<td>Técnico</td>
+<td>Requisitos</td>
+</tr>
+<tr>
+<td>RN05</td>
+<td>Escopo muito grande em relação ao prazo de entregada da matéria</td>
+<td>Técnico</td>
+<td>Requisitos</td>
+</tr>
+<tr>
+<td>RN06</td>
+<td>Interface pouco amigável</td>
+<td>Técnico</td>
+<td>Interface</td>
+</tr>
+<tr>
+<td>RN07</td>
+<td>Métricas relacionadas à qualidade não atingirem pontuação aceitável</td>
+<td>Técnico</td>
+<td>Qualidade</td>
+</tr>
+<tr>
+<td>RN08</td>
+<td>Cliente mudar escopo</td>
+<td>Externo</td>
+<td>Cliente</td>
+</tr>
+<tr>
+<td>RN09</td>
+<td>Cliente atrasar para definição do escopo</td>
+<td>Externo</td>
+<td>Cliente</td>
+</tr>
+<tr>
+<td>RN10</td>
+<td>Alto preço para custeio do projeto</td>
+<td>Externo</td>
+<td>Mercado</td>
+</tr>
+<tr>
+<td>RN11</td>
+<td>Algum membro desistir da matéria</td>
+<td>Organizacional</td>
+<td>Dependência do projeto</td>
+</tr>
+<tr>
+<td>RN12</td>
+<td>Algum membro ficar ausente</td>
+<td>Organizacional</td>
+<td>Dependência do projeto</td>
+</tr>
+<tr>
+<td>RN13</td>
+<td>Houver perda de equipamentos</td>
+<td>Organizacional</td>
+<td>Recursos</td>
+</tr>
+<tr>
+<td>RN14</td>
+<td>Falta de compromisso por algum membro</td>
+<td>Organizacional</td>
+<td>Recursos</td>
+</tr>
+<tr>
+<td>RN15</td>
+<td>Dificuldade de comunicação na equipe</td>
+<td>Gerenciamento</td>
+<td>Comunicação</td>
+</tr>
+<tr>
+<td>RN16</td>
+<td>Erro no planejamento do projeto</td>
+<td>Gerenciamento</td>
+<td>Planejamento</td>
+</tr>
+<tr>
+<td>RN17</td>
+<td>Dificuldade para fechamento de Sprint</td>
+<td>Gerenciamento</td>
+<td>Planejamento</td>
+</tr>
+<tr>
+<td>RN18</td>
+<td>Erros no cronograma</td>
+<td>Gerenciamento</td>
+<td>Planejamento</td>
+</tr>
+<tr>
+<td>RN19</td>
+<td>Entregas incompletas</td>
+<td>Gerenciamento</td>
+<td>Controle</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-riscos-positivos">2.2 Riscos Positivos</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Categoria EAR</th>
+<th>Subcategoria EAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP01</td>
+<td>Membro se adaptarem rapidamente às tecnologias</td>
+<td>Técnico</td>
+<td>Tecnologia</td>
+</tr>
+<tr>
+<td>RP02</td>
+<td>Elicitação dos requisitos ter ocorrido adequadamente</td>
+<td>Técnico</td>
+<td>Requisitos</td>
+</tr>
+<tr>
+<td>RP03</td>
+<td>Produto desenvolvido com alta usabilidade</td>
+<td>Técnico</td>
+<td>Interface</td>
+</tr>
+<tr>
+<td>RP04</td>
+<td>Métricas de qualidade superarem o nível aceitável</td>
+<td>Técnico</td>
+<td>Qualidade</td>
+</tr>
+<tr>
+<td>RP05</td>
+<td>Cliente aceitar projeto</td>
+<td>Técnico</td>
+<td>Cliente</td>
+</tr>
+<tr>
+<td>RP06</td>
+<td>Aceitação do produto pelo mercado</td>
+<td>Técnico</td>
+<td>Mercado</td>
+</tr>
+<tr>
+<td>RP07</td>
+<td>Alta produtividade dos membros</td>
+<td>Organizacional</td>
+<td>Recursos</td>
+</tr>
+<tr>
+<td>RP08</td>
+<td>Finalização do projeto dentro do programado</td>
+<td>Gerenciamento</td>
+<td>Planejamento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-analise-e-respostas-aos-riscos">3 Análise e Respostas aos Riscos</h2>
+<p>Neste tópico será feito a avaliação dos riscos de acordo com seu impacto, probabilidade, prioridade e estratégia para controle dos mesmos.</p>
+<h3 id="31-riscos-negativos">3.1 Riscos Negativos</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN01</td>
+<td>Dificuldade na aprendizagem das tecnologias (linguagens)</td>
+<td>Média</td>
+<td>Muito Alto</td>
+<td>Alto</td>
+<td>Mitigar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitorar o grau de aprendizagem de cada membro da equipe</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Aplicar dojos, com a finalidade de elevar o conhecimento do grupo.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN02</td>
+<td>Equipe não possuir domínio do código</td>
+<td>Média</td>
+<td>Alto</td>
+<td>Médio</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitorar frequentemente dúvidas abertas na issues</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Aplicar dojos, com a finalidade de elevar o conhecimento do grupo.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN03</td>
+<td>Equipe não conseguir desenvolver a arquitetura</td>
+<td>Baixa</td>
+<td>Médio</td>
+<td>Baixo</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Integrante responsável pela arquitetura verificar constantemente a integridade da arquitetura</p>
+</li>
+<li>
+<p><strong><em>Reposta</em></strong>
+Elaboração de correções arquiteturais</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN04</td>
+<td>Dificuldade na Elicitação de Requisitos</td>
+<td>Baixa</td>
+<td>Médio</td>
+<td>Baixo</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitorar os métodos utilizados para elicitação</p>
+</li>
+<li>
+<p><strong><em>Reposta</em></strong>
+Utilizar outros métodos de elicitação que ainda não foram empregados</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN05</td>
+<td>Escopo muito grande em relação ao prazo de entregada da matéria</td>
+<td>Baixo</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Mitigar</td>
+</tr>
+<tr>
+<td>* <strong><em>Monitoramento</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Verificar constantemente a viabilidade do desenvolvimento do escopo</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <strong><em>Resposta</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reduzir escopo ao primordial</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN06</td>
+<td>Interface pouco amigável</td>
+<td>Alta</td>
+<td>Muito Alta</td>
+<td>Muito alta</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Fazer com frequência testes de usabilidade</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Aumentar usabilidade</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN07</td>
+<td>Métricas relacionadas à qualidade não atingirem pontuação aceitável</td>
+<td>Alta</td>
+<td>média</td>
+<td>Alta</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitorar frequentemente os níveis de qualidade de código</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Melhorar qualidade do código</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN08</td>
+<td>Cliente mudar escopo</td>
+<td>Média</td>
+<td>Alta</td>
+<td>Médio</td>
+<td>Mitigar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Manter contato com cliente afim de assegurar validade do escopo</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Acatar mudanças requeridas.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN09</td>
+<td>Cliente atrasar para definição do escopo</td>
+<td>Alta</td>
+<td>Muito Alto</td>
+<td>Muito Alto</td>
+<td>Mitigar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Estar atento aos prazos definidos pela matéria</p>
+</li>
+<li>
+<p><strong><em>Respostas</em></strong>
+Guiar cliente da melhor maneira</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN10</td>
+<td>Alto preço para custeio do projeto</td>
+<td>Alta</td>
+<td>Alta</td>
+<td>Alta</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Conferir frequentemente gastos</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Alteração do escopo para o mínimo aceitável</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN11</td>
+<td>Algum membro desistir da matéria</td>
+<td>Média</td>
+<td>Muito Alta</td>
+<td>Muito Alta</td>
+<td>Previnir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Verificar motivação em relação a disciplina</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Rotação de pareamento para reduzir impacto</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN12</td>
+<td>Algum membro ficar ausente</td>
+<td>Muito Alto</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Todos membros foram avisados caso algum imprevisto aconteça e comece a existir a necessidade de se ausentar que seja informado aos demais membros.</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Divisão do Trabalho do membro pelos outros integrantes</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN13</td>
+<td>Houver perda de equipamentos</td>
+<td>Baixa</td>
+<td>Médio</td>
+<td>Baixo</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+O integrante que perdeu o equipamento buscar uma forma de comunicar o grupo sobre a perda</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Utilizar equipamentos disponíveis na faculdade</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN14</td>
+<td>Falta de compromisso por algum membro</td>
+<td>Muito Baixa</td>
+<td>Médio</td>
+<td>Muito Baixo</td>
+<td>Transferir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Verificar empenho dos membros</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Reunião sob o assunto e redistribuição das atividades entre membros motivados</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN15</td>
+<td>Dificuldade de comunicação na equipe</td>
+<td>Média</td>
+<td>Alto</td>
+<td>Médio</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Garantir que todos membros possuam formas de acesso aos meios de comunicação definidos</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Alterar para um meio de comunicação no qual todos possuam acesso</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN16</td>
+<td>Erro no planejamento do projeto</td>
+<td>Baixa</td>
+<td>Alta</td>
+<td>baixa</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Membros em geral conferir o planejamento</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Replanejar</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN17</td>
+<td>Dificuldade para fechamento de Sprint</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Mitigar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Fazer entregas o mais cedo possível</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Alterar prazo de entrega em um ou dois dias  para efetuar o fechamento</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN18</td>
+<td>Erros no cronograma</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Prevenir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Conferir constantemente se o projeto está de acordo com cronogramam</p>
+</li>
+<li>
+<p><strong><em>Respostas</em></strong>
+Refazer cronograma</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN19</td>
+<td>Entregas incompletas</td>
+<td>Médio</td>
+<td>Alto</td>
+<td>Médio</td>
+<td>Transferir</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitorar as entregas</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Remanejar entregas incompletas para outro membro</p>
+</li>
+</ul>
+<h3 id="32-riscos-positivos">3.2 Riscos positivos</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP01</td>
+<td>Membro se adaptarem rapidamente às tecnologias</td>
+<td>Médio</td>
+<td>Alto</td>
+<td>Médio</td>
+<td>Melhorar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitoramento realizado pela quantidade de pontos entregues</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Continuar equilibrando equipe através dos pareamentos</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP02</td>
+<td>Elicitação dos requisitos ter ocorrido adequadamente</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Compartilhar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitoramento feito através da criação de histórias de usuário sem dificuldades</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Compartilhar com terceiros para que possa ser tirado o melhor proveito</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP03</td>
+<td>Produto desenvolvido com alta usabilidade</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Realização de testes de usabilidade</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Aceitar boa usabilidade</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP04</td>
+<td>Métricas de qualidade superarem o nível aceitável</td>
+<td>Médio</td>
+<td>Alto</td>
+<td>Médio</td>
+<td>Explorar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Efetuar testes de qualidade</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Explorar mais afim de melhorar ainda mais se possível</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP05</td>
+<td>Cliente aceitar projeto</td>
+<td>Alta</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Manter contato com cliente</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Aceitar e entregar</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP06</td>
+<td>Aceitação do produto pelo mercado</td>
+<td>Baixo</td>
+<td>Médio</td>
+<td>Baixo</td>
+<td>Compartilhar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Conferir número de acessos</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Compartilhar as técnicas empregadas</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP07</td>
+<td>Alta produtividade dos membros</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Médio</td>
+<td>Explorar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Monitorar tempo gasto para entregas das hsitórias</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Explorar afim de produzir mais</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Probabilidade</th>
+<th>Impacto</th>
+<th>Prioridade</th>
+<th>Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RP08</td>
+<td>Finalização do projeto dentro do programado</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Aceitar</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong><em>Monitoramento</em></strong>
+Conferir se o projeto está de acordo com cronograma</p>
+</li>
+<li>
+<p><strong><em>Resposta</em></strong>
+Aceitar o fim de projeto</p>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
