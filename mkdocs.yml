@@ -13,6 +13,8 @@ pages:
       - Artefatos de Modelagem do Sistema:
         - Diagrama de Caso de Uso: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Caso-de-Uso.md
         - Diagrama de Domínio: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Domínio.md
+      - Artefatos Organizacionais:
+        - Plano de Gerenciamento de Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Plano-de-Gerenciamento-de-Riscos.md
 
   - Dinâmica 1:
     - 5W2H: Dinâmica-1/5W2H.md
