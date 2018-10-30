@@ -8,5 +8,6 @@
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit">Update</button>
+  <p><a href="{% url 'delete_user' %}">Delete account</a></p>
 </form>
 {% endblock %}

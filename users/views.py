@@ -5,6 +5,7 @@ from django.contrib.auth.forms import PasswordResetForm
 
 from .forms import CustomUserCreationForm
 from .forms import CustomUserChangeForm
+from .models import CustomUser
 
 
 class SignUp(generic.CreateView):
@@ -22,3 +23,10 @@ def settings(request):
     else:
         form = CustomUserChangeForm(instance=request.user)
     return render(request, 'settings.html', {'form': form})
+
+
+def delete_user(request):
+    user = CustomUser.objects.filter(username=request.user.username)
+    user.delete()
+
+    return HttpResponseRedirect(reverse('logout'))
