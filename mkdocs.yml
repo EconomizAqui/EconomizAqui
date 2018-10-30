@@ -3,31 +3,38 @@ site_name: EconomizAqui
 pages:
   - Home: index.md
 
-  - Metodologia:
-    - Desenho da Metodologia: Metodologia/Desenho-da-Metodologia.md
-    - Modelagem da Metodologia:
-      - Artefatos de Desenvolvimento:
-        - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/Documento-de-Visão.md
-        - Elicitação de Requisitos: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/Elicitação-de-Requisitos.md
-        - NFR Framework: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/NFR-Framework.md
-      - Artefatos de Modelagem do Sistema:
-        - Diagrama de Caso de Uso: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Caso-de-Uso.md
-        - Diagrama de Domínio: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Domínio.md
-      - Artefatos Organizacionais:
-        - Plano de Gerenciamento de Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Plano-de-Gerenciamento-de-Riscos.md
-        - Detalhamento dos Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Detalhamento-dos-Riscos.md
+  - Metodologia: Metodologia/Desenho-da-Metodologia.md
+
+  - Artefatos:
+      - Desenvolvimento:
+        - Configuração de Software e Políticas de Repositório: Artefatos/Desenvolvimento/Configuração-de-Software-e-Políticas-de-Repositório.md
+        - Documento de Visão: Artefatos/Desenvolvimento/Documento-de-Visão.md
+      - Organizacional:
+        - Plano de Gerenciamento de Riscos: Artefatos/Organizacional/Plano-de-Gerenciamento-de-Riscos.md
+        - Detalhamento dos Riscos: Artefatos/Organizacional/Detalhamento-dos-Riscos.md
+
+  - Requisitos:
+    - Elicitação:
+      - Elicitação de Requisitos: Requisitos/Elicitação/Elicitação-de-Requisitos.md
+      - 5W2H: Requisitos/Elicitação/5W2H.md
+      - Brainstorming: Requisitos/Elicitação/Brainstorming.md
+      - Mapa Mental: Requisitos/Elicitação/Mapa-Mental.md
+      - Rich Pictures: Requisitos/Elicitação/Rich-Picture.md
+      - Storyboard: Requisitos/Elicitação/Storyboard.md
+    - Modelagem:
+      - Ágil:
+        - Backlog do Produto: Requisitos/Modelagem/Ágil/Backlog-do-Produto.md
+      - Inicial:
+        - Léxicos: Requisitos/Modelagem/Inicial/Léxicos.md
+      - Intencional:
+        - NFR Framework: Requisitos/Modelagem/Intencional/NFR-Framework.md
+      - Tradicional:
+        - Diagrama de Caso de Uso: Requisitos/Modelagem/Tradicional/Diagrama-de-Caso-de-Uso.md
+        - Diagrama de Domínio: Requisitos/Modelagem/Tradicional/Diagrama-de-Domínio.md
 
   # - Padrões de Projeto:
 
   # - Arquitetura de Projeto:
-
-  - Dinâmicas:
-    - 5W2H: Dinâmicas/5W2H.md
-    - Brainstorming: Dinâmicas/Brainstorming.md
-    - Léxicos: Dinâmicas/Léxicos.md
-    - Mapa-Mental: Dinâmicas/Mapa-Mental.md
-    - Rich Pictures: Dinâmicas/Rich-Picture.md
-    - Storyboard: Dinâmicas/Storyboard.md
 
   - Atas de Reuniões:
     - Ata 01: Atas-de-Reuniões/Ata-01.md
@@ -35,6 +42,3 @@ pages:
     - Ata 03: Atas-de-Reuniões/Ata-03.md
     - Ata 04: Atas-de-Reuniões/Ata-04.md
     - Ata 05: Atas-de-Reuniões/Ata-05.md
-
-  - Complementos:
-    - Configuração de Software e Políticas de Repositório: Complementos/Configuração-de-Software-e-Políticas-de-Repositório.md
