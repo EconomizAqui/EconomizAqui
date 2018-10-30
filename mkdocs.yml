@@ -21,12 +21,13 @@ pages:
 
   # - Arquitetura de Projeto:
 
-  - Dinâmica:
-    - 5W2H: Dinâmica-1/5W2H.md
-    - Léxicos: Dinâmica-1/Léxicos.md
-    - Mapa-Mental: Dinâmica-1/Mapa-Mental.md
-    - Rich Pictures: Dinâmica-1/Rich-Picture.md
-    - Storyboard: Dinâmica-1/Storyboard.md
+  - Dinâmicas:
+    - 5W2H: Dinâmicas/5W2H.md
+    - Brainstorming: Dinâmicas/Brainstorming.md
+    - Léxicos: Dinâmicas/Léxicos.md
+    - Mapa-Mental: Dinâmicas/Mapa-Mental.md
+    - Rich Pictures: Dinâmicas/Rich-Picture.md
+    - Storyboard: Dinâmicas/Storyboard.md
 
   - Atas de Reuniões:
     - Ata 01: Atas-de-Reuniões/Ata-01.md
