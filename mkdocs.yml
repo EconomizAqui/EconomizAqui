@@ -1,0 +1,39 @@
+site_name: EconomizAqui
+
+pages:
+  - Home: index.md
+
+  - Metodologia:
+    - Desenho da Metodologia: Metodologia/Desenho-da-Metodologia.md
+    - Modelagem da Metodologia:
+      - Artefatos de Desenvolvimento:
+        - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/Documento-de-Visão.md
+        - Elicitação de Requisitos: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/Elicitação-de-Requisitos.md
+        - NFR Framework: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/NFR-Framework.md
+      - Artefatos de Modelagem do Sistema:
+        - Diagrama de Caso de Uso: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Caso-de-Uso.md
+        - Diagrama de Domínio: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Domínio.md
+      - Artefatos Organizacionais:
+        - Plano de Gerenciamento de Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Plano-de-Gerenciamento-de-Riscos.md
+        - Detalhamento dos Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Detalhamento-dos-Riscos.md
+
+  # - Padrões de Projeto:
+
+  # - Arquitetura de Projeto:
+
+  - Dinâmica:
+    - 5W2H: Dinâmica-1/5W2H.md
+    - Léxicos: Dinâmica-1/Léxicos.md
+    - Mapa-Mental: Dinâmica-1/Mapa-Mental.md
+    - Rich Pictures: Dinâmica-1/Rich-Picture.md
+    - Storyboard: Dinâmica-1/Storyboard.md
+
+  - Atas de Reuniões:
+    - Ata 01: Atas-de-Reuniões/Ata-01.md
+    - Ata 02: Atas-de-Reuniões/Ata-02.md
+    - Ata 03: Atas-de-Reuniões/Ata-03.md
+    - Ata 04: Atas-de-Reuniões/Ata-04.md
+    - Ata 05: Atas-de-Reuniões/Ata-05.md
+
+  - Complementos:
+    - Configuração de Software e Políticas de Repositório: Complementos/Configuração-de-Software-e-Políticas-de-Repositório.md
