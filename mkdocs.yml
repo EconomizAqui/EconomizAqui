@@ -6,9 +6,13 @@ pages:
   - Metodologia:
     - Desenho da Metodologia: Metodologia/Desenho-da-Metodologia.md
     - Modelagem da Metodologia:
-      - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Documento-de-Visão.md
-      - Elicitação de Requisitos: Metodologia/Modelagem-da-Metodologia/Elicitação-de-Requisitos.md
-      - NFR Framework: Metodologia/Modelagem-da-Metodologia/NFR-Framework.md
+      - Artefatos de Desenvolvimento:
+        - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/Documento-de-Visão.md
+        - Elicitação de Requisitos: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/Elicitação-de-Requisitos.md
+        - NFR Framework: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Desenvolvimento/NFR-Framework.md
+      - Artefatos de Modelagem do Sistema:
+        - Diagrama de Caso de Uso: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Caso-de-Uso.md
+        - Diagrama de Domínio: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Domínio.md
 
   - Dinâmica 1:
     - 5W2H: Dinâmica-1/5W2H.md
