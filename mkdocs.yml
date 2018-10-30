@@ -7,10 +7,11 @@ pages:
     - Desenho da Metodologia: Metodologia/Desenho-da-Metodologia.md
     - Modelagem da Metodologia:
       - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Documento-de-Visão.md
+      - Elicitação de Requisitos: Metodologia/Modelagem-da-Metodologia/Elicitação-de-Requisitos.md
 
-  - Elicitação de Requisitos:
-    - 5W2H: Elicitação-de-Requisitos/5W2H.md
-    - Léxicos: Elicitação-de-Requisitos/Léxicos.md
-    - Mapa-Mental: Elicitação-de-Requisitos/Mapa-Mental.md
-    - Rich Pictures: Elicitação-de-Requisitos/Rich-Picture.md
-    - Storyboard: Elicitação-de-Requisitos/Storyboard.md
+  - Dinâmica 1:
+    - 5W2H: Dinâmica-1/5W2H.md
+    - Léxicos: Dinâmica-1/Léxicos.md
+    - Mapa-Mental: Dinâmica-1/Mapa-Mental.md
+    - Rich Pictures: Dinâmica-1/Rich-Picture.md
+    - Storyboard: Dinâmica-1/Storyboard.md
