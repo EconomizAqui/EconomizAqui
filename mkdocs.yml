@@ -17,10 +17,21 @@ pages:
         - Plano de Gerenciamento de Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Plano-de-Gerenciamento-de-Riscos.md
         - Detalhamento dos Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Detalhamento-dos-Riscos.md
 
+  # - Padrões de Projeto:
 
-  - Dinâmica 1:
+  # - Arquitetura de Projeto:
+
+  - Dinâmica:
     - 5W2H: Dinâmica-1/5W2H.md
     - Léxicos: Dinâmica-1/Léxicos.md
     - Mapa-Mental: Dinâmica-1/Mapa-Mental.md
     - Rich Pictures: Dinâmica-1/Rich-Picture.md
     - Storyboard: Dinâmica-1/Storyboard.md
+
+  - Atas de Reuniões:
+    - Ata 01: Atas-de-Reuniões/Ata-01.md
+    - Ata 02: Atas-de-Reuniões/Ata-02.md
+    - Ata 03: Atas-de-Reuniões/Ata-03.md
+    - Ata 04: Atas-de-Reuniões/Ata-04.md
+    - Ata 05: Atas-de-Reuniões/Ata-05.md
+

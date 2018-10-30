@@ -132,6 +132,6 @@ A resposta aos riscos será dividida em duas partes as dos riscos negativos e do
 |***Compartilhar*** |Essa estratégia ocorre quando se compartilha o risco com terceiros para que possa tirar melhor proveito do benefício.|
 |***Aceitar*** |Essa estratégia ocorre quando aceita-se o risco mas não há esforço para tentar repetir o risco.|
 
-## 4 Referências
+### Referências
 
 Guia PMBOK 5a. ed. - EUA: Project Management Institute, 2013.
