@@ -4,5 +4,6 @@ pages:
   - Home: index.md
 
   - Elicitação de Requisitos:
+    - 5W2H: Elicitação-de-Requisitos/5W2H.md
     - Rich Pictures: Elicitação-de-Requisitos/Rich-Picture.md
     - Storyboard: Elicitação-de-Requisitos/Storyboard.md
