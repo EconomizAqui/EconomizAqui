@@ -2,5 +2,7 @@ site_name: EconomizAqui
 
 pages:
   - Home: index.md
-  - Pré-Rastreabilidade:
-    - Rich Pictures: Pré-Rastreabilidade/Rich-Picture.md
+
+  - Elicitação de Requisitos:
+    - Rich Pictures: Elicitação-de-Requisitos/Rich-Picture.md
+    - Storyboard: Elicitação-de-Requisitos/Storyboard.md
