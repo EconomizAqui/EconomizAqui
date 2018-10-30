@@ -15,6 +15,8 @@ pages:
         - Diagrama de Domínio: Metodologia/Modelagem-da-Metodologia/Artefatos-de-Modelagem-do-Sistema/Diagrama-de-Domínio.md
       - Artefatos Organizacionais:
         - Plano de Gerenciamento de Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Plano-de-Gerenciamento-de-Riscos.md
+        - Detalhamento dos Riscos: Metodologia/Modelagem-da-Metodologia/Artefatos-Organizacionais/Detalhamento-dos-Riscos.md
+
 
   - Dinâmica 1:
     - 5W2H: Dinâmica-1/5W2H.md
