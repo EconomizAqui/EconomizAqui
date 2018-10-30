@@ -1,6 +1,10 @@
 site_name: EconomizAqui
 
 pages:
+  - Repositório: https://github.com/EconomizAqui/EconomizAqui/
+
+  - Deploy: https://economizaqui.herokuapp.com/
+
   - Home: index.md
 
   - Metodologia: Metodologia/Desenho-da-Metodologia.md
@@ -8,7 +12,7 @@ pages:
   - Artefatos:
       - Desenvolvimento:
         - Configuração de Software e Políticas de Repositório: Artefatos/Desenvolvimento/Configuração-de-Software-e-Políticas-de-Repositório.md
-        - Documento de Visão: Artefatos/Desenvolvimento/Documento-de-Visão.md
+        - Documento de Visão: Artefatos/Desenvolvimento/Documento-de-Visão.md
       - Organizacional:
         - Plano de Gerenciamento de Riscos: Artefatos/Organizacional/Plano-de-Gerenciamento-de-Riscos.md
         - Detalhamento dos Riscos: Artefatos/Organizacional/Detalhamento-dos-Riscos.md
