@@ -2,3 +2,5 @@ site_name: EconomizAqui
 
 pages:
   - Home: index.md
+  - Pré-Rastreabilidade:
+    - Rich Pictures: Pré-Rastreabilidade/Rich-Picture.md
