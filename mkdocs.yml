@@ -3,8 +3,10 @@ site_name: EconomizAqui
 pages:
   - Home: index.md
 
-  - Desenho da Metodologia:
-    - Metodologia: Desenho-da-Metodologia/Metodologia.md
+  - Metodologia:
+    - Desenho da Metodologia: Metodologia/Desenho-da-Metodologia.md
+    - Modelagem da Metodologia:
+      - Documento de Visão: Metodologia/Modelagem-da-Metodologia/Documento-de-Visão.md
 
   - Elicitação de Requisitos:
     - 5W2H: Elicitação-de-Requisitos/5W2H.md
