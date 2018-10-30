@@ -6,5 +6,15 @@
     </head>
     <body>
         <h1>EconomizAqui</h1>
+        {% block content %}
+        {% if user.is_authenticated %}
+            Olá {{ user.username }}!
+            <p><a href="{% url 'logout' %}">logout</a></p>
+        {% else %}
+        <p>Você não está logado</p>
+            <a href="{% url 'login' %}">login</a> |
+            <a href="{% url 'signup' %}">signup</a>
+        {% endif %}
+        {% endblock %}
     </body>
 </html>
