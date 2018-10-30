@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponseRedirect, reverse
 from django.urls import reverse_lazy
 from django.views import generic
+from django.contrib.auth.forms import PasswordResetForm
 
 from .forms import CustomUserCreationForm
 from .forms import CustomUserChangeForm
