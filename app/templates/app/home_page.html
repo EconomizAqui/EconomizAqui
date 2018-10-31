@@ -9,13 +9,13 @@
         {% block content %}
         {% if user.is_authenticated %}
             Olá {{ user.username }}!
-            <p><a href="{% url 'logout' %}">logout</a></p>
-            <p><a href="{% url 'settings' %}">settings</a></p>
-            <p><a href="{% url 'list_users' %}">list users</a></p>
+            <p><a href="{% url 'logout' %}">Sair</a></p>
+            <p><a href="{% url 'settings' %}">Configurações</a></p>
+            <p><a href="{% url 'list_users' %}">Listar usuários</a></p>
         {% else %}
         <p>Você não está logado</p>
-            <a href="{% url 'login' %}">login</a> |
-            <a href="{% url 'signup' %}">signup</a>
+            <a href="{% url 'login' %}">Fazer login</a> |
+            <a href="{% url 'signup' %}">Criar conta</a>
         {% endif %}
         {% endblock %}
     </body>

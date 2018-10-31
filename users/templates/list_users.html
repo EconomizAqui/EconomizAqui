@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %}User list{% endblock %}
+{% block title %}Lista de usuários{% endblock %}
 
 {% block content %}
-<h2>User list</h2>
+<h2>Lista de usuários:</h2>
 <form method="post">
   {% csrf_token %}
   {% for user in users %}
@@ -11,6 +11,6 @@
       <li>{{ user.username }}</li>
     </div>
   {% endfor %}
-  <a href="{% url 'home_page' %}">home</a>
+  <a href="{% url 'home_page' %}">Página inicial</a>
 </form>
 {% endblock %}

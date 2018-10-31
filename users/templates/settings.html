@@ -3,11 +3,12 @@
 {% block title %}Settings{% endblock %}
 
 {% block content %}
-<h2>Account Settings</h2>
+<h2>Configurações de conta</h2>
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">Update</button>
-  <p><a href="{% url 'delete_user' %}">Delete account</a></p>
+  <button type="submit">Atualizar</button>
+  <p><a href="{% url 'delete_user' %}">Excluir conta</a></p>
+  <a href="{% url 'home_page' %}">Página inicial</a>
 </form>
 {% endblock %}
