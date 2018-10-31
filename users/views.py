@@ -30,3 +30,10 @@ def delete_user(request):
     user.delete()
 
     return HttpResponseRedirect(reverse('logout'))
+
+
+def list_users(request):
+    users = CustomUser.objects.filter(is_active=True)
+
+    return render(request, 'list_users.html', {'users': users})
+
