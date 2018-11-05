@@ -1,6 +1,8 @@
 # EconomizAqui
 <p align="justify">Projeto desenvolvido por alunos da Universidade de Brasília (UnB) para aplicabilidade dos conhecimentos adquiridos na disciplina de Arquitetura e Desenho de Software.</p>
 
+Acesse a aplicação em [EconomizAqui](https://economizaqui.herokuapp.com/).
+
 ## Integrantes
 
 | Nome | Matrícula | GitHub |

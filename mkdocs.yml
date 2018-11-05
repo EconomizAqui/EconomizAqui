@@ -1,49 +1,46 @@
 site_name: EconomizAqui
+repo_name: EconomizAqui
+repo_url: https://github.com/EconomizAqui/EconomizAqui
 
 pages:
-  - Repositório: https://github.com/EconomizAqui/EconomizAqui/
-
-  - Deploy: https://economizaqui.herokuapp.com/
-
   - Home: index.md
 
-  - Metodologia: Metodologia/Desenho-da-Metodologia.md
+  - I. Artefatos genéricos:
+    - Rich Pictures: Requisitos/Elicitação/Rich-Picture.md
+    - Storyboard: Requisitos/Elicitação/Storyboard.md
+    - Mapa Mental: Requisitos/Elicitação/Mapa-Mental.md
+    - Léxicos: Requisitos/Modelagem/Inicial/Léxicos.md
+    - 5W2H: Requisitos/Elicitação/5W2H.md
+  
+  - II. Desenho da metodologia:
+    - Metodologia: Metodologia/Desenho-da-Metodologia.md
 
-  - Artefatos:
-      - Desenvolvimento:
-        - Configuração de Software e Políticas de Repositório: Artefatos/Desenvolvimento/Configuração-de-Software-e-Políticas-de-Repositório.md
-        - Documento de Visão: Artefatos/Desenvolvimento/Documento-de-Visão.md
-      - Organizacional:
-        - Plano de Gerenciamento de Riscos: Artefatos/Organizacional/Plano-de-Gerenciamento-de-Riscos.md
-        - Detalhamento dos Riscos: Artefatos/Organizacional/Detalhamento-dos-Riscos.md
+  - III. Aderência à metodologia:
+    - Documento de Visão: Artefatos/Desenvolvimento/Documento-de-Visão.md
+    - Elicitação de Requisitos: Requisitos/Elicitação/Elicitação-de-Requisitos.md
+    - Brainstorming: Requisitos/Elicitação/Brainstorming.md
+    - Plano de Gerenciamento de Riscos: Artefatos/Organizacional/Plano-de-Gerenciamento-de-Riscos.md
+    - Detalhamento dos Riscos: Artefatos/Organizacional/Detalhamento-dos-Riscos.md
+    - Diagrama de Caso de Uso: Requisitos/Modelagem/Tradicional/Diagrama-de-Caso-de-Uso.md
+    - Diagrama de Domínio: Requisitos/Modelagem/Tradicional/Diagrama-de-Domínio.md
+    - NFR Framework: Requisitos/Modelagem/Intencional/NFR-Framework.md
+    - Backlog do Produto: Requisitos/Modelagem/Ágil/Backlog-do-Produto.md
+    - Roadmap: Requisitos/Modelagem/Ágil/Roadmap.md
 
-  - Requisitos:
-    - Elicitação:
-      - Elicitação de Requisitos: Requisitos/Elicitação/Elicitação-de-Requisitos.md
-      - 5W2H: Requisitos/Elicitação/5W2H.md
-      - Brainstorming: Requisitos/Elicitação/Brainstorming.md
-      - Mapa Mental: Requisitos/Elicitação/Mapa-Mental.md
-      - Rich Pictures: Requisitos/Elicitação/Rich-Picture.md
-      - Storyboard: Requisitos/Elicitação/Storyboard.md
-    - Modelagem:
-      - Ágil:
-        - Backlog do Produto: Requisitos/Modelagem/Ágil/Backlog-do-Produto.md
-        - Roadmap: Requisitos/Modelagem/Ágil/Roadmap.md
-      - Inicial:
-        - Léxicos: Requisitos/Modelagem/Inicial/Léxicos.md
-      - Intencional:
-        - NFR Framework: Requisitos/Modelagem/Intencional/NFR-Framework.md
-      - Tradicional:
-        - Diagrama de Caso de Uso: Requisitos/Modelagem/Tradicional/Diagrama-de-Caso-de-Uso.md
-        - Diagrama de Domínio: Requisitos/Modelagem/Tradicional/Diagrama-de-Domínio.md
+  - IV. Padrões de Projeto:
+    - Padrões
 
-  # - Padrões de Projeto:
+  - V. Arquitetura de Projeto:
+    - Arquitetura
 
-  # - Arquitetura de Projeto:
+  - Iniciativas Extras:
+    - Atas de Reunião:
+      - Ata 01: Atas-de-Reuniões/Ata-01.md
+      - Ata 02: Atas-de-Reuniões/Ata-02.md
+      - Ata 03: Atas-de-Reuniões/Ata-03.md
+      - Ata 04: Atas-de-Reuniões/Ata-04.md
+      - Ata 05: Atas-de-Reuniões/Ata-05.md
+    - Configuração de Software e Políticas de Repositório: Artefatos/Desenvolvimento/Configuração-de-Software-e-Políticas-de-Repositório.md
 
-  - Atas de Reuniões:
-    - Ata 01: Atas-de-Reuniões/Ata-01.md
-    - Ata 02: Atas-de-Reuniões/Ata-02.md
-    - Ata 03: Atas-de-Reuniões/Ata-03.md
-    - Ata 04: Atas-de-Reuniões/Ata-04.md
-    - Ata 05: Atas-de-Reuniões/Ata-05.md
+theme:
+  name: 'material'
