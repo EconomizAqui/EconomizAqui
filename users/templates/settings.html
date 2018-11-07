@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Settings{% endblock %}
+
+{% block content %}
+<h2>Configurações de conta</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Atualizar</button>
+  <p><a href="{% url 'delete_user' %}">Excluir conta</a></p>
+  <a href="{% url 'home_page' %}">Página inicial</a>
+</form>
+{% endblock %}
