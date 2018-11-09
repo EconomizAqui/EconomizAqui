@@ -15,7 +15,7 @@ O diagrama abaixo foi produzido com o auxílio do software [Astah](http://astah.
 
 ![](https://lh6.googleusercontent.com/nBHsbbRpLACCcKLWMWJA2kRdAH1skoZCOa3PjX-gb8gjNW4V0N8UGnXOVOrL7TniiXnoFgFAM3ntgEU4WH_oA5TdPqFK_Dxmcxfdgbp5JKiWoKtnyn34If6rI_Pn3M6LdvBR50BZ)
 
-### Referências
+## Referências
  - Linguagem de Modelagem Unificada em Português- Disponível no Material
    complementar da Aula 7 da disciplina;
  - Casos de Uso e Diagrama de Casos

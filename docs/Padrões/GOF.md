@@ -1,10 +1,12 @@
 Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
-31/10/2018 | 1.0 | Adição de seção sobre GOF Observer | Amanda Bezerra
+31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
 
-# Introdução
+# GOF
+
+## Introdução
 <p align="justify">
-Padrões de projeto são descrições ou modelos de como resolver um problema que podes ser usado em diversas situações.
+Padrões de projeto são descrições ou modelos de como resolver um problema que podem ser usados em diversas situações.
 </p>
 
 <p align="justify">
@@ -15,15 +17,15 @@ Os padrões GOF (<i>Gang of Four</i>) são soluções reutilizáveis de software
 Este documento detalha os padrões GOF utilizados no projeto EconomizAqui.
 </p>
 
-# Observer
+## Observer
 <p align="justify">
 É um padrão GOF comportamental que tem como objetivo definir um mecanismo eficiente para reagir às alterações realizadas em certos objetos, permitindo que objetos interessados possam ser avisados sobre a mudança de estado ou um evento, para que possam ser atualizados.
 </p>
 
-## Estrutura genérica
+### Estrutura genérica
 ![](https://sourcemaking.com/files/v2/content/patterns/Observer.png)
 
-## Utilização no projeto EconomizAqui
+### Utilização no projeto EconomizAqui
 <p align="justify">
 O projeto utiliza um módulo que notifica um usuário por e-mail sempre que um login em sua conta for detectado.
 </p>
@@ -32,10 +34,10 @@ O projeto utiliza um módulo que notifica um usuário por e-mail sempre que um l
 Para que o módulo de envio de e-mail seja notificado de forma eficiente quando um login em uma conta de usuário for realizado, optou-se pela utilização do padrão <i>Observer</i>. Dada as peculiaridades da linguaguem Python, bem como certas limitações em relação à utilização do framework Django e sua arquitetura MTV, algumas adaptações na solução proposta pelo Observer tiveram que ser feitas.
 </p>
 
-### Modelagem
+#### Modelagem
 ![](https://lh3.googleusercontent.com/vEbxYknJcjulku7HAtu3LmBRQCcYLl84ydewwNfo2vh2Bv2tArY-P-vvUZwMQHmDm244sroYMciqKNeCNUBokMC3zHksJt7X81MnAfUol8P6avdUYTFRoNj9cAgGvogFv57V3b5f)
 
-### Implementação
+#### Implementação
 
 Um manipulador de evento é adicionado a um <i>user</i>.
 ```Python
@@ -49,7 +51,7 @@ O recurso de [sinais do Django](https://docs.djangoproject.com/en/2.1/topics/sig
 user_logged_in.connect(notify)
 ```
 O <i>user</i> notifica seus interessados e repassa seu estado para que os manipuladores possam ser atualizados.
-```Python
+```python
 def notify(user, **kwarg):
     event_handler = NotificationEmailSender()
     user.attach(event_handler)

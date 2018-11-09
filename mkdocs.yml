@@ -28,7 +28,7 @@ pages:
     - Roadmap: Requisitos/Modelagem/Ágil/Roadmap.md
 
   - IV. Padrões de Projeto:
-    - Padrões
+    - GOF: Padrões/GOF.md
 
   - V. Arquitetura de Projeto:
     - Arquitetura
