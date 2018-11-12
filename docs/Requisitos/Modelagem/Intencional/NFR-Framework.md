@@ -6,9 +6,7 @@ Data | Versão | Descrição | Responsáveis
 # NFR Framework
 
 ## Segurança
-
-<p align="center"><a href="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/modelagem/nfr-seguranca.png" target="_blank"><img width="1200"src="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/modelagem/nfr-seguranca.png"></a></p>
+<a href="../../../../imagens/nfr-seguranca.png"><img src="../../../../imagens/nfr-seguranca.png"></a>
 
 ## Usabilidade 
-
-<p align="center"><a href="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/modelagem/nfr-usabilidade.png" target="_blank"><img width="2000"src="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/modelagem/nfr-usabilidade.png"></a></p>
+<a href="../../../../imagens/nfr-usabilidade.png"><img src="../../../../imagens/nfr-usabilidade.png"></a>

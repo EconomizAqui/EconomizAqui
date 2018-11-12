@@ -6,7 +6,7 @@ Data | Versão | Descrição | Responsáveis
 # Desenho da Metodologia
 
 ## Versão 1
-<p align="center"><a href="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/Metodologia%20Desenho2.0.png?raw=true" target="_blank"><img width="1200"src="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/Metodologia%20Desenho2.0.png?raw=true"></a></p>
+<a href="../../imagens/Metodologia Desenho2.0.png"><img src="../../imagens/Metodologia Desenho2.0.png"></a>
 
 ## Versão 2
-<p align="center"><a href="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/Metodologia%20Desenho2.2.png?raw=true" target="_blank"><img width="1200"src="https://github.com/DSW-2018/projetoDesenho/blob/master/imagens/Metodologia%20Desenho2.2.png?raw=true"></a></p>
+<a href="../../imagens/Metodologia Desenho2.2.png"><img src="../../imagens/Metodologia Desenho2.2.png"></a>

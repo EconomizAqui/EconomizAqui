@@ -10,7 +10,7 @@ Data|Responsáveis| Versão
 | :--: | :-- |
 | **Noção:** | Lugar público onde negociantes expõem e vendem gêneros alimentícios e artigos de uso rotineiro. |
 | **Classificação:** | Objeto |
-| **Impacto(s):** | Pessoas utilizam o [mercado](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#mercado) para adquirir [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto) e/ou serviços
+| **Impacto(s):** | Pessoas utilizam o [mercado](#mercado) para adquirir [produtos](#produto) e/ou serviços
 | **Sinônimo(s):** | comércio, mercadejo, mercancia, negócio, tráfico. |
 
 
@@ -21,17 +21,17 @@ Data|Responsáveis| Versão
 | **Noção:** | Aquele que, por direito de uso, serve-se de algo ou desfruta de suas utilidades. |
 | **Classificação:** | Objeto |
 | **Impacto(s):** | Pessoas assumem a posição de usuários ao utilizarem algo ou alguma coisa
-| **Sinônimo(s):** | Utilizador, utente, [cliente](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cliente), usador, usufruidor, desfrutador, usufrutuário, usufrutueiro. |
+| **Sinônimo(s):** | Utilizador, utente, [cliente](#cliente), usador, usufruidor, desfrutador, usufrutuário, usufrutueiro. |
 
 
 ## Lista de compras
 
-| Nome: | Lista de [compras](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#compra) |
+| Nome: | Lista de [compras](#compra) |
 | :--: | :-- |
-| **Noção:** |Lista que contém [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto) e/ou itens |
+| **Noção:** |Lista que contém [produtos](#produto) e/ou itens |
 | **Classificação:** | Objeto |
 | **Impacto(s):** | Pessoas elaboram e utilizam listas com itens  que desejam comprar
-| **Sinônimo(s):** | Carrinho de [compras](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#compra), lista de desejo  |
+| **Sinônimo(s):** | Carrinho de [compras](#compra), lista de desejo  |
 
 
 ## Favoritos
@@ -40,7 +40,7 @@ Data|Responsáveis| Versão
 | :--: | :-- |
 | **Noção:** |O que agrada mais |
 | **Classificação:** | Objeto |
-| **Impacto(s):** | Pessoas e/ou [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto) podem ser [favoritos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#favoritos) à indivíduos
+| **Impacto(s):** | Pessoas e/ou [produtos](#produto) podem ser [favoritos](#favoritos) à indivíduos
 | **Sinônimo(s):** | Predileto, preferido |
 
 
@@ -78,50 +78,50 @@ Data|Responsáveis| Versão
 ## Produto
 | Nome: | Produto |
 | :--: | :-- |
-| **Noção:** | Objeto produzido para ser vendido em [mercado](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#mercado). |
+| **Noção:** | Objeto produzido para ser vendido em [mercado](#mercado). |
 | **Classificação:** | Objeto |
-| **Impacto(s):** | O [cliente](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cliente) [compra](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#compra) um [produto](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto) no [mercado](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#mercado).  |
-| **Sinônimo(s):** | Mercadoria, [Compra](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#compra) |
+| **Impacto(s):** | O [cliente](#cliente) [compra](#compra) um [produto](#produto) no [mercado](#mercado).  |
+| **Sinônimo(s):** | Mercadoria, [Compra](#compra) |
 
 
 ## Preço
 | Nome: | Preço |
 | :--: | :-- |
-| **Noção:** | Quantidade monetária atribuida à um [produto](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto). |
+| **Noção:** | Quantidade monetária atribuida à um [produto](#produto). |
 | **Classificação:** | Objeto |
-| **Impacto(s):** | Os [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto) do [mercado](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#mercado) têm preços.   |
+| **Impacto(s):** | Os [produtos](#produto) do [mercado](#mercado) têm preços.   |
 | **Sinônimo(s):** | Valor, custo |
 
 ## Compra
 | Nome: | Compra |
 | :--: | :-- |
-| **Noção:** | [Produto](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto)  adquirido  em um [mercado](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#mercado) mediante  pagamento. |
+| **Noção:** | [Produto](#produto)  adquirido  em um [mercado](#mercado) mediante  pagamento. |
 | **Classificação:** | Verbo |
-| **Impacto(s):** | O [cliente](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cliente) faz compras.   |
-| **Sinônimo(s):** | [Produto](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto), Mercadoria |
+| **Impacto(s):** | O [cliente](#cliente) faz compras.   |
+| **Sinônimo(s):** | [Produto](#produto), Mercadoria |
 
 ## Cadastrar
 | Nome: | Cadastrar |
 | :--: | :-- |
 | **Noção:** | Inserir informações a respeito de algo. |
 | **Classificação:** | Verbo |
-| **Impacto(s):** | O [cliente](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cliente) cadastra [preços](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#preço) para os [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto). |
+| **Impacto(s):** | O [cliente](#cliente) cadastra [preços](#preço) para os [produtos](#produto). |
 | **Sinônimo(s):** | Registrar |
 
 ## Alterar
 | Nome: | Alterar |
 | :--: | :-- |
-| **Noção:** | Modificar informações [cadastradas](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cadastrar) a respeito de algo. |
+| **Noção:** | Modificar informações [cadastradas](#cadastrar) a respeito de algo. |
 | **Classificação:** | Verbo |
-| **Impacto(s):** | O [cliente](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cliente) altera um [preço](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#preço) [cadastrado](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cadastrar) para um [produto](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto). |
+| **Impacto(s):** | O [cliente](#cliente) altera um [preço](#preço) [cadastrado](#cadastrar) para um [produto](#produto). |
 | **Sinônimo(s):** | Modificar, Mudar |
 
 ## Cliente
 | Nome: | Cliente |
 | :--: | :-- |
-| **Noção:** | Indivíduo que [compra](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#compra) algo. |
+| **Noção:** | Indivíduo que [compra](#compra) algo. |
 | **Classificação:** | Objeto |
-| **Impacto(s):** | O cliente [compra](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#compra) [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto). |
+| **Impacto(s):** | O cliente [compra](#compra) [produtos](#produto). |
 | **Sinônimo(s):** | Comprador |
 
 ## Pesquisar
@@ -129,5 +129,5 @@ Data|Responsáveis| Versão
 | :--: | :-- |
 | **Noção:** | Ação de buscar mais informações a respeito de algo. |
 | **Classificação:** | Verbo |
-| **Impacto(s):** | O [cliente](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#cliente) pesquisa [preços](https://github.com/DSW-2018/projetoDesenho/wiki/ℹ️-Léxicos#preço) de [produtos](https://github.com/DSW-2018/projetoDesenho/wiki/%E2%84%B9%EF%B8%8F-L%C3%A9xicos#produto). |
+| **Impacto(s):** | O [cliente](#cliente) pesquisa [preços](#preço) de [produtos](#produto). |
 | **Sinônimo(s):** | Buscar, Procurar |

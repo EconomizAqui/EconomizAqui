@@ -9,6 +9,7 @@
   <a href="https://codeclimate.com/github/fga-gpp-mds/2018.1_Gerencia_mais"><img src="https://codeclimate.com/github/fga-gpp-mds/2018.1_Gerencia_mais/badges/issue_count.svg" alt="Issue Count"></a> <a href='https://www.python.org/'><img src='https://img.shields.io/badge/Made%20with-Python-1f425f.svg' alt='python' /></a> 
  
 </p> -->
+[![Build Status](https://travis-ci.org/EconomizAqui/EconomizAqui.svg?branch=development)](https://travis-ci.org/EconomizAqui/EconomizAqui)
 
 <bt>
 <br>
