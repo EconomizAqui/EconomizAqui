@@ -1,249 +1,1319 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
         <title>Documento de Visão - EconomizAqui</title>
-        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../../..">EconomizAqui</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://github.com/EconomizAqui/EconomizAqui/">Repositório</a>
-                            </li>
-                            <li >
-                                <a href="https://economizaqui.herokuapp.com/">Deploy</a>
-                            </li>
-                            <li >
-                                <a href="../../..">Home</a>
-                            </li>
-                            <li >
-                                <a href="../../../Metodologia/Desenho-da-Metodologia/">Metodologia</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Artefatos <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Desenvolvimento</a>
-    <ul class="dropdown-menu">
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#documento-de-visao" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="EconomizAqui" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
             
-<li >
-    <a href="../Configuração-de-Software-e-Políticas-de-Repositório/">Configuração de Software e Políticas de Repositório</a>
-</li>
+              <span class="md-header-nav__topic">
+                EconomizAqui
+              </span>
+              <span class="md-header-nav__topic">
+                Documento de Visão
+              </span>
             
-<li class="active">
-    <a href="./">Documento de Visão</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Organizacional</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../Organizacional/Plano-de-Gerenciamento-de-Riscos/">Plano de Gerenciamento de Riscos</a>
-</li>
-            
-<li >
-    <a href="../../Organizacional/Detalhamento-dos-Riscos/">Detalhamento dos Riscos</a>
-</li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requisitos <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Elicitação</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../../Requisitos/Elicitação/Elicitação-de-Requisitos/">Elicitação de Requisitos</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Elicitação/5W2H/">5W2H</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Elicitação/Brainstorming/">Brainstorming</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Elicitação/Mapa-Mental/">Mapa Mental</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Elicitação/Rich-Picture/">Rich Pictures</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Elicitação/Storyboard/">Storyboard</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Modelagem</a>
-    <ul class="dropdown-menu">
-            
-  <li class="dropdown-submenu">
-    <a href="#">Ágil</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../../Requisitos/Modelagem/Ágil/Backlog-do-Produto/">Backlog do Produto</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Modelagem/Ágil/Roadmap/">Roadmap</a>
-</li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#">Inicial</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../../Requisitos/Modelagem/Inicial/Léxicos/">Léxicos</a>
-</li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#">Intencional</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../../Requisitos/Modelagem/Intencional/NFR-Framework/">NFR Framework</a>
-</li>
-    </ul>
-  </li>
-            
-  <li class="dropdown-submenu">
-    <a href="#">Tradicional</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../../Requisitos/Modelagem/Tradicional/Diagrama-de-Caso-de-Uso/">Diagrama de Caso de Uso</a>
-</li>
-            
-<li >
-    <a href="../../../Requisitos/Modelagem/Tradicional/Diagrama-de-Domínio/">Diagrama de Domínio</a>
-</li>
-    </ul>
-  </li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Atas de Reuniões <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../../Atas-de-Reuniões/Ata-01/">Ata 01</a>
-</li>
-                                    
-<li >
-    <a href="../../../Atas-de-Reuniões/Ata-02/">Ata 02</a>
-</li>
-                                    
-<li >
-    <a href="../../../Atas-de-Reuniões/Ata-03/">Ata 03</a>
-</li>
-                                    
-<li >
-    <a href="../../../Atas-de-Reuniões/Ata-04/">Ata 04</a>
-</li>
-                                    
-<li >
-    <a href="../../../Atas-de-Reuniões/Ata-05/">Ata 05</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../Configuração-de-Software-e-Políticas-de-Repositório/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../../Organizacional/Plano-de-Gerenciamento-de-Riscos/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+          
         </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#documento-de-visao">Documento de Visão</a></li>
-            <li><a href="#1-introducao">1 Introdução</a></li>
-            <li><a href="#2-posicionando">2 Posicionando</a></li>
-            <li><a href="#3-descricoes-da-parte-interessada-e-do-usuario">3 Descrições da Parte Interessada e do Usuário</a></li>
-            <li><a href="#4-visao-geral-do-produto">4 Visão Geral do Produto</a></li>
-            <li><a href="#5-recursos-do-produto">5 Recursos do Produto</a></li>
-            <li><a href="#6-restricoes">6 Restrições</a></li>
-            <li><a href="#7-faixas-de-qualidade">7 Faixas de Qualidade</a></li>
+
+  
+
+
+  <a href="https://github.com/EconomizAqui/EconomizAqui/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      EconomizAqui
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="EconomizAqui" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    EconomizAqui
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/EconomizAqui/EconomizAqui/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      EconomizAqui
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      I. Artefatos genéricos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        I. Artefatos genéricos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Elicitação/Rich-Picture/" title="Rich Pictures" class="md-nav__link">
+      Rich Pictures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Elicitação/Storyboard/" title="Storyboard" class="md-nav__link">
+      Storyboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Elicitação/Mapa-Mental/" title="Mapa Mental" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Modelagem/Inicial/Léxicos/" title="Léxicos" class="md-nav__link">
+      Léxicos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Elicitação/5W2H/" title="5W2H" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      II. Desenho da metodologia
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        II. Desenho da metodologia
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Metodologia/Desenho-da-Metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      III. Aderência à metodologia
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        III. Aderência à metodologia
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Documento de Visão
+      </label>
+    
+    <a href="./" title="Documento de Visão" class="md-nav__link md-nav__link--active">
+      Documento de Visão
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" title="1 Introdução" class="md-nav__link">
+    1 Introdução
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-proposito" title="1.1 Propósito" class="md-nav__link">
+    1.1 Propósito
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" title="1.2 Escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" title="1.3 Definições, acrônimos e abreviações" class="md-nav__link">
+    1.3 Definições, acrônimos e abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" title="1.4 Referências" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-visao-geral" title="1.5 Visão Geral" class="md-nav__link">
+    1.5 Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-posicionando" title="2 Posicionando" class="md-nav__link">
+    2 Posicionando
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-oportunidade-de-negocios" title="2.1 Oportunidade de Negócios" class="md-nav__link">
+    2.1 Oportunidade de Negócios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-instrucao-do-problema" title="2.2 Instrução do Problema" class="md-nav__link">
+    2.2 Instrução do Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-instrucao-de-posicao-do-produto" title="2.3 Instrução de Posição do Produto" class="md-nav__link">
+    2.3 Instrução de Posição do Produto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-descricoes-da-parte-interessada-e-do-usuario" title="3 Descrições da Parte Interessada e do Usuário" class="md-nav__link">
+    3 Descrições da Parte Interessada e do Usuário
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-demograficos-de-mercado" title="3.1 Demográficos de Mercado" class="md-nav__link">
+    3.1 Demográficos de Mercado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-resumo-da-parte-interessada" title="3.2 Resumo da Parte Interessada" class="md-nav__link">
+    3.2 Resumo da Parte Interessada
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-resumo-do-usuario" title="3.3 Resumo do Usuário" class="md-nav__link">
+    3.3 Resumo do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-ambiente-do-usuario" title="3.4 Ambiente do Usuário" class="md-nav__link">
+    3.4 Ambiente do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-perfis-das-partes-interessadas" title="3.5 Perfis das Partes Interessadas" class="md-nav__link">
+    3.5 Perfis das Partes Interessadas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-perfis-do-usuario" title="3.6 Perfis do Usuário" class="md-nav__link">
+    3.6 Perfis do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-principais-necessidades-da-parte-interessada-ou-do-usuario" title="3.7 Principais Necessidades da Parte Interessada ou do Usuário" class="md-nav__link">
+    3.7 Principais Necessidades da Parte Interessada ou do Usuário
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#371-divulgacao" title="3.7.1 Divulgação" class="md-nav__link">
+    3.7.1 Divulgação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#372-deslocamento" title="3.7.2 Deslocamento" class="md-nav__link">
+    3.7.2 Deslocamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#373-recordacao" title="3.7.3 Recordação" class="md-nav__link">
+    3.7.3 Recordação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-alternativas-e-concorrencia" title="3.8 Alternativas e Concorrência" class="md-nav__link">
+    3.8 Alternativas e Concorrência
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-geral-do-produto" title="4 Visão Geral do Produto" class="md-nav__link">
+    4 Visão Geral do Produto
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-perspectiva-do-produto" title="4.1 Perspectiva do produto" class="md-nav__link">
+    4.1 Perspectiva do produto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-resumo-dos-recursos" title="4.2 Resumo dos recursos" class="md-nav__link">
+    4.2 Resumo dos recursos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-recursos-do-produto" title="5 Recursos do Produto" class="md-nav__link">
+    5 Recursos do Produto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-restricoes" title="6 Restrições" class="md-nav__link">
+    6 Restrições
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-faixas-de-qualidade" title="7 Faixas de Qualidade" class="md-nav__link">
+    7 Faixas de Qualidade
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-usabilidade" title="7.1 Usabilidade" class="md-nav__link">
+    7.1 Usabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-confiabilidade" title="7.2 Confiabilidade" class="md-nav__link">
+    7.2 Confiabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-desempenho" title="7.3 Desempenho" class="md-nav__link">
+    7.3 Desempenho
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-suportabilidade" title="7.4 Suportabilidade" class="md-nav__link">
+    7.4 Suportabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-restricoes-de-design" title="7.5 Restrições de Design" class="md-nav__link">
+    7.5 Restrições de Design
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  
+</nav>
+    
+  </li>
 
-<table>
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Elicitação/Brainstorming/" title="Brainstorming" class="md-nav__link">
+      Brainstorming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Elicitação/Elicitação-de-Requisitos/" title="Elicitação de Requisitos" class="md-nav__link">
+      Elicitação de Requisitos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Organizacional/Plano-de-Gerenciamento-de-Riscos/" title="Plano de Gerenciamento de Riscos" class="md-nav__link">
+      Plano de Gerenciamento de Riscos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Organizacional/Detalhamento-dos-Riscos/" title="Detalhamento dos Riscos" class="md-nav__link">
+      Detalhamento dos Riscos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Modelagem/Tradicional/Diagrama-de-Caso-de-Uso/" title="Diagrama de Caso de Uso" class="md-nav__link">
+      Diagrama de Caso de Uso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Modelagem/Tradicional/Diagrama-de-Domínio/" title="Diagrama de Domínio" class="md-nav__link">
+      Diagrama de Domínio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Modelagem/Intencional/NFR-Framework/" title="NFR Framework" class="md-nav__link">
+      NFR Framework
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Modelagem/Ágil/Backlog-do-Produto/" title="Backlog do Produto" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Requisitos/Modelagem/Ágil/Roadmap/" title="Roadmap" class="md-nav__link">
+      Roadmap
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      IV. Padrões de Projeto
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        IV. Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padrões/GOF/" title="GOF" class="md-nav__link">
+      GOF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      V. Arquitetura de Projeto
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        V. Arquitetura de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Arquitetura" title="None" class="md-nav__link">
+      None
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Iniciativas Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Atas de Reunião
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        Atas de Reunião
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Atas-de-Reuniões/Ata-01/" title="Ata 01" class="md-nav__link">
+      Ata 01
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Atas-de-Reuniões/Ata-02/" title="Ata 02" class="md-nav__link">
+      Ata 02
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Atas-de-Reuniões/Ata-03/" title="Ata 03" class="md-nav__link">
+      Ata 03
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Atas-de-Reuniões/Ata-04/" title="Ata 04" class="md-nav__link">
+      Ata 04
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Atas-de-Reuniões/Ata-05/" title="Ata 05" class="md-nav__link">
+      Ata 05
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Atas-de-Reuniões/Ata-06/" title="Ata 06" class="md-nav__link">
+      Ata 06
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Configuração-de-Software-e-Políticas-de-Repositório/" title="Configuração de Software e Políticas de Repositório" class="md-nav__link">
+      Configuração de Software e Políticas de Repositório
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" title="1 Introdução" class="md-nav__link">
+    1 Introdução
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-proposito" title="1.1 Propósito" class="md-nav__link">
+    1.1 Propósito
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" title="1.2 Escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" title="1.3 Definições, acrônimos e abreviações" class="md-nav__link">
+    1.3 Definições, acrônimos e abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" title="1.4 Referências" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-visao-geral" title="1.5 Visão Geral" class="md-nav__link">
+    1.5 Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-posicionando" title="2 Posicionando" class="md-nav__link">
+    2 Posicionando
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-oportunidade-de-negocios" title="2.1 Oportunidade de Negócios" class="md-nav__link">
+    2.1 Oportunidade de Negócios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-instrucao-do-problema" title="2.2 Instrução do Problema" class="md-nav__link">
+    2.2 Instrução do Problema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-instrucao-de-posicao-do-produto" title="2.3 Instrução de Posição do Produto" class="md-nav__link">
+    2.3 Instrução de Posição do Produto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-descricoes-da-parte-interessada-e-do-usuario" title="3 Descrições da Parte Interessada e do Usuário" class="md-nav__link">
+    3 Descrições da Parte Interessada e do Usuário
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-demograficos-de-mercado" title="3.1 Demográficos de Mercado" class="md-nav__link">
+    3.1 Demográficos de Mercado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-resumo-da-parte-interessada" title="3.2 Resumo da Parte Interessada" class="md-nav__link">
+    3.2 Resumo da Parte Interessada
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-resumo-do-usuario" title="3.3 Resumo do Usuário" class="md-nav__link">
+    3.3 Resumo do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-ambiente-do-usuario" title="3.4 Ambiente do Usuário" class="md-nav__link">
+    3.4 Ambiente do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-perfis-das-partes-interessadas" title="3.5 Perfis das Partes Interessadas" class="md-nav__link">
+    3.5 Perfis das Partes Interessadas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-perfis-do-usuario" title="3.6 Perfis do Usuário" class="md-nav__link">
+    3.6 Perfis do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-principais-necessidades-da-parte-interessada-ou-do-usuario" title="3.7 Principais Necessidades da Parte Interessada ou do Usuário" class="md-nav__link">
+    3.7 Principais Necessidades da Parte Interessada ou do Usuário
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#371-divulgacao" title="3.7.1 Divulgação" class="md-nav__link">
+    3.7.1 Divulgação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#372-deslocamento" title="3.7.2 Deslocamento" class="md-nav__link">
+    3.7.2 Deslocamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#373-recordacao" title="3.7.3 Recordação" class="md-nav__link">
+    3.7.3 Recordação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-alternativas-e-concorrencia" title="3.8 Alternativas e Concorrência" class="md-nav__link">
+    3.8 Alternativas e Concorrência
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-geral-do-produto" title="4 Visão Geral do Produto" class="md-nav__link">
+    4 Visão Geral do Produto
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-perspectiva-do-produto" title="4.1 Perspectiva do produto" class="md-nav__link">
+    4.1 Perspectiva do produto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-resumo-dos-recursos" title="4.2 Resumo dos recursos" class="md-nav__link">
+    4.2 Resumo dos recursos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-recursos-do-produto" title="5 Recursos do Produto" class="md-nav__link">
+    5 Recursos do Produto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-restricoes" title="6 Restrições" class="md-nav__link">
+    6 Restrições
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-faixas-de-qualidade" title="7 Faixas de Qualidade" class="md-nav__link">
+    7 Faixas de Qualidade
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-usabilidade" title="7.1 Usabilidade" class="md-nav__link">
+    7.1 Usabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-confiabilidade" title="7.2 Confiabilidade" class="md-nav__link">
+    7.2 Confiabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-desempenho" title="7.3 Desempenho" class="md-nav__link">
+    7.3 Desempenho
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-suportabilidade" title="7.4 Suportabilidade" class="md-nav__link">
+    7.4 Suportabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-restricoes-de-design" title="7.5 Restrições de Design" class="md-nav__link">
+    7.5 Restrições de Design
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/EconomizAqui/EconomizAqui/edit/master/docs/Artefatos/Desenvolvimento/Documento-de-Visão.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <table>
 <thead>
 <tr>
 <th>Data</th>
@@ -315,29 +1385,29 @@
 </tr>
 </tbody>
 </table>
-<h1 id="documento-de-visao">Documento de Visão</h1>
-<h2 id="1-introducao">1 Introdução</h2>
-<h3 id="11-proposito">1.1 Propósito</h3>
+<h1 id="documento-de-visao">Documento de Visão<a class="headerlink" href="#documento-de-visao" title="Permanent link">&para;</a></h1>
+<h2 id="1-introducao">1 Introdução<a class="headerlink" href="#1-introducao" title="Permanent link">&para;</a></h2>
+<h3 id="11-proposito">1.1 Propósito<a class="headerlink" href="#11-proposito" title="Permanent link">&para;</a></h3>
 <p><p align="justify"> O objetivo deste documento é apresentar a aplicação EconomizAqui e determinar a sua utilidade e funcionalidade. Com esse propósito, será realizada uma exposição detalhada do projeto, de modo a abranger as inovações ofertadas pela aplicação, através de tópicos relativos à descrição do problema, oportunidade de negócios, descrição dos envolvidos, restrições do projeto e outros. Dessa forma, espera-se que o leitor seja capaz de entender a proposta e as suas aplicabilidades.</p></p>
-<h3 id="12-escopo">1.2 Escopo</h3>
+<h3 id="12-escopo">1.2 Escopo<a class="headerlink" href="#12-escopo" title="Permanent link">&para;</a></h3>
 <p><p align="justify"> Tendo em vista as dificuldades em se comparar os preços dos produtos em diferentes comércios, que não disponibilizam informações por meio da internet, surge a necessidade de uma aplicação para centralizar as informações sobre os produtos desejados, apresentando ao consumidor os estabelecimentos que tem os menores preços.</p></p>
-<h3 id="13-definicoes-acronimos-e-abreviacoes">1.3 Definições, acrônimos e abreviações</h3>
+<h3 id="13-definicoes-acronimos-e-abreviacoes">1.3 Definições, acrônimos e abreviações<a class="headerlink" href="#13-definicoes-acronimos-e-abreviacoes" title="Permanent link">&para;</a></h3>
 <ul>
 <li>FGA - Faculdade do Gama</li>
 <li>UnB - Universidade de Brasília</li>
 </ul>
-<h3 id="14-referencias">1.4 Referências</h3>
+<h3 id="14-referencias">1.4 Referências<a class="headerlink" href="#14-referencias" title="Permanent link">&para;</a></h3>
 <ul>
 <li>IBM. Documento de Visão. Disponível em: <a href="https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html">https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html</a>. Acesso em: 16 de setembro de 2018.</li>
 <li>Falko. Documento de Visão. Disponível em: <a href="https://github.com/fga-eps-mds/Falko-2017.2-BackEnd/wiki/Documento-de-Visão">https://github.com/fga-eps-mds/Falko-2017.2-BackEnd/wiki/Documento-de-Visão</a>. Acesso em 18 de setembro de 2018.</li>
 <li>Matrícula Web. Documentação Suplementar. Disponível em:  <a href="https://github.com/requisitos-de-software-2018-1-grupo-1/matricula-web/wiki/Documentação-Suplementar">https://github.com/requisitos-de-software-2018-1-grupo-1/matricula-web/wiki/Documentação-Suplementar</a>. Acesso em 20 de setembro de 2018.</li>
 </ul>
-<h3 id="15-visao-geral">1.5 Visão Geral</h3>
+<h3 id="15-visao-geral">1.5 Visão Geral<a class="headerlink" href="#15-visao-geral" title="Permanent link">&para;</a></h3>
 <p><p align="justify"> A organização do documento dá-se de maneira a possibilitar ao leitor uma melhor visualização das informações expostas. Com essa finalidade, apresenta-se inicialmente a motivação por trás da implementação, que culminou no desenvolvimento dessa proposta. Em segunda instância, são expostos os envolvidos no projeto, explicitando a equipe responsável pela gestão e desenvolvimento do software e evidenciando o valor que este irá agregar aos usuários. Logo, o arquivo retrata todas as funcionalidades do sistema e demais requisitos fundamentais para a documentação do mesmo.</p></p>
-<h2 id="2-posicionando">2 Posicionando</h2>
-<h3 id="21-oportunidade-de-negocios">2.1 Oportunidade de Negócios</h3>
+<h2 id="2-posicionando">2 Posicionando<a class="headerlink" href="#2-posicionando" title="Permanent link">&para;</a></h2>
+<h3 id="21-oportunidade-de-negocios">2.1 Oportunidade de Negócios<a class="headerlink" href="#21-oportunidade-de-negocios" title="Permanent link">&para;</a></h3>
 <p><p align="justify"> Periodicamente, são feitas compras de produtos de limpeza e alimentos para lares e comércios. Com isso, o consumidor acaba deixando de economizar por não saber quais são os lugares com os preços mais baixos. Vendo essa necessidade de economizar, a aplicação mostrará os preços dos itens com valores mais baixos dos mercados mais próximos.</p></p>
-<h3 id="22-instrucao-do-problema">2.2 Instrução do Problema</h3>
+<h3 id="22-instrucao-do-problema">2.2 Instrução do Problema<a class="headerlink" href="#22-instrucao-do-problema" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -364,7 +1434,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="23-instrucao-de-posicao-do-produto">2.3 Instrução de Posição do Produto</h3>
+<h3 id="23-instrucao-de-posicao-do-produto">2.3 Instrução de Posição do Produto<a class="headerlink" href="#23-instrucao-de-posicao-do-produto" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -403,10 +1473,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="3-descricoes-da-parte-interessada-e-do-usuario">3 Descrições da Parte Interessada e do Usuário</h2>
-<h3 id="31-demograficos-de-mercado">3.1 Demográficos de Mercado</h3>
+<h2 id="3-descricoes-da-parte-interessada-e-do-usuario">3 Descrições da Parte Interessada e do Usuário<a class="headerlink" href="#3-descricoes-da-parte-interessada-e-do-usuario" title="Permanent link">&para;</a></h2>
+<h3 id="31-demograficos-de-mercado">3.1 Demográficos de Mercado<a class="headerlink" href="#31-demograficos-de-mercado" title="Permanent link">&para;</a></h3>
 <p><p align="justify"> O mercado de comércio eletrônico é precário em relação à aplicação que faz comparações de preços de produtos domésticos. Com isso, visamos preencher esse lacuna com nossa aplicação para que os consumidores possam economizar no seu orçamento.</p></p>
-<h3 id="32-resumo-da-parte-interessada">3.2 Resumo da Parte Interessada</h3>
+<h3 id="32-resumo-da-parte-interessada">3.2 Resumo da Parte Interessada<a class="headerlink" href="#32-resumo-da-parte-interessada" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -423,7 +1493,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="33-resumo-do-usuario">3.3 Resumo do Usuário</h3>
+<h3 id="33-resumo-do-usuario">3.3 Resumo do Usuário<a class="headerlink" href="#33-resumo-do-usuario" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -438,9 +1508,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="34-ambiente-do-usuario">3.4 Ambiente do Usuário</h3>
+<h3 id="34-ambiente-do-usuario">3.4 Ambiente do Usuário<a class="headerlink" href="#34-ambiente-do-usuario" title="Permanent link">&para;</a></h3>
 <p>A aplicação poderá ser utilizada em todos dispositivo com navegador e acesso a internet.</p>
-<h3 id="35-perfis-das-partes-interessadas">3.5 Perfis das Partes Interessadas</h3>
+<h3 id="35-perfis-das-partes-interessadas">3.5 Perfis das Partes Interessadas<a class="headerlink" href="#35-perfis-das-partes-interessadas" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -511,7 +1581,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="36-perfis-do-usuario">3.6 Perfis do Usuário</h3>
+<h3 id="36-perfis-do-usuario">3.6 Perfis do Usuário<a class="headerlink" href="#36-perfis-do-usuario" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -546,20 +1616,20 @@
 </tr>
 </tbody>
 </table>
-<h3 id="37-principais-necessidades-da-parte-interessada-ou-do-usuario">3.7 Principais Necessidades da Parte Interessada ou do Usuário</h3>
-<h4 id="371-divulgacao">3.7.1 Divulgação</h4>
+<h3 id="37-principais-necessidades-da-parte-interessada-ou-do-usuario">3.7 Principais Necessidades da Parte Interessada ou do Usuário<a class="headerlink" href="#37-principais-necessidades-da-parte-interessada-ou-do-usuario" title="Permanent link">&para;</a></h3>
+<h4 id="371-divulgacao">3.7.1 Divulgação<a class="headerlink" href="#371-divulgacao" title="Permanent link">&para;</a></h4>
 <p><p align="justify"> A forma de divulgação mais comum utilizada por comércios é o panfleto, porém algumas vezes eles se encontram desatualizados e para alterar isto deve se criar um novo, sem contar que alguns lugares não divulgam os preços.</p></p>
-<h4 id="372-deslocamento">3.7.2 Deslocamento</h4>
+<h4 id="372-deslocamento">3.7.2 Deslocamento<a class="headerlink" href="#372-deslocamento" title="Permanent link">&para;</a></h4>
 <p><p align="justify"> Para a comparação de preços é necessário ir de comércio em comércio procurando o melhor preço para comprar o produto desejado, isso demanda tempo e custo de locomoção.</p></p>
-<h4 id="373-recordacao">3.7.3 Recordação</h4>
+<h4 id="373-recordacao">3.7.3 Recordação<a class="headerlink" href="#373-recordacao" title="Permanent link">&para;</a></h4>
 <p><p align="justify"> Para fazer a comparação de preços as pessoas costumam confiar em suas lembranças e os mais cuidados anotar em papéis, porém quando se trata de vários produtos é difícil lembrar o preço de cada um, tanto para fazer uma comparação entre comércios quanto para comparar com o mês anterior.</p></p>
-<h3 id="38-alternativas-e-concorrencia">3.8 Alternativas e Concorrência</h3>
+<h3 id="38-alternativas-e-concorrencia">3.8 Alternativas e Concorrência<a class="headerlink" href="#38-alternativas-e-concorrencia" title="Permanent link">&para;</a></h3>
 <p>Não há alternativas e concorrência para esse tipo de aplicação.</p>
-<h2 id="4-visao-geral-do-produto">4 Visão Geral do Produto</h2>
-<h3 id="41-perspectiva-do-produto">4.1 Perspectiva do produto</h3>
+<h2 id="4-visao-geral-do-produto">4 Visão Geral do Produto<a class="headerlink" href="#4-visao-geral-do-produto" title="Permanent link">&para;</a></h2>
+<h3 id="41-perspectiva-do-produto">4.1 Perspectiva do produto<a class="headerlink" href="#41-perspectiva-do-produto" title="Permanent link">&para;</a></h3>
 <p align="justify"> O sistema terá a função de auxiliar os consumidores, identificando os melhores preços entre os comércios. O mesmo fornecerá comparações sobre produtos iguais de diferentes comércios, indicando ao consumidor qual é o comércio mais econômico para ele realizar as compras.</p>
 
-<h3 id="42-resumo-dos-recursos">4.2 Resumo dos recursos</h3>
+<h3 id="42-resumo-dos-recursos">4.2 Resumo dos recursos<a class="headerlink" href="#42-resumo-dos-recursos" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -586,7 +1656,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="5-recursos-do-produto">5 Recursos do Produto</h2>
+<h2 id="5-recursos-do-produto">5 Recursos do Produto<a class="headerlink" href="#5-recursos-do-produto" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Pesquisar produto ou comércio desejado</li>
 <li>Visualizar histórico de pesquisas</li>
@@ -599,14 +1669,14 @@
 <li>Notificar alterações de preços em um produto seguido</li>
 <li>Visualizar histórico de preços de um produto ou comércio</li>
 </ul>
-<h2 id="6-restricoes">6 Restrições</h2>
+<h2 id="6-restricoes">6 Restrições<a class="headerlink" href="#6-restricoes" title="Permanent link">&para;</a></h2>
 <p>Para a utilização do produto descrito, o usuário deverá ter acesso aos dados do sistema que são disponibilizados por outros usuários, implicando assim em certas limitações, tais como:</p>
 <ul>
 <li>O usuário deve dispor de acesso a internet</li>
 <li>O usuário deve dispor de um navegador</li>
 </ul>
-<h2 id="7-faixas-de-qualidade">7 Faixas de Qualidade</h2>
-<h3 id="71-usabilidade">7.1 Usabilidade</h3>
+<h2 id="7-faixas-de-qualidade">7 Faixas de Qualidade<a class="headerlink" href="#7-faixas-de-qualidade" title="Permanent link">&para;</a></h2>
+<h3 id="71-usabilidade">7.1 Usabilidade<a class="headerlink" href="#71-usabilidade" title="Permanent link">&para;</a></h3>
 <ul>
 <li>RU01 - Tempo mínimo para a execução de uma atividade</li>
 </ul>
@@ -627,7 +1697,7 @@
 <li>RU05 - Facilidade de Uso</li>
 </ul>
 <p>Espera-se que o sistema seja de fácil uso ao usuário, de modo que não seja preciso uso de documentação externa para execução das atividades.</p>
-<h3 id="72-confiabilidade">7.2 Confiabilidade</h3>
+<h3 id="72-confiabilidade">7.2 Confiabilidade<a class="headerlink" href="#72-confiabilidade" title="Permanent link">&para;</a></h3>
 <ul>
 <li>RC01 - Segurança</li>
 </ul>
@@ -682,7 +1752,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="73-desempenho">7.3 Desempenho</h3>
+<h3 id="73-desempenho">7.3 Desempenho<a class="headerlink" href="#73-desempenho" title="Permanent link">&para;</a></h3>
 <ul>
 <li>RD01 - Otimização de acessos</li>
 </ul>
@@ -695,9 +1765,9 @@
 <li>RD03 - Tempo de resposta</li>
 </ul>
 <p>O tempo de resposta de uma pesquisa no sistema não deve ultrapassar o prazo máximo de 1 minuto.</p>
-<h3 id="74-suportabilidade">7.4 Suportabilidade</h3>
+<h3 id="74-suportabilidade">7.4 Suportabilidade<a class="headerlink" href="#74-suportabilidade" title="Permanent link">&para;</a></h3>
 <p>A aplicação poderá ser acessado por qualquer dispositivo com navegador e conectividade com a internet.</p>
-<h3 id="75-restricoes-de-design">7.5 Restrições de Design</h3>
+<h3 id="75-restricoes-de-design">7.5 Restrições de Design<a class="headerlink" href="#75-restricoes-de-design" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Processo de software</li>
 </ul>
@@ -705,83 +1775,85 @@
 <ul>
 <li>Design</li>
 </ul>
-<p>O sistema deve possuir um design intuitivo, utilizando um formato de posicionamento de informações claro e que facilite a visualização.</p></div>
-        </div>
+<p>O sistema deve possuir um design intuitivo, utilizando um formato de posicionamento de informações claro e que facilite a visualização.</p>
+                
+                  
+                
+              
+              
+                
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../../..",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
-        </script>
-        <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+          </div>
         </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../../Metodologia/Desenho-da-Metodologia/" title="Metodologia" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Metodologia
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../Requisitos/Elicitação/Brainstorming/" title="Brainstorming" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Brainstorming
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
     </div>
-</div>
-
-    </body>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
 </html>
