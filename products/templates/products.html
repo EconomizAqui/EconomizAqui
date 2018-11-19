@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block body %}
+<!-- <div class="row"> -->
+<!-- <div class="col-3 col-line"> -->
+<div class="row">
+  <h1 class="product-title">Produtos</h1>
+</div>
+<div class="row">
+  <p class="product-title">{{products.count}} resultados</p>
+</div>
+<!-- </div> -->
+<!-- <div class="col-9"> -->
+
+<div class="row justify-content row-margin">
+{% for product in products %}
+  <a class="card" href="{% url 'updateProduct' product.id %}" style="width: 16rem;">
+    <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
+    <h6 class="card-title">{{ product.name }} - {{product.category}}</h6>
+    <div class="card-body card-body-background">
+      <p class="card-text">R${{ product.price }}</p>
+      <p>
+        <small class="text-muted">
+          {{ product.description }}
+        </small>
+      </p>
+    </div>
+  </a>
+{% endfor %}
+</div>
+<!-- </div> -->
+<!-- </div> -->
+{% endblock %}
