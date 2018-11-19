@@ -11,13 +11,13 @@ def market_list(request, template_name='market_list.html'):
         form = SortOptionForm(request.POST)
         if form.is_valid():
             choice = form.cleaned_data['choice']
-            if choice == 'nomeaz':
+            if choice == 'nomeAz':
                 sorter = MarketSorter(MarketSorter.sort_by_name_ascending)
-            elif choice == 'nomeza':
+            elif choice == 'nomeZa':
                 sorter = MarketSorter(MarketSorter.sort_by_name_descending)
-            elif choice == 'avaliacaomelhores':
+            elif choice == 'avaliacaoMelhores':
                 sorter = MarketSorter(MarketSorter.sort_by_rating_ascending)
-            elif choice == 'avaliacaopiores':
+            elif choice == 'avaliacaoPiores':
                 sorter = MarketSorter(MarketSorter.sort_by_rating_descending)
 
             markets = sorter.sort()

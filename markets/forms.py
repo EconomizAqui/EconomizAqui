@@ -12,9 +12,9 @@ class MarketForm(ModelForm):
 class SortOptionForm(forms.Form):
     OPTIONS = [
         ('default', 'Ordenar por:'),
-        ('nomeaz', 'Nome A-Z'),
-        ('nomeza', 'Nome Z-A'),
-        ('avaliacaomelhores', "Melhores avaliados"),
-        ('avaliacaopiores', 'Piores avaliados'),
+        ('nomeAz', 'Nome A-Z'),
+        ('nomeZa', 'Nome Z-A'),
+        ('avaliacaoMelhores', "Melhores avaliados"),
+        ('avaliacaoPiores', 'Piores avaliados'),
     ]
     choice = forms.ChoiceField(choices=OPTIONS)
