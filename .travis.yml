@@ -11,14 +11,8 @@ before_install:
   - sudo apt-get update
   - sudo apt-get -y install docker-ce
   - sudo pip install docker-compose
-  - pip install -r requirements.txt
-before_script:
-  - sudo docker-compose -f docker-compose.yml up --d
-
-
 script:
-  - python manage.py makemigrations --noinput
-#  - python manage.py migrate
+  - sudo docker-compose -f docker-compose.yml up --d
 
 after_script:
   - docker-compose down
