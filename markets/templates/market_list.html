@@ -10,6 +10,15 @@
     </tr>
 </thead>
 <tbody>
+    <form method="post">{% csrf_token %}
+        {% for field in form.visible_fields %}
+          {{ field }}
+          {{ field.help_text }}
+        {% endfor %}
+        <input type="submit" value="Ok" />
+    </form>
+    <br>
+    <br>
     {% for market in markets %}
     <tr>
     <td>{{ market.name }}</td>
