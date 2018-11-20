@@ -14,18 +14,26 @@
 }
 
 .card-img-top {
-    width: 80% !important;
     margin: 0 auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+.card-icon-top {
+    max-height: 25px;
+    margin-top: 20px;
+    margin-right: 4px;
+    /* margin-left: 40px */
 }
 
 /* Name and Category */
 .card-title {
-    align-self: center;
+    /* align-self: center; */
     margin-top: 20px;
     color: black;
     font-size: 20px;
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Play', sans-serif;
+    margin-left: 10px;
 }
 
 /* Price */
@@ -36,17 +44,20 @@
   font-family: 'Poppins', sans-serif;
   /* font-family: 'Play', sans-serif; */
   font-family: 'Merienda', cursive;
+  margin-left: 10px;
 }
 
 .card-body {
   padding-bottom: 0;
   padding-top: 10px;
+  padding-left: 0px;
 }
 
 /* Description */
 .text-muted {
   font-size: 13px;
   padding: 0px;
+  margin-left: 10px;
   font-family: 'Play', sans-serif;
   font-family: 'El Messiri', sans-serif;
   font-family: 'Merienda', cursive;
@@ -58,11 +69,7 @@
   font-family: 'Federant', cursive;
   /* margin-left: 60px; */
   margin: 0 auto;
-}
-
-.col-line {
-  /* justify-content: center; */
-  /* border-right: 1px solid #B2DBBF; */
+  margin-top: 10px;
 }
 
 .form-group {
@@ -71,7 +78,7 @@
   margin-bottom: 10px;
 }
 
-.align-button {
+.align-center {
   text-align: center;
 }
 
@@ -93,26 +100,56 @@
   border: none;
 }
 
-a {
+customdiv {
   color: transparent;
   text-decoration: none;
 }
 
-a:link {
+customdiv:link {
   color: transparent;
   border-width: 0px;
 }
 
-a:visited {
+customdiv:visited {
   color: transparent;
   border-width: 0px;
 }
 
-a:hover {
+customdiv:hover {
   color: transparent;
   border-width: 0px;
 }
 
-a.card:hover {
+customdiv.card:hover {
   box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.12);
+}
+
+.img-product {
+  margin: 0 auto;
+  max-width: 370px;
+  max-height: 370px;
+  margin-top: 40px;
+  border: 4px solid #fbffe9;
+
+}
+
+.details-product {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Play', sans-serif;
+  /* font-family: 'Merienda', cursive; */
+  color: #1e617d;
+}
+
+.details-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #A30F36;
+}
+
+.background-product {
+  /* background: #F3FFBD; */
+  margin-top: 20px;
+  height: 480px;
 }

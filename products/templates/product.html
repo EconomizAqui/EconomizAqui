@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block body %}
+<div class="row">
+  <h1 class="product-title">Produto</h1>
+</div>
+<div class="row background-product">
+  <div class="col-6 align-center">
+    <img class="img-product" src="{{product.photo}}">
+  </div>
+  <div class="col-6">
+    <div class="details-product">
+      <h1 class="details-title">Detalhes</h1>
+      <h3>Nome: {{product.name}}</h3>
+      <h3>Comércio: {{product.historic.last.commerce}}</h3>
+      <h3>Último preço: {{product.historic.last.price}}</h3>
+      <h3>Marca: {{product.brand}}</h3>
+      <h3>Descrição: {{product.description}}</h3>
+      <h3>Categoria: {{product.categoria}}</h3>
+      <h3>Data: {{product.historic.last.date}}</h3>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
