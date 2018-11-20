@@ -12,18 +12,34 @@
 
 <div class="row justify-content row-margin">
 {% for product in products %}
-  <a class="card" href="{% url 'updateProduct' product.id %}" style="width: 16rem;">
-    <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
-    <h6 class="card-title">{{ product.name }} - {{product.category}}</h6>
+  <customdiv class="card card-customization" style="width: 16rem;">
+    <div class="row">
+      <a class="card-img-top" href="{% url 'viewProduct' product.id %}">
+      <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <h6 class="card-title">{{ product.name }}</h6>
+      </div>
+      <div class="col-4">
+        <a class="" href="{% url 'updateProduct' product.id %}">
+          <img class="card-icon-top" src="/static/edit.png"/>
+        </a>
+        <a class="" href="{% url 'newPrice' product.id %}">
+          <img class="card-icon-top" src="/static/price.png"/>
+        </a>
+      </div>
+    </div>
     <div class="card-body card-body-background">
-      <p class="card-text">R${{ product.price }}</p>
+      <p class="card-text">R${{ product.historic.last.price }}</p>
       <p>
         <small class="text-muted">
           {{ product.description }}
         </small>
       </p>
     </div>
-  </a>
+  </customdiv>
 {% endfor %}
 </div>
 <!-- </div> -->
