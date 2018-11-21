@@ -4,13 +4,26 @@ from .models import Historic
 from .forms import ProductForm
 from .forms import HistoricForm
 from django.shortcuts import redirect
+import simplejson as json
 
 def base(request):
     return render(request, 'base.html')
 
 def view(request, id):
     product = Product.objects.get(id=id)
-    return render(request, 'product.html', {"product": product})
+    historic_price = []
+    historic_commerce = []
+    for historic in product.historic.all():
+        price = json.dumps(historic.price)
+        historic_price.append(price )
+        historic_commerce.append(historic.commerce)
+
+    historic_price = json.dumps(historic_price)
+    historic_commerce = json.dumps(historic_commerce)
+
+    print("VETOR PREÇO = ", historic_price)
+    print("VETOR Comerce = ", historic_commerce)
+    return render(request, 'product.html', {"product": product, "historic_price": historic_price, "historic_commerce": historic_commerce})
 
 def list_products(request):
     products = Product.objects.all()
