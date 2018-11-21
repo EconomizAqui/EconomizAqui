@@ -1,6 +1,8 @@
 Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
 31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
+21/11/2018 | 1.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
+
 
 # GOF
 
@@ -62,17 +64,23 @@ def notify(user, **kwarg):
 
 O módulo de envio de e-mail é atualizado e dispara um e-mail para o usuário referente ao <i>user</i> que o alertou.
 ```Python
-class NotificationEmailSender():
+class NotificationEmailSender(EventHandler):
     def update(self, user):
-        email = user.email
+        email = user.email 
+        msg = 'Alerta de login.Registramos um novo login em sua conta no EconomizAqui. Caso não tenha sido você, favor redefinir sua senha!'
+        self.notify(msg, email)
 
-        sent = send_mail(
-            'Alerta de login',
-            'Registramos um novo login em sua conta no EconomizAqui. '
-            + 'Caso não tenha sido você, favor redefinir sua senha.',
-            'economizaqui@email.com',
-            [email],
-        )
+    def notify(self, texto, email):
+        email_to = ['noreplayfiscae@gmail.com']
+        subject = 'Login detectado'
+        mensagem = MIMEText(texto)
+        mensagem.set_charset('utf-8')
+        mensagem['Subject'] = subject
+        mail = smtplib.SMTP('smtp.gmail.com', 587)
+        mail.ehlo()
+        mail.starttls()
+        mail.login('noreplayfiscae@gmail.com', 'fiscaeunb')
+        mail.sendmail('noreplayfiscae@gmail.com', email, mensagem.as_string())
 ```
 
-Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/commit/a7747e8d00846bc6f546dbb48973961871bed460) no repositório.
+Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/blob/development/users/services.py) no repositório.
