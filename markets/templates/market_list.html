@@ -1,0 +1,34 @@
+<h1>Mercados</h1>
+
+<table border="1">
+<thead>
+    <tr>
+    <th>Nome</th>
+    <th>Visualizar</th>
+    <th>Editar</th>
+    <th>Excluir</th>
+    </tr>
+</thead>
+<tbody>
+    <form method="post">{% csrf_token %}
+        {% for field in form.visible_fields %}
+          {{ field }}
+          {{ field.help_text }}
+        {% endfor %}
+        <input type="submit" value="Ok" />
+    </form>
+    <br>
+    <br>
+    {% for market in markets %}
+    <tr>
+    <td>{{ market.name }}</td>
+    <td><a href="{% url "market_view" market.id %}">visualizar</a></td>
+    <td><a href="{% url "market_edit" market.id %}">editar</a></td>
+    <td><a href="{% url "market_delete" market.id %}">excluir</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+
+<p><a href="{% url 'market_new' %}">Novo</a></p>
+<p><a href="{% url 'home_page' %}">Página inicial</a></p>

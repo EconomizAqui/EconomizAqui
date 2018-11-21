@@ -37,3 +37,6 @@ def list_users(request):
 
     return render(request, 'list_users.html', {'users': users})
 
+def index(request):
+    return render(request, 'index.html', {})
+

@@ -32,12 +32,14 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'markets',
     'users',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'star_ratings',
     'products',
 ]
 
@@ -56,6 +58,8 @@ ROOT_URLCONF = 'economizaqui.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'markets/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'users/templates')],
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,3 +132,7 @@ LOGOUT_REDIRECT_URL = 'home_page'
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+
+TEMPLATE_CONTEXT_PROCESSORS = [
+    'django.core.context_processors.request',
+]

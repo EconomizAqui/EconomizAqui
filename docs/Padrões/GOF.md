@@ -1,6 +1,7 @@
 Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
 31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
+19/11/2018 | 2.0 | Adição de seção de seção Referências e seção sobre GOF Strategy  | Amanda Bezerra
 21/11/2018 | 1.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
 
 
@@ -64,6 +65,12 @@ def notify(user, **kwarg):
 
 O módulo de envio de e-mail é atualizado e dispara um e-mail para o usuário referente ao <i>user</i> que o alertou.
 ```Python
+class EventHandler(metaclass=abc.ABCMeta):
+    @abc.abstractmethod
+    def update(self, user):
+        pass
+
+ class NotificationEmailSender(EventHandler):
 class NotificationEmailSender(EventHandler):
     def update(self, user):
         email = user.email 
@@ -83,4 +90,72 @@ class NotificationEmailSender(EventHandler):
         mail.sendmail('noreplayfiscae@gmail.com', email, mensagem.as_string())
 ```
 
+Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/commit/a7747e8d00846bc6f546dbb48973961871bed460) no repositório.
+
+## Strategy
+<p align="justify">
+É um padrão GOF comportamental que tem como objetivo definir uma família de algoritmos que podem variar de forma independente. Este padrão melhora a manutenção do código e ajuda a gerenciar toda complexidade exigida pelas lógicas condicionais.
+</p>
+
+### Estrutura genérica
+![](https://sourcemaking.com/files/v2/content/patterns/Strategy1.png)
+
+### Utilização no projeto EconomizAqui
+<p align="justify">
+O projeto possui uma lista de mercados cadastrados que podem ser ordenadas de acordo com alguns critérios, sendo eles: por ordem alfabética (de "A a Z" e de "Z a A") e por avaliação (melhores avaliados e piores avaliados). 
+</p>
+<p align="justify">
+Para ordenar esta lista de mercados podem ser utilizados vários algoritmos, assim, encontrou-se uma oportunidade para aplicar o padrão <i>Strategy</i>, visto que uma família de algoritmos seria definida.
+</p>
+<p align="justify">
+Dada as peculiaridades da linguaguem Python, bem como certas limitações em relação à utilização do framework Django e sua arquitetura MTV, algumas adaptações na solução proposta pelo <i>Strategy</i> tiveram que ser feitas.
+</p>
+
+#### Implementação
+
+<p align="justify">Na maioria das linguagens de programação, o padrão Strategy é implementado através da criação de uma interface ou classe abstrata base e a partir desta subclasses são criadas implementações concretas das Strategys, porém, a linguagem Python suporta funções de ordem superior que podem ser utilizadas para simplificar a implementação deste padrão.</p>
+
+<p align="justify">Em Python, funções são tratadas como objetos de primeira classe, permitindo que, por exemplo, uma função possa ter uma ou mais funções como argumentos, permitindo assim que o padrão Strategy seja implementado de modo que uma única classe seja criada e sejam injetadas funções em suas instâncias.</p>
+
+Uma classe contém as implementações das variações de algoritmos como funções:
+```Python
+class MarketSorter:  
+    def __init__(self, func=None):
+        self.queryset = list(Market.objects.all())
+        if func is not None:
+            self.sort = types.MethodType(func, self)
+    def sort(self):
+        return self.queryset
+    def sort_by_name_ascending(self):
+        return Market.objects.order_by('name')
+    # ...
+    def sort_by_rating_descending(self):
+        return Market.objects.filter(ratings__isnull=False).order_by('ratings__average')
+```
+
+<p align="justify">Um <i>form</i> do Django é responsável por capturar a opção desejada pelo usuário, que representa o critério a partir do qual ele quer que a lista de mercados seja ordenada. De acordo com a opção, um dos algoritmos da classe <i>MarketSorter</i> é escolhido e então a função <i>sort()</i> é chamada para ordenar a lista de acordo com o algoritmo escolhido.</p>
+
+```Python
+if form.is_valid():
+    choice = form.cleaned_data['choice']
+    if choice == 'nomeAz':
+        sorter = MarketSorter(MarketSorter.sort_by_name_ascending)
+    elif choice == 'nomeZa':
+        sorter = MarketSorter(MarketSorter.sort_by_name_descending)
+    elif choice == 'avaliacaoMelhores':
+        sorter = MarketSorter(MarketSorter.sort_by_rating_ascending)
+    elif choice == 'avaliacaoPiores':
+        sorter = MarketSorter(MarketSorter.sort_by_rating_descending)
+    markets = sorter.sort()
+```
+
+Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/commit/284dadc78abfcebefbc5413efc870fb3d5721a28) no repositório.
+
+
+## Referências
++ [Observer Design Pattern](https://sourcemaking.com/design_patterns/observer)
++ [Abstract Base Classes in Python](http://blog.thedigitalcatonline.com/blog/2016/04/03/abstract-base-classes-in-python/)
++ [Strategy Design Pattern](https://sourcemaking.com/design_patterns/strategy)
++ [Python Higher Order Functions](https://www.hackerearth.com/pt-br/practice/python/functional-programming/higher-order-functions-and-decorators/tutorial/)
++ [Python Patterns](https://github.com/faif/python-patterns)
 Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/blob/development/users/services.py) no repositório.
