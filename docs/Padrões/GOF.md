@@ -2,7 +2,7 @@ Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
 31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
 19/11/2018 | 2.0 | Adição de seção de seção Referências e seção sobre GOF Strategy  | Amanda Bezerra
-21/11/2018 | 1.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
+21/11/2018 | 2.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
 
 
 # GOF
@@ -70,7 +70,6 @@ class EventHandler(metaclass=abc.ABCMeta):
     def update(self, user):
         pass
 
- class NotificationEmailSender(EventHandler):
 class NotificationEmailSender(EventHandler):
     def update(self, user):
         email = user.email 
