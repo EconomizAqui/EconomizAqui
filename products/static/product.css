@@ -1,0 +1,163 @@
+.card {
+  margin: 20px auto;
+  margin-top: 30px;
+  border: 1px solid #F3FFBD;
+}
+
+.row-margin {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.card-body-background {
+  background: #F3FFBD;
+}
+
+.card-img-top {
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+.card-icon-top {
+    max-height: 25px;
+    margin-top: 20px;
+    margin-right: 4px;
+    /* margin-left: 40px */
+}
+
+/* Name and Category */
+.card-title {
+    /* align-self: center; */
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Play', sans-serif;
+    margin-left: 10px;
+}
+
+/* Price */
+.card-text {
+  margin-bottom: 0px;
+  font-size: 30px;
+  color: #A30F36;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Play', sans-serif; */
+  font-family: 'Merienda', cursive;
+  margin-left: 10px;
+}
+
+.card-body {
+  padding-bottom: 0;
+  padding-top: 10px;
+  padding-left: 0px;
+}
+
+/* Description */
+.text-muted {
+  font-size: 13px;
+  padding: 0px;
+  margin-left: 10px;
+  font-family: 'Play', sans-serif;
+  font-family: 'El Messiri', sans-serif;
+  font-family: 'Merienda', cursive;
+
+}
+
+.product-title {
+  color: #247BA0;
+  font-family: 'Federant', cursive;
+  /* margin-left: 60px; */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.form-group {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.button-color {
+  background: #247BA0;
+  color: white;
+  border: none;
+}
+
+.button-color:hover {
+  background: #1B5C77;
+  color: white;
+  border: none;
+}
+
+.button-color:active {
+  background: #4F8980;
+  color: white;
+  border: none;
+}
+
+customdiv {
+  color: transparent;
+  text-decoration: none;
+}
+
+customdiv:link {
+  color: transparent;
+  border-width: 0px;
+}
+
+customdiv:visited {
+  color: transparent;
+  border-width: 0px;
+}
+
+customdiv:hover {
+  color: transparent;
+  border-width: 0px;
+}
+
+customdiv.card:hover {
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.12);
+}
+
+.img-product {
+  margin: 0 auto;
+  max-width: 370px;
+  max-height: 370px;
+  margin-top: 20px;
+  border: 4px solid #fbffe9;
+
+}
+
+.details-product {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Play', sans-serif;
+  /* font-family: 'Merienda', cursive; */
+  color: #1e617d;
+}
+
+.details-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #A30F36;
+}
+
+.background-product {
+  /* background: #F3FFBD; */
+  margin-top: 20px;
+  height: 480px;
+}
+
+canvas {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 300px;
+  width: 200px;
+  height: 200px;
+}
