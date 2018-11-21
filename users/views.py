@@ -17,12 +17,14 @@ class SignUp(generic.CreateView):
 def settings(request):
     if request.method == 'POST':
         form = CustomUserChangeForm(request.POST, instance=request.user)
+        form2 = CustomUserCreationForm(request.POST, instance=request.user)
         if form.is_valid():
             request.user = form.save()
             return HttpResponseRedirect(reverse('home_page'))
     else:
         form = CustomUserChangeForm(instance=request.user)
-    return render(request, 'settings.html', {'form': form})
+        form2 = CustomUserCreationForm(request.POST, instance=request.user)
+    return render(request, 'settings.html', {'form': form, 'form2' : form2})
 
 
 def delete_user(request):
@@ -39,4 +41,3 @@ def list_users(request):
 
 def index(request):
     return render(request, 'index.html', {})
-
