@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 AUTH_USER_MODEL = 'users.CustomUser'
-LOGIN_REDIRECT_URL = 'home_page'
+LOGIN_REDIRECT_URL = 'products'
 LOGOUT_REDIRECT_URL = 'home_page'
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
