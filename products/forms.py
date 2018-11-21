@@ -1,5 +1,30 @@
 from django import forms
 from .models import Product
+from .models import Historic
+
+class HistoricForm (forms.ModelForm):
+    price = forms.CharField(
+        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o preço do produto.'},
+        widget=forms.TextInput(
+            attrs={
+                'class' : 'form-control',
+                'placeholder' : 'Preço',
+            }
+        )
+    )
+    commerce = forms.CharField(
+        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o comércio do produto.'},
+        widget=forms.TextInput(
+            attrs={
+                'class' : 'form-control',
+                'placeholder' : 'Comércio',
+            }
+        )
+    )
+    class Meta:
+        model = Historic
+        fields = ['price', 'commerce']
+
 
 class ProductForm(forms.ModelForm):
     name = forms.CharField(
@@ -38,24 +63,6 @@ class ProductForm(forms.ModelForm):
             }
         )
     )
-    commerce = forms.CharField(
-        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o comércio do produto.'},
-        widget=forms.TextInput(
-            attrs={
-                'class' : 'form-control',
-                'placeholder' : 'Comércio',
-            }
-        )
-    )
-    price = forms.CharField(
-        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o preço do produto.'},
-        widget=forms.TextInput(
-            attrs={
-                'class' : 'form-control',
-                'placeholder' : 'Preço',
-            }
-        )
-    )
     photo = forms.CharField(
         error_messages={'required': 'Este campo é obrigatório! Preencha este campo com a url da imagem do produto.'},
         widget=forms.TextInput(
@@ -67,4 +74,4 @@ class ProductForm(forms.ModelForm):
     )
     class Meta:
         model = Product
-        fields = ['name', 'brand', 'description', 'category', 'commerce', 'price', 'photo']
+        fields = ['name', 'brand', 'description', 'category', 'photo']

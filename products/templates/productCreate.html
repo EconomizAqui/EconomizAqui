@@ -10,51 +10,63 @@
 <form method="POST" role="form" novalidate>
   {% csrf_token %}
   <br style="clear:both">
-
+  {% if form_product%}
   <div class="form-group">
+    Nome:
     <small class="text-danger">
-      {{ form.name.errors.as_text }}
+      {{ form_product.name.errors.as_text }}
     </small>
-    {{ form.name }}
+    {{ form_product.name }}
   </div>
   <div class="form-group">
+    Marca:
     <small class="text-danger">
-      {{ form.brand.errors.as_text}}
+      {{ form_product.brand.errors.as_text}}
     </small>
-    {{ form.brand }}
+    {{ form_product.brand }}
   </div>
   <div class="form-group">
+    Decrição:
     <small class="text-danger">
-      {{ form.description.errors.as_text}}
+      {{ form_product.description.errors.as_text}}
     </small>
-    {{ form.description}}
+    {{ form_product.description}}
   </div>
   <div class="form-group">
+    Categoria:
     <small class="text-danger">
-      {{ form.category.errors.as_text}}
+      {{ form_product.category.errors.as_text}}
     </small>
-    {{ form.category}}
+    {{ form_product.category}}
   </div>
   <div class="form-group">
+    Url da foto:
     <small class="text-danger">
-      {{ form.commerce.errors.as_text}}
+      {{ form_product.photo.errors.as_text}}
     </small>
-    {{ form.commerce }}
+    {{ form_product.photo }}
+  </div>
+  {% endif %}
+  {% if form_historic %}
+  <div class="form-group">
+    Comércio:
+    <small class="text-danger">
+      {{ form_historic.commerce.errors.as_text}}
+    </small>
+    {{ form_historic.commerce }}
   </div>
   <div class="form-group">
+    Preço:
     <small class="text-danger">
-      {{ form.price.errors.as_text}}
+      {{ form_historic.price.errors.as_text}}
     </small>
-    {{ form.price}}
+    {{ form_historic.price}}
   </div>
-  <div class="form-group">
-    <small class="text-danger">
-      {{ form.photo.errors.as_text}}
-    </small>
-    {{ form.photo }}
-  </div>
-  <div class="align-button">
+  {% endif %}
+  <div class="align-center">
     <button type="submit" id="submit" name="submit" class="btn button-color">Enviar Mensagem</button>
   </div>
+  {{ form_product.historic.errors.as_text}}
+
 </form>
 {% endblock %}
