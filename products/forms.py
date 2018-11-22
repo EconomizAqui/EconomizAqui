@@ -4,8 +4,6 @@ from .models import Historic
 from markets.models import Market
 
 class HistoricForm (forms.ModelForm):
-    emptyField = [('', '----------')]
-    commerces = emptyField + [(cod_commerce.pk, cod_commerce.name) for cod_commerce in Market.objects.all()]
     price = forms.CharField(
         error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o preço do produto.'},
         widget=forms.TextInput(
@@ -15,14 +13,17 @@ class HistoricForm (forms.ModelForm):
             }
         )
     )
-    cod_commerce = forms.ChoiceField(
-                            widget=forms.Select(
-                                attrs={
-                                    'class' : 'form-control',
-                                }
-                            ),
-                            choices= commerces,
-                            )
+    cod_commerce = forms.ChoiceField()
+
+    def __init__(self, user, *args, **kwargs):
+        emptyField = [('', '----------')]
+        commerces = emptyField + [(cod_commerce.pk, cod_commerce.name) for cod_commerce in Market.objects.all()]
+        super(HistoricForm, self).__init__(*args, **kwargs)
+        self.fields['cod_commerce'] = forms.ChoiceField(
+            choices= commerces
+        )
+        self.fields['cod_commerce'].widget.attrs['class'] = 'form-control'
+
     class Meta:
         model = Historic
         fields = ('price', 'cod_commerce')
