@@ -16,6 +16,20 @@
     <a href="{% url 'listProducts' %}">
       <img id="logo" src="{% static "logo_economiza_aqui.png" %}"/>
     </a>
+    <div class="nav-item dropdown" style="padding-left: 25px">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Opções
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{% url 'listProducts' %}">Produtos</a>
+        <a class="dropdown-item" href="{% url 'market_list' %}">Mercados</a>
+        {% if user.is_authenticated %}
+        <a class="dropdown-item" href="{% url 'settings' %}">Configurações</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="{% url 'logout' %}">Sair</a>
+        {% endif %}
+      </div>
+    </div>
   </nav>
   <div class="">
     {% block body %}{% endblock %}

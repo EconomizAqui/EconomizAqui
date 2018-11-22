@@ -20,7 +20,7 @@ def settings(request):
         form2 = CustomUserCreationForm(request.POST, instance=request.user)
         if form.is_valid():
             request.user = form.save()
-            return HttpResponseRedirect(reverse('home_page'))
+            return HttpResponseRedirect(reverse('login'))
     else:
         form = CustomUserChangeForm(instance=request.user)
         form2 = CustomUserCreationForm(request.POST, instance=request.user)

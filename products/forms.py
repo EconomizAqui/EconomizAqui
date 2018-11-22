@@ -23,7 +23,7 @@ class HistoricForm (forms.ModelForm):
             choices= commerces
         )
         self.fields['cod_commerce'].widget.attrs['class'] = 'form-control'
-        self.fields['cod_commerce'].error_messages['required'] = 'Este campo é obrigatório! Preencha este campo com o comércio do produto.'
+        self.fields['cod_commerce'].error_messages['required'] = 'Este campo é obrigatório! Preencha este campo com o mercado do produto.'
 
     class Meta:
         model = Historic
