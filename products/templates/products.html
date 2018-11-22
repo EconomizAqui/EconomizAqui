@@ -2,9 +2,11 @@
 <!-- <div class="row"> -->
 <!-- <div class="col-3 col-line"> -->
 <div class="row">
-  <a class="product-title" href="{% url 'createProduct' %}">
-    <img class="product-title card-icon-top" src="/static/new_product.png"/>
-  </a>
+  {% if user.is_authenticated %}
+    <a class="product-title" href="{% url 'createProduct' %}">
+      <img class="product-title card-icon-top" src="/static/new_product.png"/>
+    </a>
+  {% endif %}
 </div>
 <div class="row">
   <h1 class="product-title">Produtos</h1>
@@ -28,9 +30,11 @@
         <h6 class="card-title">{{ product.name }}</h6>
       </div>
       <div class="col-4">
-        <a class="" href="{% url 'updateProduct' product.id %}">
-          <img class="card-icon-top" src="/static/edit.png"/>
-        </a>
+        {% if user.is_authenticated %}
+          <a class="" href="{% url 'updateProduct' product.id %}">
+            <img class="card-icon-top" src="/static/edit.png"/>
+          </a>
+        {% endif %}
         <a class="" href="{% url 'newPrice' product.id %}">
           <img class="card-icon-top" src="/static/price.png"/>
         </a>

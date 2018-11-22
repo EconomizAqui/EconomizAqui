@@ -1,9 +1,11 @@
 {% extends 'base.html' %} {% block body %}
 
   <div class="row">
-    <a class="product-title" href="{% url 'market_new' %}">
-      <img class="product-title card-icon-top" src="/static/new_product.png"/>
-    </a>
+    {% if user.is_authenticated %}
+      <a class="product-title" href="{% url 'market_new' %}">
+        <img class="product-title card-icon-top" src="/static/new_product.png"/>
+      </a>
+    {% endif %}
   </div>
   <div class="row">
     <h1 class="product-title">Mercados</h1>
@@ -32,9 +34,11 @@
           <h6 class="card-title">{{ market.name }}</h6>
         </div>
         <div class="col-4">
-          <a class="" href="{% url 'market_edit' market.id %}">
-            <img class="card-icon-top" src="/static/edit.png"/>
-          </a>
+            {% if user.is_authenticated %}
+              <a class="" href="{% url 'market_edit' market.id %}">
+                <img class="card-icon-top" src="/static/edit.png"/>
+              </a>
+            {% endif %}
         </div>
       </div>
     </customdiv>
