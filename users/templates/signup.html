@@ -1,12 +1,16 @@
-{% extends 'users_base.html' %}
-
+{% extends 'base.html' %}
 {% block title %}Criar conta{% endblock %}
 
-{% block content %}
-<h2>Criar conta</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Confirmar</button>
-</form>
+
+{% block body %}
+<div class="row justify-content-around center-block no-margin">
+  <div class="col-md-16 float-md-left" id="formulario">
+    <h2>Registrar</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Confirmar</button>
+    </form>
+  </div>
+</div>
 {% endblock %}

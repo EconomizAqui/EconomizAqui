@@ -1,0 +1,114 @@
+/*.container{
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;
+  background-image: url('background.png');
+  width: 100%;
+}*/
+
+/*#telaComputador{
+  position: relative;
+  max-height: 60%;
+  max-width: 50%;
+  left: 50%;
+}*/
+
+.white-shadow {
+  color: white;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.parallax {
+    background-image: url("background.png");
+    height: auto;
+
+    /* Parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.white-description {
+  color: #EFF3F5;
+  text-align: justify;
+}
+
+#computador{
+  width: 80%;
+  height: 80%;
+}
+
+#loginComponent {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#registerComponent {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+#sectionParallax {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 69, 89, 0.9);
+}
+
+#sectionBlue {
+  background: #b3dced;
+  background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+  background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+  background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 );
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sectionDark {
+  background-color: #0C2C39;
+}
+
+#footer {
+  background-color: #01161E;
+  margin: 0;
+  padding: 1.5em 0;
+  color: #598392;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#pills-tab {
+  margin: 0;
+}
+
+#loginRegisterComponent {
+  max-width: 22em;
+}
+
+.nav-link {
+  color: #8B9598;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+}
+
+.nav-link:hover {
+  color: #8B9598;
+  border-bottom: 0.25em solid #CAD5D9;
+  transition: border .3s ease;
+}
+
+.nav-link.active {
+  color: #5D6A6F;
+  border-bottom: 0.25em solid #86B1B1;
+}
+
+#informacoesForms{
+  color: #598392;
+  text-align: justify;
+}
