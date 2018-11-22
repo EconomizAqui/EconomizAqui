@@ -5,7 +5,13 @@
     <h2>Configurações de conta</h2>
     <form method="post">
       {% csrf_token %}
-      {{ form.as_p }}
+      Username:
+      {{ form.username }}
+      E-mail:
+      {{ form.email }}
+      Nome:
+      {{ form.name }}
+      <p></p>
       <button type="submit">Atualizar</button>
       <p></p>
       <p><a href="{% url 'delete_user' %}">Excluir conta</a></p>
