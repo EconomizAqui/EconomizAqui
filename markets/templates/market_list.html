@@ -1,34 +1,44 @@
-<h1>Mercados</h1>
+{% extends 'base.html' %} {% block body %}
 
-<table border="1">
-<thead>
-    <tr>
-    <th>Nome</th>
-    <th>Visualizar</th>
-    <th>Editar</th>
-    <th>Excluir</th>
-    </tr>
-</thead>
-<tbody>
+  <div class="row">
+    <a class="product-title" href="{% url 'market_new' %}">
+      <img class="product-title card-icon-top" src="/static/new_product.png"/>
+    </a>
+  </div>
+  <div class="row">
+    <h1 class="product-title">Mercados</h1>
+  </div>
+  <div class="row">
+    <p class="product-title">{{markets.count}} resultados</p>
+  </div>
+  <div class="row" style="display: flex; justify-content: flex-end;">
     <form method="post">{% csrf_token %}
-        {% for field in form.visible_fields %}
-          {{ field }}
-          {{ field.help_text }}
-        {% endfor %}
-        <input type="submit" value="Ok" />
+      <div class="form-inline" style="margin-left:auto; margin-right:50;">
+        <div>{{ form.choice }}</div>
+        <div style="padding: 8px"><input type="submit" class="btn btn-info btn-sm" value="Ok" /></div>
+      </div>
     </form>
-    <br>
-    <br>
+  </div>
+  <div class="row justify-content row-margin">
     {% for market in markets %}
-    <tr>
-    <td>{{ market.name }}</td>
-    <td><a href="{% url "market_view" market.id %}">visualizar</a></td>
-    <td><a href="{% url "market_edit" market.id %}">editar</a></td>
-    <td><a href="{% url "market_delete" market.id %}">excluir</a></td>
-    </tr>
-    {% endfor %}
-</tbody>
-</table>
+    <customdiv class="card card-customization" style="width: 16rem;">
+      <div class="row">
+        <a class="card-img-top" href="{% url 'market_view' market.id %}">
+        <img class="card-img-top" src="{{market.photo}}" alt="Card image cap">
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <h6 class="card-title">{{ market.name }}</h6>
+        </div>
+        <div class="col-4">
+          <a class="" href="{% url 'market_edit' market.id %}">
+            <img class="card-icon-top" src="/static/edit.png"/>
+          </a>
+        </div>
+      </div>
+    </customdiv>
+  {% endfor %}
+</div>
 
-<p><a href="{% url 'market_new' %}">Novo</a></p>
-<p><a href="{% url 'home_page' %}">Página inicial</a></p>
+{% endblock %}
