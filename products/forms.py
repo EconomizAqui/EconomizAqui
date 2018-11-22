@@ -1,8 +1,11 @@
 from django import forms
 from .models import Product
 from .models import Historic
+from markets.models import Market
 
 class HistoricForm (forms.ModelForm):
+    emptyField = [('', '----------')]
+    commerces = emptyField + [(cod_commerce.pk, cod_commerce.name) for cod_commerce in Market.objects.all()]
     price = forms.CharField(
         error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o preço do produto.'},
         widget=forms.TextInput(
@@ -12,18 +15,17 @@ class HistoricForm (forms.ModelForm):
             }
         )
     )
-    commerce = forms.CharField(
-        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o comércio do produto.'},
-        widget=forms.TextInput(
-            attrs={
-                'class' : 'form-control',
-                'placeholder' : 'Comércio',
-            }
-        )
-    )
+    cod_commerce = forms.ChoiceField(
+                            widget=forms.Select(
+                                attrs={
+                                    'class' : 'form-control',
+                                }
+                            ),
+                            choices= commerces,
+                            )
     class Meta:
         model = Historic
-        fields = ['price', 'commerce']
+        fields = ('price', 'cod_commerce')
 
 
 class ProductForm(forms.ModelForm):
