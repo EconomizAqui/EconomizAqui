@@ -161,3 +161,14 @@ canvas {
   width: 200px;
   height: 200px;
 }
+
+.fa-clickable-like:hover{
+  background: #64AE46;
+  color: white;
+  border: none;
+}
+.fa-clickable-dislike:hover{
+  background: #B9282B;
+  color: white;
+  border: none;
+}
