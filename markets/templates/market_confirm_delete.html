@@ -1,6 +1,15 @@
-<h1>Excluir Mercado</h1>
-<form method="post">{% csrf_token %}
-    Tem certeza que deseja excluir "{{ object }}" ?
-    <input type="submit" value="Sim" />
-    <p><a href="{% url 'market_list' %}">Voltar</a></p>
-</form>
+{% extends 'base.html' %} {% block body %}
+
+	<div class="col-4">
+    <p><a href="{% url 'market_list' %}" class="btn btn-info btn-sm">
+      Voltar
+    </a></p>
+  </div>
+
+	<h2>Excluir Mercado</h2>
+	<form method="post">{% csrf_token %}
+			Tem certeza que deseja excluir "{{ object }}" ?
+			<input type="submit" value="Sim" />
+	</form>
+
+{% endblock %}
