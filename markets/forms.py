@@ -4,9 +4,25 @@ from .models import Market
 
 
 class MarketForm(ModelForm):
+    name = forms.CharField(
+        widget=forms.TextInput(
+            attrs={
+                'class' : 'form-control',
+                'placeholder' : 'Nome',
+            }
+        )
+    )
+    photo = forms.CharField(
+        widget=forms.TextInput(
+            attrs={
+                'class' : 'form-control',
+                'placeholder' : 'Url da foto',
+            }
+        )
+    )
     class Meta:
         model = Market
-        fields = ['name']
+        fields = ['name', 'photo']
 
 
 class SortOptionForm(forms.Form):
