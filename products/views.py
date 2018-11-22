@@ -26,13 +26,11 @@ def view(request, id):
 
 def list_products(request):
     products = Product.objects.all()
-    for historico in products.last().historic.all():
-        print("PREÇO", historico.price)
     return render(request, 'products.html', {"products": products})
 
 def create_product(request):
     form_product = ProductForm(request.POST or None)
-    form_historic = HistoricForm(request.POST or None)
+    form_historic = HistoricForm(request.POST or None, data=request.POST or None)
     if form_product.is_valid() and form_historic.is_valid():
         commerce = Market.objects.all().get(id = request.POST['cod_commerce'])
         historico = Historic.objects.create(price = request.POST['price'], commerce = commerce)
