@@ -3,88 +3,7 @@
 
 
 {% block body %}
-<div>
-  <div class="image-background">
-    <div id="sectionBlue">
-      <div class="row justify-content-around center-block no-margin">
-        <div class="col-md-4 align-self-center">
-          <h1>EconomizaAqui</h1>
-          <p class="white-description">
-            Faça compras inteligentes,
-             monte sua lista de compras e
-              encontre o local ideal para seu bolso!
-          </p>
-        </div>
-
-        <div class="card" id="loginRegisterComponent">
-          <ul class="nav justify-content-around" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active text-info" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-expanded="true">Log In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-info" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-expanded="true">Register</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
-              <form method="post">
-                {% csrf_token %}
-                {{ form2.as_p }}
-                <button type="submit">Entrar</button>
-                <p><a id="informacoesForms" href="{% url 'password_reset' %}">Esqueci a senha</a></p>
-                <p><a id="informacoesForms" href="{% url 'signup' %}">Criar conta</a></p>
-              </form>
-            </div>
-            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
-              <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Confirmar</button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-    <div class="parallax">
-      <div class="row justify-content-around center-block no-margin" id="sectionParallax">
-
-        <div class="col-md-12 align-self-center" align="center">
-          <img src="../static/tela.png" class="img-fluid" width="500em" alt="EconomizaAqui" id="computador" />
-        </div>
-      </div>
-    </div>
-
-  <div class="" id="sectionDark">
-    <div class="row justify-content-around no-margin">
-      <div class="col-sm-5 align-self-center" align="center">
-        <img src="../static/logo_economiza_aqui.png" class="img-fluid" width="400em" alt="EconomizaAqui" id="Logo" />
-      </div>
-
-      <div class="col-sm-6 align-self-center">
-        <h1>Software Livre</h1>
-          <p class="white-description">
-            EconomizAqui é um projeto de software livre, isso significa que você pode usar, baixar nosso código fonte e utiliza-lo como quiser! Sinta-se livre para contribuir e ajudar a comunidade também!
-          </p>
-      </div>
-
-    </div>
-  </div>
-  <div class="card-footer" id="footer">
-    <a>
-      Copyright (c) 2018 EconomizaAqui - UnB-FGA Segundo Semestre de 2018
-    </a>
-  </div>
-</div>
-{% endblock %}
-
-
-
-
-<!-- <div class="row justify-content-around center-block no-margin">
+<div class="row justify-content-around center-block no-margin">
   <div class="col-md-16 float-md-left" id="formulario">
     <h2>Registrar</h2>
     <form method="post">
@@ -92,6 +11,6 @@
       {{ form.as_p }}
       <button type="submit">Confirmar</button>
     </form>
-
   </div>
-</div> -->
+</div>
+{% endblock %}
