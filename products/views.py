@@ -53,7 +53,7 @@ def update_product(request, id):
 
 def new_price(request, id):
     product = Product.objects.get(id=id)
-    form_historic = HistoricForm(request.POST or None)
+    form_historic = HistoricForm(request.POST or None, data=request.POST or None)
     if form_historic.is_valid():
         commerce = Market.objects.all().get(id = request.POST['cod_commerce'])
         historico = Historic.objects.create(price = request.POST['price'], commerce = commerce)
