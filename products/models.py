@@ -1,9 +1,10 @@
 from django.db import models
+from markets.models import Market
 
 class Historic (models.Model):
     price = models.DecimalField(max_digits=9, decimal_places=2)
     date = models.DateTimeField(auto_now_add=True)
-    commerce = models.CharField(max_length=50)
+    commerce = models.ForeignKey('markets.Market', models.DO_NOTHING)
 
     def _self_(self):
         return self.price
