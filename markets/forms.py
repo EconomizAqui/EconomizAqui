@@ -5,6 +5,7 @@ from .models import Market
 
 class MarketForm(ModelForm):
     name = forms.CharField(
+        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o nome do mercado.'},
         widget=forms.TextInput(
             attrs={
                 'class' : 'form-control',
@@ -13,6 +14,7 @@ class MarketForm(ModelForm):
         )
     )
     photo = forms.CharField(
+        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com a url da imagem do mercado.'},
         widget=forms.TextInput(
             attrs={
                 'class' : 'form-control',
