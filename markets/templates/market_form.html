@@ -1,7 +1,29 @@
-<h1>Editar Mercado</h1>
-<form method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Salvar" />
-</form>
-<p><a href="{% url 'market_list' %}">Lista de Mercados</a></p>
-<p><a href="{% url 'home_page' %}">Página inicial</a></p>
+{% extends 'base.html' %} {% block body %}
+
+  <div class="col-4">
+    <p><a href="{% url 'market_list' %}" class="btn btn-info btn-sm">
+      Voltar
+    </a></p>
+  </div>
+
+  <div class="row">
+    <h1 class="product-title">{{method}} Mercado</h1>
+  </div>
+
+  <form method="POST" role="form" novalidate>
+    {% csrf_token %}
+    <br style="clear:both">
+    <div class="form-group">
+      Nome:
+      {{ form.name }}
+    </div>
+    <div class="form-group">
+      Url da foto:
+      {{ form.photo }}
+    </div>
+    <div class="align-center">
+      <button type="submit" id="submit" name="submit" class="btn button-color">Salvar</button>
+    </div>
+  </form>
+
+{% endblock %}
