@@ -26,10 +26,13 @@
             <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
               <form method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Entrar</button>
-                <p><a id="informacoesForms" href="{% url 'password_reset' %}">Esqueci a senha</a></p>
-                <p><a id="informacoesForms" href="{% url 'signup' %}">Criar conta</a></p>
+                <div class="infoForm">Usuário:</div> {{form.username}}<br>
+                <div class="infoForm">Senha:</div> {{form.password}}<br>
+                <div class="align-center margin-button">
+                  <button type="submit" id="submit" name="submit" class="btn button-color button-login">Entrar</button>
+                </div>
+                <p class="infoForms infoForm"><a id="informacoesForms" href="{% url 'password_reset' %}">Esqueci a senha</a></p>
+                <p class="infoForms infoForm"><a id="informacoesForms" href="{% url 'signup' %}">Criar conta</a></p>
               </form>
             </div>
           </div>
@@ -72,8 +75,16 @@
 {% endblock %}
 
 
+{% block scripts %}
+<script>
+  $( document ).ready(function() {
+    $('#id_username').addClass('form-control');
+    $('#id_password').addClass('form-control');
+  });
+</script>
 
 
+{% endblock %}
 <!-- <div class="row justify-content-around center-block no-margin">
   <div class="col-md-16 float-md-left" id="formulario">
     <h2>Registrar</h2>
