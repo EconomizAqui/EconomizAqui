@@ -4,6 +4,7 @@ Data | Versão | Descrição | Responsáveis
 19/11/2018 | 2.0 | Adição de seção de seção Referências e seção sobre GOF Strategy  | Amanda Bezerra
 21/11/2018 | 2.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
 23/11/2018 | 2.2 | Implementação do Padrão State | Mateus de Oliveira, Matheus Roberto e Vinicius Cantuária
+23/11/2018 | 2.3 | Adição do Padrão Factory | Mateus de Oliveira e Matheus Roberto
 
 
 # GOF
@@ -221,6 +222,47 @@ HTML
 ```
 
 Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/commit/7516a9c0010144edb065b5311b2cb764a98042e4) no repositório.
+
+## Factory
+<p align="justify">
+É um padrão GOF criacional que define uma interface para criar um objeto, mas deixa que as subclasses decidam quais classes instanciar.</p>
+
+### Estrutura genérica
+![](https://sourcemaking.com/files/v2/content/patterns/Factory_Method.png)
+
+### Utilização no projeto EconomizAqui
+<p align="justify">
+O projeto é desenvolvido utilizando o <i>Framework</i> Django da linguagem Python, e o mesmo possui um módulo de Forms no qual é responsável por definir os campos necessários para que seja construido um objeto
+</p>
+
+#### Implementação
+
+<p align="justify">O modulo <i>Forms</i> de Produtos é responsável por definir os campos de entrada de dado de um usuário, ou seja os atributo necessários para a instanciação de um determinado objeto</p>
+
+```Python
+class HistoricForm (forms.ModelForm):
+    price = forms.CharField(
+        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o preço do produto.'},
+        widget=forms.TextInput(
+            attrs={
+                'class' : 'form-control',
+                'placeholder' : 'Preço',
+            }
+        )
+    )
+    cod_commerce = forms.ChoiceField()
+```
+
+<p align="justify">A classe meta define qual a model que sera utilizada na construção do formulario, e os fields definem os campos necessários para a construção de um objeto deste tipo.</p>
+
+```Python
+    class Meta:
+        model = Historic
+        fields = ('price', 'cod_commerce')
+```}
+```
+
+Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/blob/development/products/forms.py) no repositório.
 
 
 ## Referências
