@@ -3,9 +3,10 @@ Data | Versão | Descrição | Responsáveis
 31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
 19/11/2018 | 2.0 | Adição de seção de seção Referências e seção sobre GOF Strategy  | Amanda Bezerra
 21/11/2018 | 2.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo, Mateus de Oliveira e Matheus Roberto
-23/11/2018 | 2.2 | Implementação do Padrão State | Eduardo, Mateus de Oliveira, Matheus Roberto e Vinicius Cantuária
-23/11/2018 | 2.3 | Adição do Padrão Factory | Eduardo, Mateus de Oliveira e Matheus Roberto
-23/11/2018 | 2.4 | Adição do Padrão Facade | Eduardo, Mateus de Oliveira, Matheus Roberto e Vinícius Cantuária
+23/11/2018 | 2.2 | Implementação do Padrão State | Eduardo Júnio, Mateus de Oliveira, Matheus Roberto e Vinicius Cantuária
+23/11/2018 | 2.3 | Adição do Padrão Factory | Eduardo Júnio, Mateus de Oliveira e Matheus Roberto
+23/11/2018 | 2.4 | Adição do Padrão Facade | Eduardo Júnio, Mateus de Oliveira, Matheus Roberto e Vinícius Cantuária
+23/11/2018 | 2.5 | Adição do Padrão Template Method | Eduardo Júnio, Mateus de Oliveira, Matheus Roberto e Vinícius Cantuária
 
 
 # GOF
@@ -333,7 +334,29 @@ urlpatterns = [
     path('delete/<int:pk>', views.market_delete, name='market_delete'),
 ]
 ```
+## Template Method
+Defina o esqueleto de um algoritmo em uma operação, adiando algumas etapas para as subclasses do cliente. Template Method permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo.
 
+### Estrutura Genérica 
+![](https://sourcemaking.com/files/v2/content/patterns/Template_Method.png)
+
+### Utilização no projeto EconomizAqui
+Essa estrutura é utilizada nos forms dos apps da aplicação, onde se define os campos que estarão presentes em determinados formulários.
+
+```
+# users/forms.py
+
+class Meta:
+    model = CustomUser
+    fields = ['username', 'email', 'name', 'password1', 'password2']
+```
+```
+# users/forms.py
+
+class Meta:
+    model = CustomUser
+    fields = ['username', 'email', 'name', 'password']
+```    
 
 ## Referências
 + [Observer Design Pattern](https://sourcemaking.com/design_patterns/observer)
@@ -343,3 +366,4 @@ urlpatterns = [
 + [Python Higher Order Functions](https://www.hackerearth.com/pt-br/practice/python/functional-programming/higher-order-functions-and-decorators/tutorial/)
 + [Python Patterns](https://github.com/faif/python-patterns)
 Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/blob/development/users/services.py) no repositório.
++ [Template Method](https://sourcemaking.com/design_patterns/template_method)
