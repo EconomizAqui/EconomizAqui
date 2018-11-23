@@ -3,6 +3,7 @@ Data | Versão | Descrição | Responsáveis
 31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
 19/11/2018 | 2.0 | Adição de seção de seção Referências e seção sobre GOF Strategy  | Amanda Bezerra
 21/11/2018 | 2.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
+23/11/2018 | 2.2 | Implementação do Padrão State | Mateus de Oliveira e Matheus Roberto
 
 
 # GOF
@@ -150,11 +151,83 @@ if form.is_valid():
 
 Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/commit/284dadc78abfcebefbc5413efc870fb3d5721a28) no repositório.
 
+## State
+<p align="justify">
+É um padrão GOF comportamental que permite um objeto modificar seu comportamento quando seu estado interno vária.</p>
+
+### Estrutura genérica
+![](https://sourcemaking.com/files/v2/content/patterns/State1.png)
+
+### Utilização no projeto EconomizAqui
+<p align="justify">
+O projeto possui diversos produtos nos quais usuários podem informar o preço, para garantir que o preço realmente é válido, os usuários tem a opção de confirmar o preço ou declara-lo incorreto, o preço possui um atributo de pontos de confiabilidade, que aumenta ou diminui de acordo com esta opção do usuário. 
+</p>
+<p align="justify">Para garantir esta confiabilidade, encontrou-se uma oportunidade para aplicar o padrão <i>State</i>, No qual o produto receberia um selo de verificado caso este atributo de pontos estivesse em uma determinada categoria.
+</p>
+
+#### Implementação
+
+<p align="justify">Na classe Historic foi adicionado um campo para guardar seus pontos</p>
+
+```Python
+class Historic (models.Model):
+    price = models.DecimalField(max_digits=9, decimal_places=2)
+    date = models.DateTimeField(auto_now_add=True)
+    commerce = models.ForeignKey('markets.Market', models.DO_NOTHING)
+    points = models.IntegerField(default=0)
+    def _self_(self):
+        return self.price
+```
+
+<p align="justify">A classe <i>View</i> de Produtos é responsável pela realização das operações, que no caso seria o pegar os pontos e adicionar ou subtrair do banco de dados, para assim realizar as decisões posteriores.</p>
+
+```Python
+def view(request, id):
+    product = Product.objects.get(id=id)
+    historic_price = []
+    historic_commerce = []
+    if request.POST:
+        historic = product.historic.last()
+        historic.points += int(request.POST['points'])
+        historic.save()
+
+    point = False
+    for historic in product.historic.all():
+        price = json.dumps(historic.price)
+        historic_price.append(price)
+        historic_commerce.append(historic.commerce.name)
+
+    historic_price = json.dumps(historic_price)
+    historic_commerce = json.dumps(historic_commerce)
+
+    return render(request, 'product.html', {"product": product, "historic_price": historic_price, "historic_commerce": historic_commerce})
+```
+
+<p align="justify">No Template de Produtos o método é chamado através do JS, para assim ser utilizado no HTML após o usuário realizar uma ação de clique no botão, para somar ou subtrair. No HTML também é realizado a decisão se o selo de verificado irá aparecer ou não dependendo da quantidade de pontos daquele determinado produto.</p>
+
+```JS
+function AumentaPontos(valor){
+  var opt= document.getElementById('option_points');
+  opt.value = valor
+  document.getElementById("pointForm").submit();
+}
+HTML
+{% if product.historic.last.points > 9 %}
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-certificate fa-stack-2x" style="color:blue"></i>
+      <i class="fa fa-check fa-stack-1x" style="color:#247BA0"></i>
+    </span>
+    {% endif %}
+```
+
+Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/commit/7516a9c0010144edb065b5311b2cb764a98042e4) no repositório.
+
 
 ## Referências
 + [Observer Design Pattern](https://sourcemaking.com/design_patterns/observer)
 + [Abstract Base Classes in Python](http://blog.thedigitalcatonline.com/blog/2016/04/03/abstract-base-classes-in-python/)
 + [Strategy Design Pattern](https://sourcemaking.com/design_patterns/strategy)
++ [Strategy Design Pattern](https://sourcemaking.com/design_patterns/state)
 + [Python Higher Order Functions](https://www.hackerearth.com/pt-br/practice/python/functional-programming/higher-order-functions-and-decorators/tutorial/)
 + [Python Patterns](https://github.com/faif/python-patterns)
 Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/blob/development/users/services.py) no repositório.
