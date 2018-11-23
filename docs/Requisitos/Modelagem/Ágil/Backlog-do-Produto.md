@@ -32,6 +32,6 @@ Data | Versão | Descrição | Responsáveis
 |  **UC13** | Manter mercado | A funcionalidade de manter mercado estabelece as operações de CRUD, ou seja, criação, leitura, atualização e exclusão de dados relacionados ao objeto que representa a classe de mercado. Nesse sentido, ela define que um usuário poderá criar um mercado e a partir disso adicionar seu local e nome e produtos que este mercado possua |  |  | A |  |
 |  **UC14** | Buscar mercado | Este caso de uso permite ao usuário pesquisar um determinado mercado pelo seu nome |  |  | B |  |
 |  **UC15** | Autenticar mercado | Esta funcionalidade permite que usuários que sejam donos de um mercado confirmem a posse deste, através de documentos, CNPJ, etc |  |  | E |  |
-|  **UC16** | Filtrar mercado por distancia | Esta funcionalidade tem como objetivo filtrar a listagem de mercados através da sua distancia |  |  | D |  |
+|  **UC16** | Filtrar mercado | Esta funcionalidade tem como objetivo filtrar a listagem de mercados |  | Strategy | D |  |
 |  **UC17** | Montar Lista de Compras | Permite ao usuário adicionar e remover produtos em um carrinho de compras, o usuário tera direito a 15 produtos, a não ser que gaste 100 pontos de confiança, neste caso terá direito a adicionar até 100 produtos |  |  | A |  |
 |  **UC18** | Filtrar lista de compras por preço | Esta funcionalidade apresenta para o usuário o mercado mais barato com todos aqueles produtos |  |  | B |  |

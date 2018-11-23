@@ -84,5 +84,5 @@ A visualização lógica do sistema EconomizAqui é composta de 3 pacotes princi
 
 ### Visão de Modelos
 
-![](https://lh4.googleusercontent.com/44vcEzxm1hpR6C8zJxLWDUmUdM_5U1IO9aGqGSQUsyB16S_KB5b32I-QfgM1ZokPX4cB682skiQnG7V1P9bzILjm5cP53WfSMHvonC6HsWZMuzTMcsddEn92FuGBxXcPp5Cmxxwz)
+<a href="https://lh4.googleusercontent.com/44vcEzxm1hpR6C8zJxLWDUmUdM_5U1IO9aGqGSQUsyB16S_KB5b32I-QfgM1ZokPX4cB682skiQnG7V1P9bzILjm5cP53WfSMHvonC6HsWZMuzTMcsddEn92FuGBxXcPp5Cmxxwz"><img src="https://lh4.googleusercontent.com/44vcEzxm1hpR6C8zJxLWDUmUdM_5U1IO9aGqGSQUsyB16S_KB5b32I-QfgM1ZokPX4cB682skiQnG7V1P9bzILjm5cP53WfSMHvonC6HsWZMuzTMcsddEn92FuGBxXcPp5Cmxxwz"></a>
 <i>Figura 3. Diagrama UML das Models utilizadas no projeto.</i>
