@@ -18,9 +18,8 @@ Data | Versão | Descrição | Responsáveis
 ## Versão 2
 
 ### Segurança
-<a href="../../../../imagens/nfr01-Segurança2.jpg"><img src="../../../../imagens/nfr01-Segurança2.jpg"></a>
+<a href="../../../../imagens/nfr-segurança.jpg"><img src="../../../../imagens/nfr-segurança.jpg"></a>
 
 ### Usabilidade
-<a href="../../../../imagens/nfr-usabilidade2.png"><img src="../../../../imagens/nfr-usabilidade2.png"></a>
-
+<a href="../../../../imagens/nfr-usabilidade2.jpg"><img src="../../../../imagens/nfr-usabilidade2.jpg"></a>
 
