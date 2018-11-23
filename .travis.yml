@@ -1,25 +1,22 @@
 sudo: required
 
-language: python
-python:
-  - "3.6.4"
 services:
   - docker
-before_install:
-  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-  - sudo apt-get update
-  - sudo apt-get -y install docker-ce
-  - sudo pip install docker-compose
+
+# before_script:
+#   - docker-compose -f "docker-compose.yml" up -d --build
+
 script:
-  - sudo docker-compose -f docker-compose.yml up --d
+  # - docker exec -it backend python3 manage.py test
+  - docker-compose -f "docker-compose.yml" up -d --build  # Delete this command when uncomment the test command and 
+                                                          # uncomment before_script
 
 after_script:
-  - docker-compose down
+  - docker-compose -f "docker-compose.yml" down --remove-orphans
 
 deploy:
   provider: heroku
   api_key:
     secure: "WbdrlQ9hxnXdtf/r3PtaKSRxFjVp/R1GSJwVPsRlAL13L/psrqcmxkDYvFDL7YU/Kgu+BGYMtghhbJIRKW+crBazsTWy21+x4Hbz1fLtXWTnP4P22sP7tK1e+q9Rz7lvFX1+KkTL2PtMtWqZ/6vofFm9RVrneOC47xAri/J8e/HqQ30fBgDc2ZrWqEMILhFSPSUCOMUTpF9+wXoZF6QHsiKVFcFHL3DGJebYli3IZ+MUREiOF2LQeO6Zgufl0l6zUBvAlMx9Il4bGKTeHcDf5o4uZMyNSjV/s7AcGqcHq1LHHjDl+t/08ThuQ5OpKD87/1k0/FGkh6yQnvaBlqsTMo38SsvwdFE8AdhtaEfxk5JTO/LZ3nEQ8FqQ+yx7U9ZH21y0ZS5YMWhxi0dFqxGkEVD9BorENJLHc/leXIMmkmxN2rKeOQ571P4Wwu70Y/FXdMCtUETT6XQiJ+ojo6KG+XsUWyN7h7CV0M4MS61uy0rKQr8cWpd6E4RBBTvwy8idoeyfDCGaWIA5v1O5LkkxKpZ5tttg4bbAuyg1EFp1N4bKOVl/eNkn27HQ2cZGitdQYzrq2cAIF5hAwhigZi8C98Tsza6o3YgFKmHQXczaSINTsrKyhJ9nQx5FYymKUZpNAxh0j5l1tRSsdmwwNzmHQAuSjRjrk0loy0YT3Dmowkc="
-  app:
-    master: economizaqui
+  on: 
+    branch: development
