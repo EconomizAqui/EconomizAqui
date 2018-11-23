@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect, reverse
 from .models import Product
 from .models import Historic
+from .models import ShoppingList
 from markets.models import Market
 from .forms import ProductForm
 from .forms import HistoricForm
@@ -73,3 +74,33 @@ def new_price(request, id):
 
 def delete_product(request):
     return render(request, 'delete_product.html')
+
+def shopping_list(request):
+    shopping_list = ShoppingList.objects.get(user=request.user) 
+    
+    product_list = shopping_list.products.all()
+
+    total_price = 0
+    total_price = sum(product.historic.last().price for product in product_list)
+
+    return render(
+        request,
+        'shopping_list.html',
+        {'shopping_list': shopping_list, 'product_list': product_list, 'total_price': total_price}
+        )
+
+def add_product_list(request,id):
+    shopping_list = ShoppingList.objects.get(user=request.user)
+    
+    product = Product.objects.get(id=id)
+    shopping_list.products.add(product)
+
+    return HttpResponseRedirect(reverse('shopping_list'))
+
+def remove_product_list(request,id):
+    shopping_list = ShoppingList.objects.get(user=request.user)
+    
+    product = Product.objects.get(id=id)
+    shopping_list.products.remove(product)
+
+    return HttpResponseRedirect(reverse('shopping_list'))
