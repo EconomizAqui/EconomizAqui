@@ -9,6 +9,12 @@
 <div class="row background-product">
   <div class="col-6 align-center">
     <img class="img-product" src="{{product.photo}}">
+    {% if product.historic.last.points > 9 %}
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-certificate fa-stack-2x" style="color:blue"></i>
+      <i class="fa fa-check fa-stack-1x" style="color:#247BA0"></i>
+    </span>
+    {% endif %}
   </div>
   <div class="col-6">
     <div class="row">
@@ -21,7 +27,7 @@
         <h3>Descrição: {{product.description}}</h3>
         <h3>Categoria: {{product.category}}</h3>
         <h3>Data: {{product.historic.last.date}}</h3>
-        <h3>Pontos: {{product.historic.last.points}}</h3>
+        <!-- <h3>Pontos: {{product.historic.last.points}}</h3> -->
         <form method="POST" id="pointForm" role="form" class="display-none" novalidate>
           {% csrf_token %}
           <select name="points">
