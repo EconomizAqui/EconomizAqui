@@ -3,7 +3,7 @@ Data | Versão | Descrição | Responsáveis
 21/11/2018 | 1.0 | Adição de seção de Introdução, Representação da Arquitetura, Metas e Restrições de Arquitetura e Visão de Casos de Uso | Amanda Bezerra
 23/11/2018 | 1.1 | Adição de seção de Visão Lógica, Visão Geral e Visão de Modelos | Amanda Bezerra
 23/11/2018 | 1.2 | Adição da explicação do forms na descrição da arquitetura | Mateus Oliveira, Matheus Roberto e Vinícius Cantuária
-
+23/11/2018 | 1.3 | Incremento na Representação da arquitetura | Mateus Oliveira, Matheus Roberto e Vinícius Cantuária
 # Documento de Arquitetura de Software
 
 ## Introdução
@@ -25,15 +25,24 @@ Este documento está organizado da seguinte forma:
 + Metas e Restrições de Arquitetura
 + Visão de Casos de Uso
 
-## Representação da Arquitetur
+## Representação da Arquitetura
 <p align="justify">
-Este projeto utiliza o padrão MTV (<i>Model-Template-View</i>) que organiza a estrutura do projeto em camadas, sendo elas:
+O sistema faz uso do Framework Django, que faz uso do padrão MVC. No entanto, tal plataforma possui uma interpretação singular em relação à organização de camadas. O indicado é considerar que a própria plataforma faz o papel da camada de controle, enquanto a camada de Modelo e de Visão devem ser adaptadas e reinterpretadas conforme o necessário. Por este motivo, ainda que o Django implemente o MVC, considera-se que o padrão de camadas externalizado pela plataforma é o MTV (<i>Model-Template-View</i>).
+A utilização de uma arquitetura em camadas é interessante por proporcionar uma clara separação de responsabilidades no código, proporcionando reusabilidade, e reduzindo o esforço de manutenção.
+Os conceitos de MVC e MTV sero apresentados nas sessões seguintes.
 <p>
 
+### Model View Controller(MVC)
 + <b>Model</b>: camada de acesso a base de dados, é responsável pela leitura e escrita de dados, bem como de suas validações;
-+ <b>Template</b>: camada de apresentação das informações, é responsável pela interação com o usuário;
-+ <b>View</b>: camada responsável pelas as regras de negócios do sistema, é responsável por receber e processar as 
++ <b>View</b>: camada de apresentação das informações, é responsável pela interação com o usuário;
++ <b>Controller</b>: camada responsável pelas as regras de negócios do sistema, é responsável por receber e processar as 
 requisições do usuário, controlando o fluxo de informações entre as demais camadas.
+
+
+### Model Template View(MTV)
++ <b>Model</b>: segue a mesma definição da model no MVC;
++ <b>Template</b>: segue a mesma definição da view no MVC;
++ <b>View</b>: segue a mesma definição da controller no MVC.
 + <b>Forms</b>: a camada de Forms não faz parte do MTV, mas é uma forma de agrupar todas as classes usadas para descrever os formulários utilizados na aplicação. Se comunica diretamente com a modelo, de forma a mapear os atributos das entidades, e com a View, para refletir o mesmo mapeamento na camada de Template.
 
 A imagem a seguir apresenta as interações entre as camadas:
