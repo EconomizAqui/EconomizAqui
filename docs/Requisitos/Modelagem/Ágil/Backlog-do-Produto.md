@@ -26,12 +26,12 @@ Data | Versão | Descrição | Responsáveis
 |  **UC11** | Buscar produto | Este caso de uso permite ao usuário pesquisar um determinado produto pelo seu nome |  |  | B |  |
 |  **UC12** | Pontuar Confiabilidade do Produto | A confiabilidade do preço de um produto será determinada através das confirmações e questionamentos dos usuários, um usuário normal soma 2 pontos de confiança para um produto, um usuário não confiavel soma 1 ponto de confiança e um usuário premium soma 3 pontos de confiança |  |  | C |  |
 
-## Tema Comércio
+## Tema Mercado
 |  **Identificador** | **Nome** | **Descrição** | **Tarefas** | **Padrões de Projeto** | **Prioridade** | **Pontuação** |
 |  :------: | :------: | :------: | :------: | :------: | :------: | :------: |
-|  **UC13** | Manter Comércio | A funcionalidade de manter comércio estabelece as operações de CRUD, ou seja, criação, leitura, atualização e exclusão de dados relacionados ao objeto que representa a classe de comércio. Nesse sentido, ela define que um usuário poderá criar um comércio e a partir disso adicionar seu local e nome e produtos que este comércio possua |  |  | A |  |
-|  **UC14** | Buscar comércio | Este caso de uso permite ao usuário pesquisar um determinado comércio pelo seu nome |  |  | B |  |
-|  **UC15** | Autenticar comércio | Esta funcionalidade permite que usuários que sejam donos de um comércio confirmem a posse deste, através de documentos, CNPJ, etc |  |  | E |  |
-|  **UC16** | Filtrar comércio por distancia | Esta funcionalidade tem como objetivo filtrar a listagem de comércios através da sua distancia |  |  | D |  |
+|  **UC13** | Manter mercado | A funcionalidade de manter mercado estabelece as operações de CRUD, ou seja, criação, leitura, atualização e exclusão de dados relacionados ao objeto que representa a classe de mercado. Nesse sentido, ela define que um usuário poderá criar um mercado e a partir disso adicionar seu local e nome e produtos que este mercado possua |  |  | A |  |
+|  **UC14** | Buscar mercado | Este caso de uso permite ao usuário pesquisar um determinado mercado pelo seu nome |  |  | B |  |
+|  **UC15** | Autenticar mercado | Esta funcionalidade permite que usuários que sejam donos de um mercado confirmem a posse deste, através de documentos, CNPJ, etc |  |  | E |  |
+|  **UC16** | Filtrar mercado por distancia | Esta funcionalidade tem como objetivo filtrar a listagem de mercados através da sua distancia |  |  | D |  |
 |  **UC17** | Montar Lista de Compras | Permite ao usuário adicionar e remover produtos em um carrinho de compras, o usuário tera direito a 15 produtos, a não ser que gaste 100 pontos de confiança, neste caso terá direito a adicionar até 100 produtos |  |  | A |  |
-|  **UC18** | Filtrar lista de compras por preço | Esta funcionalidade apresenta para o usuário o comércio mais barato com todos aqueles produtos |  |  | B |  |
+|  **UC18** | Filtrar lista de compras por preço | Esta funcionalidade apresenta para o usuário o mercado mais barato com todos aqueles produtos |  |  | B |  |
