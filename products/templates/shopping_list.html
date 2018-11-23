@@ -6,10 +6,12 @@
 </div>
 
 {% for product in product_list %}
-  <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
-  <p> {{ product.name }}</p>
-  <p class="card-text">R${{ product.historic.last.price }}</p>
-
+  <div style="font-size:25px; margin-left: 200px; margin-right:200px" >
+    <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
+    <p> {{ product.name }}</p>
+    <p class="card-text">R${{ product.historic.last.price }}</p>
+    <hr>
+  </div>
 {% endfor %}
 
 {% endblock %}
