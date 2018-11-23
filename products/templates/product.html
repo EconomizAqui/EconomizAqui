@@ -21,9 +21,15 @@
         <h3>Descrição: {{product.description}}</h3>
         <h3>Categoria: {{product.category}}</h3>
         <h3>Data: {{product.historic.last.date}}</h3>
-        <h3>Pontos: {{user.pontos}}</h3>
-        <a style="font-size:24px" class="icones-clicaveis">Preço Correto <i class="btn fa fa-thumbs-up fa-clickable-like" style="font-size:24px; color:green" id="like"></i></a>
-        <a style="font-size:24px; margin-left: 100px" class="icones-clicaveis">Preço Incorreto <i class="btn fa fa-thumbs-down fa-clickable-dislike" onclick="AumentaPontos(1)" style="font-size:24px; color:red" id="dislike"></i></a>
+        <h3>Pontos: {{product.historic.last.points}}</h3>
+        <form method="POST" id="pointForm" role="form" class="display-none" novalidate>
+          {% csrf_token %}
+          <select name="points">
+            <option id="option_points" value=""></option>
+          </select>
+        </form>
+        <a style="font-size:24px" class="icones-clicaveis">Preço Correto <i class="btn fa fa-thumbs-up fa-clickable-like" onclick="AumentaPontos(1)" style="font-size:24px; color:green" id="like"></i></a>
+        <a style="font-size:24px; margin-left: 100px" class="icones-clicaveis">Preço Incorreto <i class="btn fa fa-thumbs-down fa-clickable-dislike" onclick="AumentaPontos(-1)" style="font-size:24px; color:red" id="dislike"></i></a>
       </div>
     </div>
     </div>
@@ -42,9 +48,9 @@
 <script>
 
 function AumentaPontos(valor){
-  user.pontos = user.pontos + valor;
-  alert("Pontos atuais: "+user.pontos)
-
+  var opt= document.getElementById('option_points');
+  opt.value = valor
+  document.getElementById("pointForm").submit();
 }
 console.log("OOAOFOASOFOSDO");
 var ctx = document.getElementById("myChart").getContext('2d');
