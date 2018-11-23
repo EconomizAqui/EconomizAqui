@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from .models import Product
 from .models import Historic
 from .models import ShoppingList
@@ -79,3 +79,8 @@ def shopping_list(request):
     shopping_list = ShoppingList.objects.get(user=request.user)
 
     return render(request, 'shopping_list.html', {'shopping_list': shopping_list})
+
+def add_product_list(request,id):
+    if id >= 0:
+        new_product = Product.objects.get(id=id)
+    return HttpResponseRedirect('../../shopping_list')        
