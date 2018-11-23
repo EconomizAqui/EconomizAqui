@@ -2,9 +2,10 @@ Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
 31/10/2018 | 1.0 | Adição de seção de Introdução e seção sobre GOF Observer | Amanda Bezerra
 19/11/2018 | 2.0 | Adição de seção de seção Referências e seção sobre GOF Strategy  | Amanda Bezerra
-21/11/2018 | 2.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo Júnio
-23/11/2018 | 2.2 | Implementação do Padrão State | Mateus de Oliveira, Matheus Roberto e Vinicius Cantuária
-23/11/2018 | 2.3 | Adição do Padrão Factory | Mateus de Oliveira e Matheus Roberto
+21/11/2018 | 2.1 | Implementação do mecanismo de envio de email para o Observer | Eduardo, Mateus de Oliveira e Matheus Roberto
+23/11/2018 | 2.2 | Implementação do Padrão State | Eduardo, Mateus de Oliveira, Matheus Roberto e Vinicius Cantuária
+23/11/2018 | 2.3 | Adição do Padrão Factory | Eduardo, Mateus de Oliveira e Matheus Roberto
+23/11/2018 | 2.4 | Adição do Padrão Facade | Eduardo, Mateus de Oliveira, Matheus Roberto e Vinícius Cantuária
 
 
 # GOF
@@ -263,6 +264,75 @@ class HistoricForm (forms.ModelForm):
 ```
 
 Para mais detalhes da implementação, acesse o [código](https://github.com/EconomizAqui/EconomizAqui/blob/development/products/forms.py) no repositório.
+
+## Facade
+Prover uma interface simplificada para a utilização de várias interfaces de um subsistema.
+
+### Estrutura genérica
+![](https://sourcemaking.com/files/v2/content/patterns/Facade1.png)
+
+### Utilização no projeto EconomizAqui
+Essa estrutura já é implementada no django com o arquivo urls.py, onde é feito todo o gerenciamento de rotas da aplicação. No django existem vários apps, no qual cada um tem a sua própria url, e o arquivo urls.py nada mais é do que uma fachada que gerencia outras fachadas.
+
+#### Implementação
+
+```
+#economizaqui urls.py
+
+"""economizaqui URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.0/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('products/', include('products.urls')),
+    path('', include('users.urls')),
+    path('', include('django.contrib.auth.urls')),
+    path('markets/', include('markets.urls')),
+    path('ratings/', include('star_ratings.urls', namespace='ratings')),
+]
+
+
+#product urls.py
+from django.urls import path
+from django.urls import include
+from products import views
+urlpatterns = [
+    path('', views.list_products ,name='listProducts'),
+    path('new', views.create_product ,name='createProduct'),
+    path('view/<int:id>/', views.view ,name='viewProduct'),
+    path('update/<int:id>/', views.update_product ,name='updateProduct'),
+    path('delete/<int:id>/', views.delete_product ,name='deleteProduct'),
+    path('addPrice/<int:id>/', views.new_price ,name='newPrice'),
+]
+
+#market urls.py
+from django.urls import path
+
+from markets import views
+
+urlpatterns = [
+    path('', views.market_list, name='market_list'),
+    path('view/<int:pk>', views.market_view, name='market_view'),
+    path('new', views.market_create, name='market_new'),
+    path('edit/<int:pk>', views.market_update, name='market_edit'),
+    path('delete/<int:pk>', views.market_delete, name='market_delete'),
+]
+```
 
 
 ## Referências
