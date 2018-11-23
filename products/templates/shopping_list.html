@@ -5,13 +5,29 @@
 
 </div>
 
-{% for product in product_list %}
-  <div style="font-size:25px; margin-left: 200px; margin-right:200px" >
-    <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
-    <p> {{ product.name }}</p>
-    <p class="card-text">R${{ product.historic.last.price }}</p>
-    <hr>
-  </div>
-{% endfor %}
+<div class="row justify-content row-margin">
+  {% for product in product_list %}
+    <customdiv class="card card-customization" style="width: 16rem;">
+      <div class="row">
+        <a class="card-img-top" href="{% url 'viewProduct' product.id %}">
+        <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <h6 class="card-title">{{ product.name }}</h6>
+        </div>
+        <div class="col-4">
+          <a class="" href="{% url 'remove_product_list' product.id %}">
+            <img class="card-icon-top" src="/static/remove.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="card-body card-body-background">
+        <p class="card-text">R${{ product.historic.last.price }}</p>
+      </div>
+    </customdiv>
+  {% endfor %}
+</div>
 
 {% endblock %}

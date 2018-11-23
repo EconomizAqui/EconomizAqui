@@ -92,3 +92,11 @@ def add_product_list(request,id):
     shopping_list.products.add(product)
 
     return HttpResponseRedirect(reverse('shopping_list'))
+
+def remove_product_list(request,id):
+    shopping_list = ShoppingList.objects.get(user=request.user)
+    
+    product = Product.objects.get(id=id)
+    shopping_list.products.remove(product)
+
+    return HttpResponseRedirect(reverse('shopping_list'))
