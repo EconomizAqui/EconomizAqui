@@ -4,4 +4,8 @@
   <h1 class="product-title">Lista de compras de {{ shopping_list.user.name }} </h1>
 </div>
 
+{% for product in product_list %}
+  <li>{{ product.name }}</li>
+{% endfor %}
+
 {% endblock %}

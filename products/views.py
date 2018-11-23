@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, reverse
 from .models import Product
 from .models import Historic
 from .models import ShoppingList
@@ -76,11 +76,19 @@ def delete_product(request):
     return render(request, 'delete_product.html')
 
 def shopping_list(request):
-    shopping_list = ShoppingList.objects.get(user=request.user)
+    shopping_list = ShoppingList.objects.get(user=request.user) 
+    
+    product_list = shopping_list.products.all()
 
-    return render(request, 'shopping_list.html', {'shopping_list': shopping_list})
+    return render(
+        request,
+        'shopping_list.html',
+        {'shopping_list': shopping_list, 'product_list': product_list})
 
 def add_product_list(request,id):
-    if id >= 0:
-        new_product = Product.objects.get(id=id)
-    return HttpResponseRedirect('../../shopping_list')        
+    shopping_list = ShoppingList.objects.get(user=request.user)
+    
+    product = Product.objects.get(id=id)
+    shopping_list.products.add(product)
+
+    return HttpResponseRedirect(reverse('shopping_list'))
