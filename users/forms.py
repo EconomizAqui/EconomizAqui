@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from .models import CustomUser
+from products.models import ShoppingList
 
 
 class CustomUserCreationForm(UserCreationForm):
@@ -60,6 +61,14 @@ class CustomUserCreationForm(UserCreationForm):
         self.fields['password1'].label = "Senha"
         self.fields['password2'].label = "Confirmar Senha"
         self.fields['name'].label = "Nome"
+
+    def save(self, commit=True):
+        instance = super(CustomUserCreationForm, self).save(commit=False)
+        if commit:
+            instance.save()
+            shopping_list = ShoppingList(user=instance)
+            shopping_list.save()
+        return instance
 
 class CustomUserChangeForm(UserChangeForm):
     username = forms.CharField(

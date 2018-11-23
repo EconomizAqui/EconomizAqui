@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Product
 from .models import Historic
+from .models import ShoppingList
 from markets.models import Market
 from .forms import ProductForm
 from .forms import HistoricForm
@@ -73,3 +74,8 @@ def new_price(request, id):
 
 def delete_product(request):
     return render(request, 'delete_product.html')
+
+def shopping_list(request):
+    shopping_list = ShoppingList.objects.get(user=request.user)
+
+    return render(request, 'shopping_list.html', {'shopping_list': shopping_list})
