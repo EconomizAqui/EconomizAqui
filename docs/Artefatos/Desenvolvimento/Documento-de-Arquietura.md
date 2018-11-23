@@ -1,7 +1,7 @@
 Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
 21/11/2018 | 1.0 | Adição de seção de Introdução, Representação da Arquitetura, Metas e Restrições de Arquitetura e Visão de Casos de Uso | Amanda Bezerra
-23/11/2018 | 1.0 | Adição de seção de Visão Lógica, Visão Geral e Visão de Modelos | Amanda Bezerra
+23/11/2018 | 1.1 | Adição de seção de Visão Lógica, Visão Geral e Visão de Modelos | Amanda Bezerra
 
 # Documento de Arquitetura de Software
 
