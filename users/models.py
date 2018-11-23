@@ -9,8 +9,7 @@ class CustomUser(AbstractUser):
         return self.email
 
     name = models.CharField(max_length=100, blank=False)
-    pontos = models.IntegerField(default=0)
-    
+
     event_handlers = []
 
     def attach(self, event_handler):
@@ -26,7 +25,7 @@ class CustomUser(AbstractUser):
     def notify(user, **kwarg):
         event_handler = NotificationEmailSender()
         user.attach(event_handler)
-        
+
         for event_handler in user.event_handlers:
             event_handler.update(user)
 
