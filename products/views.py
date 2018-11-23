@@ -80,10 +80,14 @@ def shopping_list(request):
     
     product_list = shopping_list.products.all()
 
+    total_price = 0
+    total_price = sum(product.historic.last().price for product in product_list)
+
     return render(
         request,
         'shopping_list.html',
-        {'shopping_list': shopping_list, 'product_list': product_list})
+        {'shopping_list': shopping_list, 'product_list': product_list, 'total_price': total_price}
+        )
 
 def add_product_list(request,id):
     shopping_list = ShoppingList.objects.get(user=request.user)
