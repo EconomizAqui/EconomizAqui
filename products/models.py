@@ -5,7 +5,7 @@ class Historic (models.Model):
     price = models.DecimalField(max_digits=9, decimal_places=2)
     date = models.DateTimeField(auto_now_add=True)
     commerce = models.ForeignKey('markets.Market', models.DO_NOTHING)
-
+    points = models.IntegerField(default=0)
     def _self_(self):
         return self.price
 

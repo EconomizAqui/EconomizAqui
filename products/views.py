@@ -14,6 +14,12 @@ def view(request, id):
     product = Product.objects.get(id=id)
     historic_price = []
     historic_commerce = []
+    if request.POST:
+        historic = product.historic.last()
+        historic.points += int(request.POST['points'])
+        historic.save()
+
+    point = False
     for historic in product.historic.all():
         price = json.dumps(historic.price)
         historic_price.append(price)

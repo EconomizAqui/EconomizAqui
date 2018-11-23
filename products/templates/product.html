@@ -9,6 +9,12 @@
 <div class="row background-product">
   <div class="col-6 align-center">
     <img class="img-product" src="{{product.photo}}">
+    {% if product.historic.last.points > 9 %}
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-certificate fa-stack-2x" style="color:blue"></i>
+      <i class="fa fa-check fa-stack-1x" style="color:#247BA0"></i>
+    </span>
+    {% endif %}
   </div>
   <div class="col-6">
     <div class="row">
@@ -21,6 +27,15 @@
         <h3>Descrição: {{product.description}}</h3>
         <h3>Categoria: {{product.category}}</h3>
         <h3>Data: {{product.historic.last.date}}</h3>
+        <!-- <h3>Pontos: {{product.historic.last.points}}</h3> -->
+        <form method="POST" id="pointForm" role="form" class="display-none" novalidate>
+          {% csrf_token %}
+          <select name="points">
+            <option id="option_points" value=""></option>
+          </select>
+        </form>
+        <a style="font-size:24px" class="icones-clicaveis">Preço Correto <i class="btn fa fa-thumbs-up fa-clickable-like" onclick="AumentaPontos(1)" style="font-size:24px; color:green" id="like"></i></a>
+        <a style="font-size:24px; margin-left: 100px" class="icones-clicaveis">Preço Incorreto <i class="btn fa fa-thumbs-down fa-clickable-dislike" onclick="AumentaPontos(-1)" style="font-size:24px; color:red" id="dislike"></i></a>
       </div>
     </div>
     </div>
@@ -37,6 +52,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 <script>
+
+function AumentaPontos(valor){
+  var opt= document.getElementById('option_points');
+  opt.value = valor
+  document.getElementById("pointForm").submit();
+}
 console.log("OOAOFOASOFOSDO");
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
