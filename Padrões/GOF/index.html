@@ -875,6 +875,46 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#factory" title="Factory" class="md-nav__link">
+    Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-generica_3" title="Estrutura genérica" class="md-nav__link">
+    Estrutura genérica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizacao-no-projeto-economizaqui_3" title="Utilização no projeto EconomizAqui" class="md-nav__link">
+    Utilização no projeto EconomizAqui
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacao_3" title="Implementação" class="md-nav__link">
+    Implementação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#referencias" title="Referências" class="md-nav__link">
     Referências
   </a>
@@ -933,6 +973,12 @@
 <td>2.2</td>
 <td>Implementação do Padrão State</td>
 <td>Mateus de Oliveira, Matheus Roberto e Vinicius Cantuária</td>
+</tr>
+<tr>
+<td>23/11/2018</td>
+<td>2.3</td>
+<td>Adição do Padrão Factory</td>
+<td>Mateus de Oliveira e Matheus Roberto</td>
 </tr>
 </tbody>
 </table>
@@ -1126,6 +1172,40 @@ HTML
 </code></pre>
 
 <p>Para mais detalhes da implementação, acesse o <a href="https://github.com/EconomizAqui/EconomizAqui/commit/7516a9c0010144edb065b5311b2cb764a98042e4">código</a> no repositório.</p>
+<h2 id="factory">Factory<a class="headerlink" href="#factory" title="Permanent link">&para;</a></h2>
+<p><p align="justify">
+É um padrão GOF criacional que define uma interface para criar um objeto, mas deixa que as subclasses decidam quais classes instanciar.</p></p>
+<h3 id="estrutura-generica_3">Estrutura genérica<a class="headerlink" href="#estrutura-generica_3" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://sourcemaking.com/files/v2/content/patterns/Factory_Method.png" /></p>
+<h3 id="utilizacao-no-projeto-economizaqui_3">Utilização no projeto EconomizAqui<a class="headerlink" href="#utilizacao-no-projeto-economizaqui_3" title="Permanent link">&para;</a></h3>
+<p><p align="justify">
+O projeto é desenvolvido utilizando o <i>Framework</i> Django da linguagem Python, e o mesmo possui um módulo de Forms no qual é responsável por definir os campos necessários para que seja construido um objeto
+</p></p>
+<h4 id="implementacao_3">Implementação<a class="headerlink" href="#implementacao_3" title="Permanent link">&para;</a></h4>
+<p align="justify">O modulo <i>Forms</i> de Produtos é responsável por definir os campos de entrada de dado de um usuário, ou seja os atributo necessários para a instanciação de um determinado objeto</p>
+
+<pre><code class="Python">class HistoricForm (forms.ModelForm):
+    price = forms.CharField(
+        error_messages={'required': 'Este campo é obrigatório! Preencha este campo com o preço do produto.'},
+        widget=forms.TextInput(
+            attrs={
+                'class' : 'form-control',
+                'placeholder' : 'Preço',
+            }
+        )
+    )
+    cod_commerce = forms.ChoiceField()
+</code></pre>
+
+<p align="justify">A classe meta define qual a model que sera utilizada na construção do formulario, e os fields definem os campos necessários para a construção de um objeto deste tipo.</p>
+
+<pre><code class="Python">    class Meta:
+        model = Historic
+        fields = ('price', 'cod_commerce')
+```}
+</code></pre>
+
+<p>Para mais detalhes da implementação, acesse o <a href="https://github.com/EconomizAqui/EconomizAqui/blob/development/products/forms.py">código</a> no repositório.</p>
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://sourcemaking.com/design_patterns/observer">Observer Design Pattern</a></li>
