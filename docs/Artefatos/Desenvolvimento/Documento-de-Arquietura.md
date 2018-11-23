@@ -2,6 +2,7 @@ Data | Versão | Descrição | Responsáveis
 -- | -- | -- | --
 21/11/2018 | 1.0 | Adição de seção de Introdução, Representação da Arquitetura, Metas e Restrições de Arquitetura e Visão de Casos de Uso | Amanda Bezerra
 23/11/2018 | 1.1 | Adição de seção de Visão Lógica, Visão Geral e Visão de Modelos | Amanda Bezerra
+23/11/2018 | 1.2 | Adição da explicação do forms na descrição da arquitetura | Mateus Oliveira, Matheus Roberto e Vinícius Cantuária
 
 # Documento de Arquitetura de Software
 
@@ -24,14 +25,16 @@ Este documento está organizado da seguinte forma:
 + Metas e Restrições de Arquitetura
 + Visão de Casos de Uso
 
-## Representação da Arquitetura
+## Representação da Arquitetur
 <p align="justify">
 Este projeto utiliza o padrão MTV (<i>Model-Template-View</i>) que organiza a estrutura do projeto em camadas, sendo elas:
 <p>
 
 + <b>Model</b>: camada de acesso a base de dados, é responsável pela leitura e escrita de dados, bem como de suas validações;
 + <b>Template</b>: camada de apresentação das informações, é responsável pela interação com o usuário;
-+ <b>View</b>: camada responsável pelas as regras de negócios do sistema, é responsável por receber e processar as requisições do usuário, controlando o fluxo de informações entre as demais camadas.
++ <b>View</b>: camada responsável pelas as regras de negócios do sistema, é responsável por receber e processar as 
+requisições do usuário, controlando o fluxo de informações entre as demais camadas.
++ <b>Forms</b>: a camada de Forms não faz parte do MTV, mas é uma forma de agrupar todas as classes usadas para descrever os formulários utilizados na aplicação. Se comunica diretamente com a modelo, de forma a mapear os atributos das entidades, e com a View, para refletir o mesmo mapeamento na camada de Template.
 
 A imagem a seguir apresenta as interações entre as camadas:
 
