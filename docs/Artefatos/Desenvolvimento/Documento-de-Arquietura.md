@@ -38,6 +38,9 @@ Os conceitos de MVC e MTV sero apresentados nas sessões seguintes.
 + <b>Controller</b>: camada responsável pelas as regras de negócios do sistema, é responsável por receber e processar as 
 requisições do usuário, controlando o fluxo de informações entre as demais camadas.
 
+A imagem a seguir apresenta as interações entre as camadas:
+
+![](https://pbs.twimg.com/media/Dst5pXcWsAAGdoo.jpg)
 
 ### Model Template View(MTV)
 + <b>Model</b>: segue a mesma definição da model no MVC;
