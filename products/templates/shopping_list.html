@@ -4,13 +4,10 @@
   <h1 class="product-title">Lista de compras de {{ shopping_list.user.name }} </h1>
 </div>
 
-<div class="row" style="display: flex; justify-content: flex-end;">
-  <div class="form-inline" style="margin-left:auto; margin-right:150;">
-    {% if product_list %}
-      <div><big><b>Preço total R$: {{ total_price }} </b></big></div>
-    {% endif %}
-  </div>
-</div>
+<!-- <div class="row" style="display: flex; justify-content: flex-end;">
+  <div class="form-inline" style="margin-left:auto; margin-right:150;"> -->
+  <!-- </div>
+</div> -->
 
 <div class="row justify-content row-margin">
   {% if product_list %}
@@ -22,10 +19,10 @@
           </a>
         </div>
         <div class="row">
-          <div class="col-8">
+          <div class="col-9">
             <h6 class="card-title">{{ product.name }}</h6>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <a class="" href="{% url 'remove_product_list' product.id %}">
               <img class="card-icon-top" src="/static/remove.png"/>
             </a>
@@ -37,7 +34,22 @@
       </customdiv>
     {% endfor %}
   {% else %}
-      <div><big><b>Lista vazia.</b></big></div>
+  <div class="row">
+    <div class="lista-vazia">Lista vazia</div>
+  </div>
+  <div class="row">
+    <img class="lista-vazia-img" src="/static/empty.png"></img>
+  </div>
+  {% endif %}
+</div>
+<div class="footer-product" id="">
+  {% if product_list %}
+  <div class="row align-center">
+    <div class="product-price">Total de produtos: {{ product_list.count }}</div>
+  </div>
+  <div class="row align-center">
+    <div class="product-price">Preço total R$: {{ total_price }}</div>
+  </div>
   {% endif %}
 </div>
 

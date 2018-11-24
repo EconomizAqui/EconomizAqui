@@ -112,6 +112,12 @@ Espere até que todos os serviços estejam disponíveis, acesse a página inicia
 * Servidor: https://economizaqui.herokuapp.com/
 
 
+##  Acessando a Wiki
+
+<p align="justify">Acesse nossa Wiki utilizando o endereço apresentado abaixo:</p>
+
+* Wiki: https://economizaqui.github.io/EconomizAqui/ 
+
 
 <br>
 <!-- 
