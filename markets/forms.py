@@ -29,10 +29,17 @@ class MarketForm(ModelForm):
 
 class SortOptionForm(forms.Form):
     OPTIONS = [
-        ('default', 'Ordenar por:'),
         ('nomeAz', 'Nome A-Z'),
         ('nomeZa', 'Nome Z-A'),
         ('avaliacaoMelhores', "Melhores avaliados"),
         ('avaliacaoPiores', 'Piores avaliados'),
     ]
-    choice = forms.ChoiceField(choices=OPTIONS)
+    choice = forms.ChoiceField(
+            choices=OPTIONS,
+                    widget=forms.Select(
+                        attrs={
+                            'onselect': 'AumentaPontos(this)',
+                            'class': 'form-control'
+                        }
+                    )
+            )

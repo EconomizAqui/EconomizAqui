@@ -22,6 +22,13 @@
   text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
 }
 
+.black-shadow {
+  color: #101D30;
+  font-family: 'Play', sans-serif;
+
+  font-size: 80px;
+}
+
 .parallax {
     background-image: url("background.png");
     height: auto;
@@ -37,6 +44,13 @@
 .white-description {
   font-family: 'Play', sans-serif;
   color: #EFF3F5;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.black-description {
+  font-family: 'Play', sans-serif;
+  color: #101D30;
   text-align: justify;
   font-size: 20px;
 }
@@ -60,7 +74,11 @@
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(18, 69, 89, 0.9);
+  background: #e0f3fa;
+  background: -moz-linear-gradient(top, #e0f3fa 0%, #d8f0fc 37%, #b8e2f6 84%, #b6dffd 100%);
+  background: -webkit-linear-gradient(top, #e0f3fa 0%,#d8f0fc 37%,#b8e2f6 84%,#b6dffd 100%);
+  background: linear-gradient(to bottom, #e0f3fa 0%,#d8f0fc 37%,#b8e2f6 84%,#b6dffd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 );
 }
 
 #sectionBlue {
@@ -76,7 +94,11 @@
 }
 
 #sectionDark {
-  background-color: #0C2C39;
+  background: #e9f6fd;
+  background: -moz-linear-gradient(top, #e9f6fd 45%, #e9f6fd 45%, #d3eefb 100%);
+  background: -webkit-linear-gradient(top, #e9f6fd 45%,#e9f6fd 45%,#d3eefb 100%);
+  background: linear-gradient(to bottom, #e9f6fd 45%,#e9f6fd 45%,#d3eefb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f6fd', endColorstr='#d3eefb',GradientType=0 );
 }
 
 #footer {
