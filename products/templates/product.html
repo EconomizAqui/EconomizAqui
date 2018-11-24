@@ -35,14 +35,14 @@
           </select>
         </form>
         <a style="font-size:15px" class="icones-clicaveis">Preço Correto <i class="btn fa fa-thumbs-up fa-clickable-like" onclick="AumentaPontos(1)" style="font-size:24px; color:green" id="like"></i></a>
-        <a style="font-size:15px; margin-left: 100px" class="icones-clicaveis">Preço Incorreto <i class="btn fa fa-thumbs-down fa-clickable-dislike" onclick="AumentaPontos(-1)" style="font-size:24px; color:red" id="dislike"></i></a>
-        <a style="font-size:15px; margin-left: 100px"  href="{% url 'add_product_list' product.id %}" class="icones-clicaveis">Adicionar à lista <i class="fa fa-plus" style="font-size:24px; aria-hidden="true"></i></a>
+        <a style="font-size:15px; margin-left: 20px" class="icones-clicaveis">Preço Incorreto <i class="btn fa fa-thumbs-down fa-clickable-dislike" onclick="AumentaPontos(-1)" style="font-size:24px; color:red" id="dislike"></i></a>
+        <a style="font-size:15px; margin-left: 20px"  href="{% url 'add_product_list' product.id %}" class="icones-clicaveis">Adicionar à lista <i class="fa fa-plus" style="font-size:24px;"></i></a>
       </div>
     </div>
-    </div>
-    <div class="row">
-      <canvas id="myChart"></canvas>
-    </div>
+  </div>
+  <div class="row">
+    <canvas id="myChart"></canvas>
+  </div>
 </div>
 {% endblock %}
 

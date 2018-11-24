@@ -26,10 +26,10 @@
       </a>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="col-6">
         <h6 class="card-title">{{ product.name }}</h6>
       </div>
-      <div class="col-4">
+      <div class="col-6">
         {% if user.is_authenticated %}
           <a class="" href="{% url 'updateProduct' product.id %}">
             <img class="card-icon-top" src="/static/edit.png"/>
