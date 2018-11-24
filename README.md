@@ -118,6 +118,12 @@ Espere até que todos os serviços estejam disponíveis, acesse a página inicia
 
 * Wiki: https://economizaqui.github.io/EconomizAqui/ 
 
+##  Acessando o Repositório
+
+<p align="justify">Acesse nosso repositório utilizando o endereço apresentado abaixo:</p>
+
+* Repositório: https://github.com/EconomizAqui/EconomizAqui 
+
 
 <br>
 <!-- 
