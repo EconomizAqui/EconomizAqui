@@ -172,3 +172,39 @@ canvas {
   color: white;
   border: none;
 }
+
+.lista-vazia {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-family: 'Play', sans-serif;
+
+}
+
+.lista-vazia-img {
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
+
+.product-price{
+  font-size: 25px;
+  font-family: 'Play', sans-serif;
+  margin: 0 auto;
+  color: #1e617d;
+}
+
+.footer-product {
+  position: relative;
+  bottom:0;
+  width:100%;
+  margin-bottom: 20px;
+}
