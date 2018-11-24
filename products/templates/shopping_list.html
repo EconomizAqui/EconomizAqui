@@ -45,10 +45,10 @@
 <div class="footer-product" id="">
   {% if product_list %}
   <div class="row align-center">
-    <div class="product-price">Total de produtos: {{ product_list.count }}</div>
+    <i class="fa fa-cart-arrow-down fa-footer"> Nº de itens: {{ product_list.count }}</i>
   </div>
   <div class="row align-center">
-    <div class="product-price">Preço total R$: {{ total_price }}</div>
+    <i class="fa fa-calculator fa-footer"> Preço total R$: {{ total_price }}</i>
   </div>
   {% endif %}
 </div>
