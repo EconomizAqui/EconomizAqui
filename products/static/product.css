@@ -209,9 +209,10 @@ canvas {
   margin-bottom: 20px;
 }
 
-.fa-footer {
-  font-size: 25px;
-  /*font-family: 'Play', sans-serif;*/
-  margin: 0 auto;
-  color: #1e617d;
+.ordernar {
+  font-family: 'Play', sans-serif;
+  margin-right: 8px;
+  font-size: 30px;
 }
+
+.fa-footer {   font-size: 25px;   /*font-family: 'Play', sans-serif;*/   margin: 0 auto;   color: #1e617d; }
