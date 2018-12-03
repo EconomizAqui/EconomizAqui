@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% block body %}
+<!-- <div class="row"> -->
+<!-- <div class="col-3 col-line"> -->
+<div class="row">
+  {% if user.is_authenticated %}
+    <a class="product-title" href="{% url 'createProduct' %}">
+      <img class="product-title card-icon-top" src="/static/new_product.png"/>
+    </a>
+  {% endif %}
+</div>
+<div class="row">
+  <h1 class="product-title">Produtos</h1>
+</div>
+<div class="row">
+  <p class="product-title">{{products.count}} resultados</p>
+</div>
+<!-- </div> -->
+<!-- <div class="col-9"> -->
+
+<div class="row justify-content row-margin">
+{% for product in products %}
+  <customdiv class="card card-customization" style="width: 16rem;">
+    <div class="row">
+      <a class="card-img-top" href="{% url 'viewProduct' product.id %}">
+      <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h6 class="card-title">{{ product.name }}</h6>
+      </div>
+      <div class="col-6">
+        {% if user.is_authenticated %}
+          <a class="" href="{% url 'updateProduct' product.id %}">
+            <img class="card-icon-top" src="/static/edit.png"/>
+          </a>
+          <a class="" href="{% url 'add_product_list' product.id %}">
+            <img class="card-icon-top" src="/static/add_to_list.png"/>
+          </a>
+        {% endif %}
+        <a class="" href="{% url 'newPrice' product.id %}">
+          <img class="card-icon-top" src="/static/price.png"/>
+        </a>
+      </div>
+    </div>
+    <div class="card-body card-body-background">
+      <p class="card-text">R${{ product.historic.last.price }}</p>
+      <p>
+        <small class="text-muted">
+          {{ product.description }}
+        </small>
+      </p>
+    </div>
+  </customdiv>
+{% endfor %}
+</div>
+<!-- </div> -->
+<!-- </div> -->
+{% endblock %}

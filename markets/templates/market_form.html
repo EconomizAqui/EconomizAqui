@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block body %}
+
+  <div class="col-4">
+    <p><a href="{% url 'market_list' %}" class="btn btn-info btn-sm">
+      Voltar
+    </a></p>
+  </div>
+
+  <div class="row">
+    <h1 class="product-title">{{method}} Mercado</h1>
+  </div>
+
+  <form method="POST" role="form" novalidate>
+    {% csrf_token %}
+    <br style="clear:both">
+    <div class="form-group">
+      Nome:
+      <small class="text-danger">
+        {{ form.name.errors.as_text }}
+      </small>
+      {{ form.name }}
+    </div>
+    <div class="form-group">
+      Url da foto:
+      <small class="text-danger">
+        {{ form.photo.errors.as_text }}
+      </small>
+      {{ form.photo }}
+    </div>
+    <div class="align-center">
+      <button type="submit" id="submit" name="submit" class="btn button-color">Salvar</button>
+    </div>
+  </form>
+
+{% endblock %}

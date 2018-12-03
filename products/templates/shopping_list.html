@@ -1,0 +1,52 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="row">
+  <h1 class="product-title">Lista de compras de {{ shopping_list.user.name }} </h1>
+</div>
+
+
+<div class="row justify-content row-margin">
+  {% if product_list %}
+    {% for product in product_list %}
+      <customdiv class="card card-customization" style="width: 16rem;">
+        <div class="row">
+          <a class="card-img-top" href="{% url 'viewProduct' product.id %}">
+          <img class="card-img-top" src="{{product.photo}}" alt="Card image cap">
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <h6 class="card-title">{{ product.name }}</h6>
+          </div>
+          <div class="col-3">
+            <a class="" href="{% url 'remove_product_list' product.id %}">
+              <img class="card-icon-top" src="/static/remove.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="card-body card-body-background">
+          <p class="card-text">R${{ product.historic.last.price }}</p>
+        </div>
+      </customdiv>
+    {% endfor %}
+  {% else %}
+  <div class="row">
+    <div class="lista-vazia">Lista vazia</div>
+  </div>
+  <div class="row">
+    <img class="lista-vazia-img" src="/static/empty.png"></img>
+  </div>
+  {% endif %}
+</div>
+<div class="footer-product" id="">
+  {% if product_list %}
+  <div class="row align-center">
+    <i class="fa fa-cart-arrow-down fa-footer"> Nº de itens: {{ product_list.count }}</i>
+  </div>
+  <div class="row align-center">
+    <i class="fa fa-calculator fa-footer"> Preço total R$: {{ total_price }}</i>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

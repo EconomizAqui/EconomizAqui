@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="row justify-content-around center-block no-margin">
+  <div class="col-md-16 float-md-left" id="formulario">
+    <h2>Configurações de conta</h2>
+    <form method="post">
+      {% csrf_token %}
+      Username:
+      {{ form.username }}
+      E-mail:
+      {{ form.email }}
+      Nome:
+      {{ form.name }}
+      <p></p>
+      <button type="submit">Atualizar</button>
+      <p></p>
+      <p><a href="{% url 'delete_user' %}">Excluir conta</a></p>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

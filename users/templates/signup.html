@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Criar conta{% endblock %}
+
+
+{% block body %}
+<div class="row">
+  <h1 class="product-title">Registrar</h1>
+</div>
+<form method="post">
+  {% csrf_token %}
+  <div class="form-group">
+    <small class="text-danger">
+       {{ form.username.errors.as_text }}
+    </small>
+    <div class="infoForm">Usuário:</div> {{form.username}}
+  </div>
+  <div class="form-group">
+    <small class="text-danger">
+       {{ form.email.errors.as_text }}
+    </small>
+    <div class="infoForm">Email:</div> {{form.email}}
+  </div>
+  <div class="form-group">
+    <small class="text-danger">
+       {{ form.name.errors.as_text }}
+    </small>
+    <div class="infoForm">Nome:</div> {{form.name}}
+  </div>
+
+  <div class="form-group">
+    <small class="text-danger">
+       {{ form.password1.errors.as_text }}
+    </small>
+    <div class="infoForm">Senha:</div> {{form.password1}}
+
+  </div>
+  <div class="form-group">
+    <small class="text-danger">
+       {{ form.password2.errors.as_text }}
+    </small>
+    <div class="infoForm">Confimar Senha:</div> {{form.password2}}
+  </div>
+  <div class="align-center">
+    <button type="submit" id="submit" name="submit" class="btn button-color">Confirmar</button>
+  </div>
+  </form>
+{% endblock %}

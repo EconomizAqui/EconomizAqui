@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load staticfiles %}
+
+{% block body %}
+<div class="row">
+  <h1 class="product-title">Produto</h1>
+</div>
+<div class="row background-product">
+  <div class="col-6 align-center">
+    <img class="img-product" src="{{product.photo}}">
+    {% if product.historic.last.points > 9 %}
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-certificate fa-stack-2x" style="color:blue"></i>
+      <i class="fa fa-check fa-stack-1x" style="color:#247BA0"></i>
+    </span>
+    {% endif %}
+  </div>
+  <div class="col-6">
+    <div class="row">
+      <div class="details-product">
+        <h1 class="details-title">Detalhes</h1>
+        <h3>Nome: {{product.name}}</h3>
+        <h3>Comércio: {{product.historic.last.commerce}}</h3>
+        <h3>Último preço: R${{product.historic.last.price}}</h3>
+        <h3>Marca: {{product.brand}}</h3>
+        <h3>Descrição: {{product.description}}</h3>
+        <h3>Categoria: {{product.category}}</h3>
+        <h3>Data: {{product.historic.last.date}}</h3>
+        <!-- <h3>Pontos: {{product.historic.last.points}}</h3> -->
+        <form method="POST" id="pointForm" role="form" class="display-none" novalidate>
+          {% csrf_token %}
+          <select name="points">
+            <option id="option_points" value=""></option>
+          </select>
+        </form>
+        <a style="font-size:15px" class="icones-clicaveis">Preço Correto <i class="btn fa fa-thumbs-up fa-clickable-like" onclick="AumentaPontos(1)" style="font-size:24px; color:green" id="like"></i></a>
+        <a style="font-size:15px; margin-left: 20px" class="icones-clicaveis">Preço Incorreto <i class="btn fa fa-thumbs-down fa-clickable-dislike" onclick="AumentaPontos(-1)" style="font-size:24px; color:red" id="dislike"></i></a>
+        <a style="font-size:15px; margin-left: 20px"  href="{% url 'add_product_list' product.id %}" class="icones-clicaveis">Adicionar à lista <i class="fa fa-plus" style="font-size:24px;"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+<script>
+
+function AumentaPontos(valor){
+  var opt= document.getElementById('option_points');
+  opt.value = valor
+  document.getElementById("pointForm").submit();
+}
+console.log("OOAOFOASOFOSDO");
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: {{historic_commerce|safe}},
+        datasets: [{
+            // label: '# of Votes',
+            data: {{historic_price|safe}},
+            fill: false,
+            borderColor: '#70C1B3',
+            borderWidth: 2
+        }]
+    },
+    options: {
+      elements: {
+          line: {
+              tension: 0
+          }
+      },
+      scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero:true,
+                  fontSize: 20,
+                  fontFamily: "'Play', sans-serif",
+                  fontColor: "#4C847B",
+              }
+          }],
+          xAxes: [{
+              ticks: {
+                  beginAtZero:true,
+                  fontSize: 20,
+                  fontFamily: "'Play', sans-serif",
+                  fontColor: "#4C847B",
+              },
+              gridLines: {
+                // display: false,
+              }
+          }]
+      },
+      legend:{
+        display: false,
+      },
+      title: {
+           display: true,
+           text: 'Histórico de preços',
+           fontSize: 25,
+           fontFamily: "'Play', sans-serif",
+           padding: 40,
+           fontColor: "#A30F36",
+
+       },
+       tooltips: {
+         callbacks: {
+           label: function (tooltipItems, data) {
+             return  "R$" + tooltipItems.yLabel;
+           }
+         },
+         backgroundColor: '#F3FFBD',
+         titleFontSize: 16,
+         titleFontColor: '#247BA0',
+         bodyFontColor: '#A30F36',
+         bodyFontSize: 16,
+         displayColors: false,
+         xPadding: 20,
+         yPadding: 20,
+         borderColor: '#247BA0',
+         borderWidth: 2,
+       }
+    }
+});
+</script>
+{% endblock %}
