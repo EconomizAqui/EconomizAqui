@@ -122,7 +122,11 @@ Espere até que todos os serviços estejam disponíveis, acesse a página inicia
 
 <p align="justify">Acesse nosso repositório utilizando o endereço apresentado abaixo:</p>
 
-* Repositório: https://github.com/EconomizAqui/EconomizAqui 
+* Repositório: https://github.com/EconomizAqui/EconomizAqui  
+
+##  Contribuição
+
+<p align="justify">Para contribuir com o projeto leia o [Código de Conduta](https://github.com/EconomizAqui/EconomizAqui/blob/master/.github/CODE_OF_CONDUCT.md), crie a [Issue](https://github.com/EconomizAqui/EconomizAqui/issues) se não existir e crie o [Pull Request](https://github.com/EconomizAqui/EconomizAqui/pulls).</p>
 
 
 <br>
