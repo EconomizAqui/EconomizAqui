@@ -94,7 +94,7 @@ Para rodar a aplicação, entre na pasta do projeto em que está localizado o __
 ```
   docker-compose up -d
 ```
-Espere até que todos os serviços estejam disponíveis, acesse a página inicial do projeto com o seguinte endereço: https://localhost:8000
+Espere até que todos os serviços estejam disponíveis, acesse a página inicial do projeto com o seguinte endereço: http://localhost:8000
 
 ##  ℹ️ Deploy
 
