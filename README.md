@@ -126,9 +126,3 @@ Espere até que todos os serviços estejam disponíveis, acesse a página inicia
 
 
 <br>
-<!-- 
-### 👤 Equipe de Desenvolvimento
-
-
-<a href='https://github.com/fga-gpp-mds/2018.1_Gerencia_mais/blob/master/docs/documentos/imagens/time/eduardo'><img width="130"  -->
-
