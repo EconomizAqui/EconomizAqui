@@ -39,7 +39,7 @@
 ## 🐳 Guia de Uso do Docker
 
 * ### Instalação
-Primeiramente é necessário ter o docker instalado, caso não tenha acesse o [Instalação docker](https://docs.docker.com/engine/installation/linux/docker-ce/). Após feito isso, instale o [Docker-compose](https://docs.docker.com/compose/install/).
+Primeiramente, é necessário ter o docker instalado, caso não tenha acesse o [Instalação docker](https://docs.docker.com/engine/installation/linux/docker-ce/). Após feito isso, instale o [Docker-compose](https://docs.docker.com/compose/install/).
 
 * ### Comandos básicos 
 
@@ -123,12 +123,4 @@ Espere até que todos os serviços estejam disponíveis, acesse a página inicia
 <p align="justify">Acesse nosso repositório utilizando o endereço apresentado abaixo:</p>
 
 * Repositório: https://github.com/EconomizAqui/EconomizAqui 
-
-
-<br>
-<!-- 
-### 👤 Equipe de Desenvolvimento
-
-
-<a href='https://github.com/fga-gpp-mds/2018.1_Gerencia_mais/blob/master/docs/documentos/imagens/time/eduardo'><img width="130"  -->
 
